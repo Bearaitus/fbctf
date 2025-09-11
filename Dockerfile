@@ -15,5 +15,6 @@ WORKDIR $HOME
 COPY . $HOME
 
 RUN apt-get update && apt-get -y install sudo apt-utils
+RUN python -m pip install --upgrade pip setuptools wheel
 RUN ./extra/provision.sh -m $MODE -c $TYPE -k $KEY -C $CRT -D $DOMAIN -e $EMAIL -s `pwd` --docker
 CMD ["./extra/service_startup.sh"]
