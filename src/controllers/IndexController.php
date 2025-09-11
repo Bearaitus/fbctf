@@ -59,7 +59,7 @@ class IndexController extends Controller {
             "fb-main page--landing row-fluid no-shrink center-vertically fb-img-glitch">
           <div class="fb-container fb-centered-main">
             <h1 class="fb-glitch" data-text="PT EdTechLab CTF">
-              {tr('PT EdTechLab CTF')}
+              PT EdTechLab CTF
             </h1>
             <p class="typed-text">
               {$welcome_msg}
