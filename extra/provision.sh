@@ -296,12 +296,23 @@ fi
             package python-setuptools
             package python-pip
             log "Upgrading pip"
-            sudo -H pip install --upgrade pip
+            PYBIN="$(command -v python3 || command -v python)"
+"$PYBIN" -m pip install --upgrade "pip<21" "setuptools<45" "wheel<0.38"
             log "Installing pip - mycli"
             sudo -H pip install mycli
             package emacs
             package htop
         fi
+	install_nodejs() {
+	  log "Installing Node.js 14 and npm 6"
+ 	 # удаляем старый nodejs
+ 	  apt-get remove -y nodejs npm || true
+	  # подключаем репозиторий nodesource и ставим nodejs 14
+	  curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+	  apt-get install -y nodejs
+	  # фиксируем npm на версии 6
+	  npm install -g npm@6
+	}
 
         package ca-certificates
 
@@ -320,7 +331,10 @@ fi
 
         log "Installing unison 2.48.3. Remember to install the same version on your host machine"
         package xz-utils
-        install_unison
+        install_unison() {
+	  log "Installing unison from apt"
+	  apt-get install -y unison
+	}
     fi
 
     log "Creating attachments folder, and setting ownership to www-data"
