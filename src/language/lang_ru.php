@@ -682,4 +682,8 @@ $translations = array(
     'Порт LDAP',
   'LDAP Domain' =>
     'Домен LDAP',
+  'Automatic Team Name Prefix' =>
+    'Префикс команды',
+  'Integration' =>
+    'Интеграции'
 );
