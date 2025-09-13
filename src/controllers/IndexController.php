@@ -4,7 +4,7 @@ class IndexController extends Controller {
   <<__Override>>
   public function getTitle(): string {
     $custom_org = \HH\Asio\join(Configuration::gen('custom_org'));
-    return tr($custom_org->getValue()).' '.tr('CTF');
+    return tr($custom_org->getValue());
   }
 
   <<__Override>>
