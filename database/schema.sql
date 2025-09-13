@@ -263,8 +263,8 @@ INSERT INTO `configuration` (field, value, description) VALUES("language", "ru",
 INSERT INTO `configuration` (field, value, description) VALUES("livesync", "0", "(Boolean) LiveSync functionality");
 INSERT INTO `configuration` (field, value, description) VALUES("livesync_auth_key", "", "(String) Optional LiveSync Auth Key");
 INSERT INTO `configuration` (field, value, description) VALUES("custom_logo", "0", "(Boolean) Custom branding logo");
-INSERT INTO `configuration` (field, value, description) VALUES("custom_org", "PT EdTechLab", "(String) Custom branding organization text");
-INSERT INTO `configuration` (field, value, description) VALUES("custom_byline", "PT EdTechLab", "(String) Custom branding byline text");
+INSERT INTO `configuration` (field, value, description) VALUES("custom_org", "EdTech Wargame", "(String) Custom branding organization text");
+INSERT INTO `configuration` (field, value, description) VALUES("custom_byline", "EdTech Wargame", "(String) Custom branding byline text");
 INSERT INTO `configuration` (field, value, description) VALUES("custom_logo_image", "static/img/favicon.png", "(String) Custom logo image file");
 UNLOCK TABLES;
 
