@@ -517,7 +517,7 @@ $translations = array(
   'Rank' =>
     'Ранг',
   'pts' =>
-    'точки', //points
+    'очки', //points
   'Your Rank' =>
     'Ваш Ранг',
   'Your Score' =>
