@@ -16,8 +16,8 @@
 // purista bold
 //  - navigation branding
 @font-face {
-  font-family: 'puristabold';
-  src: url("fonts/purista_bold.woff2") format("woff2"), url("fonts/purista_bold.woff") format("woff");
+  font-family: 'TT_Positive_Bold';
+  src: url("fonts/TT_Positive_Bold.woff2") format("woff2"), url("fonts/TT_Positive_Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,8 +25,8 @@
 // purista light
 //  - h1's
 @font-face {
-  font-family: 'puristalight';
-  src: url("fonts/purista_light.woff2") format("woff2"), url("fonts/purista_light.woff") format("woff");
+  font-family: 'TT_Positive_Light';
+  src: url("fonts/TT_Positive_Light.woff2") format("woff2"), url("fonts/TT_Positive_Light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,15 +34,15 @@
 // purista regular/medium
 //   - radio labels
 @font-face {
-  font-family: 'puristaregular';
-  src: url("fonts/purista_medium.woff2") format("woff2"), url("fonts/purista_medium.woff") format("woff");
+  font-family: 'TT_Positive_Medium';
+  src: url("fonts/TT_Positive_Medium.woff2") format("woff2"), url("fonts/TT_Positive_Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'puristasemibold';
-  src: url("fonts/purista_semibold.woff2") format("woff2"), url("fonts/purista_semibold.woff") format("woff");
+  font-family: 'TT_Positive_DemiBold';
+  src: url("fonts/TT_Positive_DemiBold.woff2") format("woff2"), url("fonts/TT_Positive_DemiBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -413,7 +413,7 @@ table {
  * inactive country
  * -------------------------------------------- */
 .inactive-country {
-  font-family: 'puristasemibold', Courier, monospace;
+  font-family: 'TT_Positive_DemiBold', Courier, monospace;
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: .2em;

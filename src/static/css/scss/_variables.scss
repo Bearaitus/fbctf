@@ -28,25 +28,25 @@
  * --purista
  */
 @mixin purista-light {
-  font-family: 'puristalight', Courier, monospace;
+  font-family: 'TT_Positive_Light', Courier, monospace;
 
   @include uppercase;
 }
 
 @mixin purista-medium {
-  font-family: 'puristaregular', Courier, monospace;
+  font-family: 'TT_Positive_Medium', Courier, monospace;
 
   @include uppercase;
 }
 
 @mixin purista-semibold {
-  font-family: 'puristasemibold', Courier, monospace;
+  font-family: 'TT_Positive_DemiBold', Courier, monospace;
 
   @include uppercase;
 }
 
 @mixin purista-bold {
-  font-family: 'puristabold', Courier, monospace;
+  font-family: 'TT_Positive_Bold', Courier, monospace;
 
   @include uppercase;
 }
@@ -55,7 +55,7 @@
  * --carbon
  */
 @mixin carbon {
-  font-family: 'carbon_plus', 'puristabold', Courier, monospace;
+  font-family: 'carbon_plus', 'TT_Positive_Bold', Courier, monospace;
 }
 
 // text size
