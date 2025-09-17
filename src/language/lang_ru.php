@@ -695,5 +695,11 @@ $translations = array(
   'Update' =>
     'Обновить',
   'Close' =>
-    'Закрыть'
+    'Закрыть',
+  'account' =>
+    'аккаунта',
+  'Settings' =>
+    'Настройки',
+  'Change your team name.' =>
+    'Сменить название команды'
 );
