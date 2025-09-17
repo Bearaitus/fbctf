@@ -687,7 +687,7 @@ $translations = array(
   'Integration' =>
     'Интеграции',
   'Game Clock' =>
-    'Игровое время',
+    'Оставшееся время',
   'Account' =>
     'Аккаунт',
   'Admin' =>
