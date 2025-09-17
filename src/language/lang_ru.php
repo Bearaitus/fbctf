@@ -124,7 +124,7 @@ $translations = array(
   'Registration' =>
     'Регистрация',
   'Play CTF' =>
-    'Сыграть в CTF',
+    'Играть',
   'Rules' =>
     'Правила',
   //Translations for GameboardController
