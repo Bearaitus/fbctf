@@ -11,15 +11,15 @@ $translations = array(
     'दुनिया जीत लो',
   'Play' =>
     'प्ले',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Facebook पर आपका स्वागत है फ़लैग प्रतियोगिता को कैप्चर करें. "खेलें" क्लिक करके आप औपचारिक रूप से CTF चुनौती में शामिल हो जाएँगे. आपकी जीत के लिए शुभ कामनाएँ.',
-  'Get ready for the CTF to start and access the board now!' =>
-    'अब CTF के शुरू होने और गेमबोर्ड एक्सेस करने के लिए तैयार रहें!!',
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    'Facebook पर आपका स्वागत है फ़लैग प्रतियोगिता को कैप्चर करें. "खेलें" क्लिक करके आप औपचारिक रूप से Wargame चुनौती में शामिल हो जाएँगे. आपकी जीत के लिए शुभ कामनाएँ.',
+  'Get ready for the Wargame to start and access the board now!' =>
+    'अब Wargame के शुरू होने और गेमबोर्ड एक्सेस करने के लिए तैयार रहें!!',
   'Gameboard' =>
     'गेमबोर्ड',
   'Register Team' =>
     'टीम पंजीकृत करें',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'CTF के शुरू होने के लिए तैयार रहें और अपनी टीम को अभी पंजीकृत करें!',
   'Login' =>
     'लॉग इन करें',
@@ -35,8 +35,8 @@ $translations = array(
     '_मिनट',
   '_seconds' =>
     '_सेकंड',
-  'Official CTF Rules' =>
-    'आधिकारिक CTF नियम',
+  'Official Wargame Rules' =>
+    'आधिकारिक Wargame नियम',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'निम्न क्रियाएँ निषिद्ध हैं, जब तक कि ईवेंट व्यवस्थापक द्वारा स्पष्ट रूप से अन्यथा न बताया गया हो',
   'Rule' =>
@@ -59,7 +59,7 @@ $translations = array(
     'स्कोर साइट के विरूद्ध चुनौती फ़्लैग/ कुंजियों की ब्रूटफ़ोर्सिंग नहीं',
   'Denial Of Service' =>
     'सेवा की मनाही',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'CTF प्लेटफ़ॉर्म या अन्य किसी भी चुनौती की डॉसिंग निषिद्ध है',
   'Legal' =>
     'कानूनी',
@@ -115,8 +115,8 @@ $translations = array(
     'फिर से शुरू करें',
   'Window is too small' =>
     'विंडो बहुत छोटा है',
-  'For the best CTF experience, please make window size bigger.' =>
-    'सर्वश्रेष्ठ CTF अनुभव के लिए, कृपया विंडो का आकार बड़ा करें.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'सर्वश्रेष्ठ Wargame अनुभव के लिए, कृपया विंडो का आकार बड़ा करें.',
   'Thank you.' =>
     'धन्यवाद. ',
   'Logout' =>

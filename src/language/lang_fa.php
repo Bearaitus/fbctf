@@ -11,15 +11,15 @@ $translations = array(
     'تسخیر جهان',
   'Play' =>
     'بازی کنید',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'به رقابت فتح پرچم فیسبوک خوش آمدید. با کلیک روی دکمه "بازی کنید" به محیط مسابقه وارد خواهید شد. در رقابتتان موفق باشید.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
+  'Get ready for the Wargame to start and access the gameboard now!' =>
     'برای شروع مسابقه آماده شوید و هم‌اکنون به صفحه ‌بازی بروید!',
   'Gameboard' =>
     'صفحه بازی',
   'Register Team' =>
     'ثبت‌نام تیم',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'برای شروع مسابقه آماده شوید و تیم خود را هم‌اکنون ثبت کنید',
   'Login' =>
     'ورود',
@@ -35,7 +35,7 @@ $translations = array(
     '_دقیقه',
   '_seconds' =>
     '_ثانیه',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'قوانین رسمی مسابقه',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'اقدامات زیر ممنوع است مگر اینکه به صراحت توسط سرپرست‌های مسابقه بیان شده باشد.',
@@ -59,7 +59,7 @@ $translations = array(
     'هیچ گونه حمله بی‌رحمانه (brute forcing) روی سایت مسابقه برای بدست آوردن پرچم/کلید مسابقه نزنید.',
   'Denial Of Service' =>
     'ممانعت از سرویس',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'هرگونه اقدام منجر به ممانعت از سرویس روی زیرساخت مسابقه یا هریک از سوالات ممنوع است.',
   'Legal' =>
     'حقوقی',
@@ -115,7 +115,7 @@ $translations = array(
     'شروع مجدد',
   'Window is too small' =>
     'پنجره تان خیلی کوچک است',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'برای داشتن تجربه بهتر از مسابقه، لطفا پنجره را بزرگ‌تر کنید.',
   'Thank you.' =>
     'با سپاس.',

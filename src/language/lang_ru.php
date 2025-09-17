@@ -11,16 +11,16 @@ $translations = array(
     'Покорите мир',
   'Play' =>
     'Играть',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Добро пожаловать на соревнование Capture the Flag от Facebook. Нажмите кнопку "Играть", вы примете участие в официальном состязании CTF. Желаем удачи!',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Приготовьтесь к началу CTF и получите доступ к игровому полю!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Приготовьтесь к началу Wargame и получите доступ к игровому полю!',
   'Gameboard' =>
     'Игровое поле',
   'Register Team' =>
     'Зарегистрировать команду',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Приготовьтесь к началу CTF и зарегистируйте свою команду!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Приготовьтесь к началу Wargame и зарегистируйте свою команду!',
   'Login' =>
     'Войти',
   'Soon' =>
@@ -35,7 +35,7 @@ $translations = array(
     '_мин',
   '_seconds' =>
     '_с',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Официальные Правила CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Следующие действия запрещены, за исключением случаев, когда администраторы мероприятия явно утверждают обратное.',
@@ -59,8 +59,8 @@ $translations = array(
     'Подбор флагов и ключей методом полного перебора на сайте соревнования запрещен.',
   'Denial Of Service' =>
     'DoS-атака',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'DoS-атака на платформу CTF или на любое состязание запрещена.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'DoS-атака на платформу Wargame или на любое состязание запрещена.',
   'Legal' =>
     'Заявление',
   'Disclaimer' =>
@@ -115,7 +115,7 @@ $translations = array(
     'Начать Заново',
   'Window is too small' =>
     'Окно слишком маленькое',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'Для наилучших ощущений от игры увеличьте размер окна.',
   'Thank you.' =>
     'Спасибо.',

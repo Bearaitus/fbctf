@@ -11,15 +11,15 @@ $translations = array(
     '征服世界',
   'Play' =>
     '開始',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    '歡迎來到 Facebook Capture the Flag 競賽。立刻點擊 "開始" 進入正式的 CTF 挑戰。祝征途愉快。',
-  'Get ready for the CTF to start and access the gameboard now!' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    '歡迎來到 Facebook Capture the Flag 競賽。立刻點擊 "開始" 進入正式的 Wargame 挑戰。祝征途愉快。',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
     '立即查看遊戲版圖並準備開始進行 CTF！',
   'Gameboard' =>
     '遊戲版圖',
   'Register Team' =>
     '註冊隊伍',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     '立即註冊隊伍並準備開始進行 CTF！',
   'Login' =>
     '登入',
@@ -35,8 +35,8 @@ $translations = array(
     '_分鐘',
   '_seconds' =>
     '_秒',
-  'Official CTF Rules' =>
-    '正式 CTF 規則',
+  'Official Wargame Rules' =>
+    '正式 Wargame 規則',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     '除非管理員明確說明，否則禁止以下的行為。',
   'Rule' =>
@@ -59,8 +59,8 @@ $translations = array(
     '禁止以暴力方式嘗試取得記分網站金鑰。',
   'Denial Of Service' =>
     '阻斷服務攻擊',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    '禁止對 CTF 平台或題目實行阻斷服務攻擊。',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    '禁止對 Wargame 平台或題目實行阻斷服務攻擊。',
   'Legal' =>
     '法律',
   'Disclaimer' =>
@@ -115,8 +115,8 @@ $translations = array(
     '重新來過',
   'Window is too small' =>
     '視窗過小',
-  'For the best CTF experience, please make window size bigger.' =>
-    '為了體驗最佳的 CTF 遊戲，請放大視窗。',
+  'For the best Wargame experience, please make window size bigger.' =>
+    '為了體驗最佳的 Wargame 遊戲，請放大視窗。',
   'Thank you.' =>
     '謝謝。',
   'Logout' =>

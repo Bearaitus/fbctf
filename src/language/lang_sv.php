@@ -11,15 +11,15 @@ $translations = array(
     'Erövra världen',
   'Play' =>
     'Spela',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Välkommen till Facebooks "Capture the Flag"-tävling. Genom att klicka på spela antar du den officiella CTF-utmaningen. Lycka till med erövringen.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Gör dig redo för början på CTF och få tillgång till spelbrädet nu!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Gör dig redo för början på Wargame och få tillgång till spelbrädet nu!',
   'Gameboard' =>
     'Spelbräde',
   'Register Team' =>
     'Registrera lag',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'Gör dig redo för början på CTF-utmaningen och registrera ditt lag nu!',
   'Login' =>
     'Logga in',
@@ -35,7 +35,7 @@ $translations = array(
     '_minuter',
   '_seconds' =>
     '_sekunder',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Officiella CTF-regler',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Följande handlingar är förbjudna om annat inte sagts av eventadministratörer.',
@@ -59,7 +59,7 @@ $translations = array(
     'Användning av metoder med bruteforcing för att få flaggor/nycklar är förbjudet.',
   'Denial Of Service' =>
     'DoS-attacker',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'Det är förbjudet att använda DoS-tjänster för att attackera plattformen eller enskilda utmaningar.',
   'Legal' =>
     'Juridiskt',
@@ -115,7 +115,7 @@ $translations = array(
     'Börja om från början',
   'Window is too small' =>
     'Fönstret är för litet',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'Öka fönsterstorleken för bästa möjliga CTF-upplevelse.',
   'Thank you.' =>
     'Tack.',

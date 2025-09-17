@@ -11,16 +11,16 @@ $translations = array(
     'Takluki dunia',
   'Play' =>
     'Main',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Selamat datang ke Pertandingan Capture the Flag Facebook. Dengan menekan "Main" anda akan menyertai cabaran rasmi CTF. Selamat maju jaya dalam penaklukan anda.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Bersedia untuk bermain CTF dan mengakses papan permainan sekarang!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Bersedia untuk bermain Wargame dan mengakses papan permainan sekarang!',
   'Gameboard' =>
     'Papan Permainan',
   'Register Team' =>
     'Daftar Pasukan',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Bersedia untuk bermain CTF dan daftar pasukan anda sekarang juga!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Bersedia untuk bermain Wargame dan daftar pasukan anda sekarang juga!',
   'Login' =>
     'Log Masuk',
   'Soon' =>
@@ -35,7 +35,7 @@ $translations = array(
     '_minit',
   '_seconds' =>
     '_saat',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Peraturan Rasmi CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Perkara-perkara berikut adalah ditegah, kecuali secara jelas diberitahu sebaliknya oleh Admin pertandingan.',
@@ -59,8 +59,8 @@ $translations = array(
     'Tidak melakukan brute force flag/ kunci terhadap laman skor.',
   'Denial Of Service' =>
     'Denial Of Service',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'DoSing platform CTF atau mana-mana cabaran adalah dilarang.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'DoSing platform Wargame atau mana-mana cabaran adalah dilarang.',
   'Legal' =>
     'Undang-undang',
   'Disclaimer' =>
@@ -115,8 +115,8 @@ $translations = array(
     'Mula Semula',
   'Window is too small' =>
     'Tetingkap terlalu kecil',
-  'For the best CTF experience, please make window size bigger.' =>
-    'Untuk pengalaman CTF yang terbaik, sila laraskan saiz tetingkap yang lebih besar.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'Untuk pengalaman Wargame yang terbaik, sila laraskan saiz tetingkap yang lebih besar.',
   'Thank you.' =>
     'Terima kasih.',
   'Logout' =>

@@ -11,15 +11,15 @@ $translations = array(
     'Dünyayı fethet',
   'Play' =>
     'Oyna',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Facebook Capture the Flag yarışmasına hoşgeldiniz. "Oyna"ya tıklayarak resmi CTF görevine katılacaksınız. Fetihlerinizde iyi şanslar.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    'Facebook Capture the Flag yarışmasına hoşgeldiniz. "Oyna"ya tıklayarak resmi Wargame görevine katılacaksınız. Fetihlerinizde iyi şanslar.',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
     'Oyun panosuna girin ve CTF\'nin başlamasına hazırlanın!',
   'Gameboard' =>
     'Oyun Panosu',
   'Register Team' =>
     'Takım Kaydet',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'Takımınızı kaydedin ve CTF\'nin başlamasına hazırlanın!',
   'Login' =>
     'Giriş Yap',
@@ -35,8 +35,8 @@ $translations = array(
     '_dakika',
   '_seconds' =>
     '_saniye',
-  'Official CTF Rules' =>
-    'Resmi CTF Kuralları',
+  'Official Wargame Rules' =>
+    'Resmi Wargame Kuralları',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Aşağıdaki eylemler, etkinlik Yöneticileri tarafından açık bir şekilde aksi belirtilmedikçe yasaklanmıştır.',
   'Rule' =>
@@ -59,7 +59,7 @@ $translations = array(
     'Skor sitesinde görev flag\'lerini/anahtarlarını brute force yöntemiyle denemek yasaktır.',
   'Denial Of Service' =>
     'Denial Of Service',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'CTF platformunu veya herhangi bir görevi DoS\'lamak yasaktır.',
   'Legal' =>
     'Yasal',
@@ -115,8 +115,8 @@ $translations = array(
     'Baştan Başla',
   'Window is too small' =>
     'Pencere çok küçük',
-  'For the best CTF experience, please make window size bigger.' =>
-    'En iyi CTF deneyimi içi lütfen pencerenizin boyutlarını artırın.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'En iyi Wargame deneyimi içi lütfen pencerenizin boyutlarını artırın.',
   'Thank you.' =>
     'Teşekkürler.',
   'Logout' =>

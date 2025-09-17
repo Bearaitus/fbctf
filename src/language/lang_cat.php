@@ -11,16 +11,16 @@ $translations = array(
     'Conquereix el món',
   'Play' =>
     'Jugar',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Benvingut al "Capture The Flag" de Facebook. Premeu el botó de "a jugar" per entrar al CTF. Bona sort en la conquesta.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Prepara\'t a que comenci el CTF i accedeix al taulell de joc ara!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Prepara\'t a que comenci el Wargame i accedeix al taulell de joc ara!',
   'Gameboard' =>
     'Taulell de joc',
   'Register Team' =>
     'Registrar Equip',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Prepara\'t per començar el CTF i registra el teu equip ara!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Prepara\'t per començar el Wargame i registra el teu equip ara!',
   'Login' =>
     'Iniciar Sessió',
   'Soon' =>
@@ -35,7 +35,7 @@ $translations = array(
     '_minuts',
   '_seconds' =>
     '_segons',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Normativa Oficial del CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Les següents accions no estan permeses, a no ser que sigui contradit explicitament pels administradors de l\'event.',
@@ -59,7 +59,7 @@ $translations = array(
     'No realitzis força bruta per atacar als serveis',
   'Denial Of Service' =>
     'Denegació de Servei',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'Realitzar un atac de denegació de servei a la plataforma o a qualsevol de les proves està prohibit',
   'Legal' =>
     'Legal',
@@ -115,7 +115,7 @@ $translations = array(
     'Començar de Nou',
   'Window is too small' =>
     'La Finestra és massa petita',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'Per a una millor experiència es recomenable fer el tamany de la finestra més gran',
   'Thank you.' =>
     'Gràcies.',

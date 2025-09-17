@@ -11,16 +11,16 @@ $translations = array(
     'Conquer the world',
   'Play' =>
     'Play',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Get ready for the CTF to start and access the gameboard now!',
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Get ready for the Wargame to start and access the gameboard now!',
   'Gameboard' =>
     'Gameboard',
   'Register Team' =>
     'Register Team',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Get ready for the CTF to start and register your team now!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Get ready for the Wargame to start and register your team now!',
   'Login' =>
     'Login',
   'Soon' =>
@@ -35,8 +35,8 @@ $translations = array(
     '_minutes',
   '_seconds' =>
     '_seconds',
-  'Official CTF Rules' =>
-    'Official CTF Rules',
+  'Official Wargame Rules' =>
+    'Official Wargame Rules',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Following actions are prohibited, unless explicitly told otherwise by event Admins.',
   'Rule' =>
@@ -59,8 +59,8 @@ $translations = array(
     'No brute forcing of challenge flag/ keys against the scoring site.',
   'Denial Of Service' =>
     'Denial Of Service',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'DoSing the CTF platform or any of the challenges is forbidden.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'DoSing the Wargame platform or any of the challenges is forbidden.',
   'Legal' =>
     'Legal',
   'Disclaimer' =>
@@ -115,8 +115,8 @@ $translations = array(
     'Start Over',
   'Window is too small' =>
     'Window is too small',
-  'For the best CTF experience, please make window size bigger.' =>
-    'For the best CTF experience, please make window size bigger.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'For the best Wargame experience, please make window size bigger.',
   'Thank you.' =>
     'Thank you.',
   'Logout' =>

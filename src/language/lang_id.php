@@ -11,15 +11,15 @@ $translations = array(
     'Kuasai dunia',
   'Play' =>
     'Bermain',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Selamat datang di Kompetisi Facebook Capture the Flag. Dengan menekan "Bermain" maka kamu akan dapat mulai bermain di Kompetisi Facebook CTF. Semoga beruntung dalam menguasai dunia.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
+  'Get ready for the Wargame to start and access the gameboard now!' =>
     'Bersiaplah untuk bermain dan masuki permainan sekarang!',
   'Gameboard' =>
     'Permainan',
   'Register Team' =>
     'Daftarkan Tim',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'Bersiaplah untuk bermain dan daftarkan tim kamu sekarang juga!',
   'Login' =>
     'Masuk',
@@ -35,7 +35,7 @@ $translations = array(
     '_menit',
   '_seconds' =>
     '_detik',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Peraturan Bermain CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Hal-hal berikut ini dilarang untuk dilakukan, kecuali dianulir secara langsung oleh Admin permainan.',
@@ -59,8 +59,8 @@ $translations = array(
     'Dilarang melakukan brute force flag / kunci permainan pada web penilaian.',
   'Denial Of Service' =>
     'Denial Of Service',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'Dilarang melakukan Denial of Service (DoS) pada platform CTF atau setiap tantangan yang tersedia.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'Dilarang melakukan Denial of Service (DoS) pada platform Wargame atau setiap tantangan yang tersedia.',
   'Legal' =>
     'Legal',
   'Disclaimer' =>
@@ -115,8 +115,8 @@ $translations = array(
     'Mulai Lagi',
   'Window is too small' =>
     'Jendela browser terlalu kecil',
-  'For the best CTF experience, please make window size bigger.' =>
-    'Untuk pengalaman bermain CTF yang terbaik, mohon perbesar ukuran jendela browser-mu.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'Untuk pengalaman bermain Wargame yang terbaik, mohon perbesar ukuran jendela browser-mu.',
   'Thank you.' =>
     'Terima kasih.',
   'Logout' =>

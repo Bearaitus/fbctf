@@ -43,13 +43,13 @@ class IndexController extends Controller {
     if ($custom_org->getValue() === 'Facebook') {
       $welcome_msg =
         tr(
-          'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.',
+          'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.',
         );
     } else {
       $welcome_msg =
         'Welcome to the '.
         $custom_org->getValue().
-        ' Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.';
+        ' Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.';
     }
     return
       <div class="fb-row-container full-height fb-scroll">
@@ -80,7 +80,7 @@ class IndexController extends Controller {
         <form class="fb-form inner-container">
           <p>
             {tr(
-              'Get ready for the CTF to start and access the gameboard now!',
+              'Get ready for the Wargame to start and access the gameboard now!',
             )}
           </p>
           <div class="form-el--actions">
@@ -105,7 +105,7 @@ class IndexController extends Controller {
       $play_nav =
         <form class="fb-form inner-container">
           <p>
-            {tr('Get ready for the CTF to start and register your team now!')}
+            {tr('Get ready for the Wargame to start and register your team now!')}
           </p>
           <div class="form-el--actions">
             {$registration_button}
@@ -178,8 +178,8 @@ class IndexController extends Controller {
       <div class="fb-column-container full-height">
         <main role="main" class="fb-main page--rules fb-scroll">
           <header class="fb-section-header fb-container">
-            <h1 class="fb-glitch" data-text={tr('Official CTF Rules')}>
-              {tr('Official CTF Rules')}
+            <h1 class="fb-glitch" data-text={tr('Official Wargame Rules')}>
+              {tr('Official Wargame Rules')}
             </h1>
             <p class="inner-container typed-text">
               {tr(
@@ -252,7 +252,7 @@ class IndexController extends Controller {
               <div class="rule-main">
                 <p>
                   {tr(
-                    'DoSing the CTF platform or any of the challenges is forbidden.',
+                    'DoSing the Wargame platform or any of the challenges is forbidden.',
                   )}
                 </p>
                 <p></p>
@@ -1215,7 +1215,7 @@ class IndexController extends Controller {
             </h1>
             <p>
               {tr(
-                'For the best CTF experience, please make window size bigger.',
+                'For the best Wargame experience, please make window size bigger.',
               )}
             </p>
             <p>{tr('Thank you.')}</p>

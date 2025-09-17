@@ -11,16 +11,16 @@ $translations = array(
     'miliki ulimwengu',
   'Play' =>
     'Cheza',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
     'Karibu katika Mfumo wa kimashindano wa Facebook. Kwa kubofya "Cheza," Utaingizwa katika shindano rasmi la CTF. Nakutakia kila la kheri',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Kuwa tayari kwa CTF ili kuanza na kufikia ubao wa mchezo sasa!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Kuwa tayari kwa Wargame ili kuanza na kufikia ubao wa mchezo sasa!',
   'Gameboard' =>
     'Ukurasa wa Mchezo',
   'Register Team' =>
     'Sajili Timu',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Kaatayari na jiandae kwa CTF kuanza na Sajili Timu yako sasa!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Kaatayari na jiandae kwa Wargame kuanza na Sajili Timu yako sasa!',
   'Login' =>
     'Ingia',
   'Soon' =>
@@ -35,7 +35,7 @@ $translations = array(
     '_dakika',
   '_seconds' =>
     '_Sekunde',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'Kanuni Rasmi za CTF',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Yafuatayo ni vitendo visivyoruhusiwa, isipokuwa pale tu umeambiwa vinginevyo na Msimamizi wa tukio.',
@@ -59,8 +59,8 @@ $translations = array(
     'Hairuhusiwi kuingilia kwa nguvu flag/ keys kinyume na inavyo takiwa kwenye ukurasa wa alama.',
   'Denial Of Service' =>
     'Kukataa Huduma',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'Kuzuia huduma za mfumo wa CTF au shindano lolote lile imezuiliwa kabisa.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'Kuzuia huduma za mfumo wa Wargame au shindano lolote lile imezuiliwa kabisa.',
   'Legal' =>
     'Kisheria',
   'Disclaimer' =>
@@ -115,7 +115,7 @@ $translations = array(
     'Anza upya',
   'Window is too small' =>
     'Dirisha ni dogo mno',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'Ili kufurahia vizuri CTF, tafadhali ongeza ukubwa wa dirisha.',
   'Thank you.' =>
     'Asante.',

@@ -11,16 +11,16 @@ $translations = array(
     'Konkistatzen mundu',
   'Play' =>
     'Play',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Ongi etorri Facebook Capture bandera Lehiaketan. Beheko "Play," zuk egingo dira CTF erronka ofiziala sartu. Zorte ona zure konkista.',
-  'Get ready for the CTF to start and access the gameboard now!' =>
-    'Talde CTF hasteko eta sartzeko gameboard orain prest!',
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    'Ongi etorri Facebook Capture bandera Lehiaketan. Beheko "Play," zuk egingo dira Wargame erronka ofiziala sartu. Zorte ona zure konkista.',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
+    'Talde Wargame hasteko eta sartzeko gameboard orain prest!',
   'Gameboard' =>
     'Game Taula',
   'Register Team' =>
     'Eman izena Team',
-  'Get ready for the CTF to start and register your team now!' =>
-    'Talde hasteko eta erregistratu zure taldea orain CTF prest!',
+  'Get ready for the Wargame to start and register your team now!' =>
+    'Talde hasteko eta erregistratu zure taldea orain Wargame prest!',
   'Login' =>
     'Saioa hasi',
   'Soon' =>
@@ -35,7 +35,7 @@ $translations = array(
     '_minutu',
   '_seconds' =>
     '_segundotan',
-  'Official CTF Rules' =>
+  'Official Wargame Rules' =>
     'CTF arauak Ofiziala',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Hurrengo ekintzak debekatuta daude, esplizituki esan ezean Gertaera Kudeatzaileek arabera.',
@@ -59,7 +59,7 @@ $translations = array(
     'Ez brute erronka banderaren behartuz / puntuazio gunean aurka gakoak.',
   'Denial Of Service' =>
     'Zerbitzua ukatzea',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'CTF plataforma dosifikazio edo erronkei edozein debekatuta dago.',
   'Legal' =>
     'Lege',
@@ -115,8 +115,8 @@ $translations = array(
     'Berriro hasi',
   'Window is too small' =>
     'Leiho txikiegia da',
-  'For the best CTF experience, please make window size bigger.' =>
-    'du CTF esperientzia onena lortzeko, mesedez, egin leihoaren tamaina handiagoa.',
+  'For the best Wargame experience, please make window size bigger.' =>
+    'du Wargame esperientzia onena lortzeko, mesedez, egin leihoaren tamaina handiagoa.',
   'Thank you.' =>
     'Eskerrik asko.',
   'Logout' =>

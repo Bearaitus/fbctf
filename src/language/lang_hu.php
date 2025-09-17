@@ -11,15 +11,15 @@ $translations = array(
     'Foglald el a világot!',
   'Play' =>
     'Kezdjük',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.' =>
-    'Üdvözlünk a Facebook Capture the Flag versenyben. Kattints a "Kezdjük" gombra, hogy belépj a hivatalos CTF versenybe. Sok sikert!',
-  'Get ready for the CTF to start and access the gameboard now!' =>
+  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
+    'Üdvözlünk a Facebook Capture the Flag versenyben. Kattints a "Kezdjük" gombra, hogy belépj a hivatalos Wargame versenybe. Sok sikert!',
+  'Get ready for the Wargame to start and access the gameboard now!' =>
     'Készülj fel a CTF-re, és lépj be a játéktérre most!',
   'Gameboard' =>
     'Játéktér',
   'Register Team' =>
     'Csapat regisztráció',
-  'Get ready for the CTF to start and register your team now!' =>
+  'Get ready for the Wargame to start and register your team now!' =>
     'Készülj fel a CTF-re, és regisztráld be most a csapatod!',
   'Login' =>
     'Bejelentkezés',
@@ -35,8 +35,8 @@ $translations = array(
     '_perc',
   '_seconds' =>
     '_másodperc',
-  'Official CTF Rules' =>
-    'A hivatalos CTF szabályok',
+  'Official Wargame Rules' =>
+    'A hivatalos Wargame szabályok',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'A következő tevékenységek tilosak, kivéve ha a szervezők külön engedélyt adnak rá.',
   'Rule' =>
@@ -59,8 +59,8 @@ $translations = array(
     'Tilos a megoldás beküldő rendszert automatizált nagyszámú próbálgatással (bruteforce-szal) terhelni.',
   'Denial Of Service' =>
     'Denial Of Service',
-  'DoSing the CTF platform or any of the challenges is forbidden.' =>
-    'Tilos túlterheléses támadást (DOS) indítani a CTF rendszer vagy bármelyik feladat ellen.',
+  'DoSing the Wargame platform or any of the challenges is forbidden.' =>
+    'Tilos túlterheléses támadást (DOS) indítani a Wargame rendszer vagy bármelyik feladat ellen.',
   'Legal' =>
     'Korlátozott felelősségi nyilatkozat',
   'Disclaimer' =>
@@ -115,7 +115,7 @@ $translations = array(
     'Kezdd újra',
   'Window is too small' =>
     'Az ablak túl kicsi',
-  'For the best CTF experience, please make window size bigger.' =>
+  'For the best Wargame experience, please make window size bigger.' =>
     'A jobb élmény érdekében növeld az ablak méretét.',
   'Thank you.' =>
     'Köszönjük.',
