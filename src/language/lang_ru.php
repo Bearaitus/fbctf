@@ -196,7 +196,7 @@ $translations = array(
   'OK' =>
     'OK',
   'status_' =>
-    'статус_',
+    'статус ',
   'On' =>
     'Вкл',
   'Off' =>
