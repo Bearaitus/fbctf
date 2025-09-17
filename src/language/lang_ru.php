@@ -36,7 +36,7 @@ $translations = array(
   '_seconds' =>
     '_с',
   'Official Wargame Rules' =>
-    'Официальные Правила CTF',
+    'Правила EdTech Wargame',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Следующие действия запрещены, за исключением случаев, когда администраторы мероприятия явно утверждают обратное.',
   'Rule' =>
