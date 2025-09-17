@@ -498,7 +498,7 @@ $translations = array(
   'Bases' =>
     'Базы',
   'Countries' =>
-    'Государства',
+    'Все государства',
   'Logos' =>
     'Логотипы',
   //Translations for inc/* and inc/gameboard/*
