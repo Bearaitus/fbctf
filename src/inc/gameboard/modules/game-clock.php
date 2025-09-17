@@ -102,7 +102,7 @@ class ClockModuleController extends ModuleController {
       return
         <div>
           <header class="module-header">
-            <h6>Game Clock</h6>
+            <h6>{tr('Game Clock')}</h6>
           </header>
           <div class="module-content module-scrollable">
             <div class="game-clock fb-numbers">
@@ -125,7 +125,7 @@ class ClockModuleController extends ModuleController {
       return
         <div>
           <header class="module-header">
-            <h6>Game Clock</h6>
+            <h6>{tr('Game Clock')}</h6>
           </header>
           <div class="module-content module-scrollable">
             <div class="game-clock fb-numbers">

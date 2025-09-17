@@ -158,8 +158,6 @@ $translations = array(
     'Фильтр',
   'Activity' =>
     'Действие',
-  'Game Clock' =>
-    'Игровые Часы',
   //Translations for AdminController
   'Auto' =>
     'Авто',
