@@ -709,5 +709,7 @@ $translations = array(
   'sec' =>
     'сек',
   'm.sec' =>
-    'м.сек'
+    'м.сек',
+  'Captured!' =>
+    'Захвачено!'
 );
