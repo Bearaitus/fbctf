@@ -40,17 +40,10 @@ class IndexController extends Controller {
 
   public function renderMainContent(): :xhp {
     $custom_org = \HH\Asio\join(Configuration::gen('custom_org'));
-    if ($custom_org->getValue() === 'Facebook') {
-      $welcome_msg =
+    $welcome_msg =
         tr(
-          'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.',
+          'Welcome to EdTech Wargame!',
         );
-    } else {
-      $welcome_msg =
-        'Welcome to the '.
-        $custom_org->getValue().
-        ' Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.';
-    }
     return
       <div class="fb-row-container full-height fb-scroll">
         <main

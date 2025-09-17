@@ -11,8 +11,8 @@ $translations = array(
     'Покорите мир',
   'Play' =>
     'Играть',
-  'Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official Wargame challenge. Good luck in your conquest.' =>
-    'Добро пожаловать на соревнование Capture the Flag от Facebook. Нажмите кнопку "Играть", вы примете участие в официальном состязании CTF. Желаем удачи!',
+  'Welcome to EdTech Wargame!' =>
+    'Добро пожаловать на EdTech Wargame!',
   'Get ready for the Wargame to start and access the gameboard now!' =>
     'Приготовьтесь к началу Wargame и получите доступ к игровому полю!',
   'Gameboard' =>
