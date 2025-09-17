@@ -691,5 +691,9 @@ $translations = array(
   'Admin' =>
     'Админ',
   'Game Schedule' =>
-    'Расписание'
+    'Расписание',
+  'Update' =>
+    'Обновить',
+  'Close' =>
+    'Закрыть'
 );
