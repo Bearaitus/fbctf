@@ -689,5 +689,7 @@ $translations = array(
   'Game Clock' =>
     'Игровое время',
   'Account' =>
-    'Аккаунт'
+    'Аккаунт',
+  'Admin' =>
+    'Админ'
 );
