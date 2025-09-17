@@ -685,5 +685,7 @@ $translations = array(
   'Automatic Team Name Prefix' =>
     'Префикс команды',
   'Integration' =>
-    'Интеграции'
+    'Интеграции',
+  'Game Clock' =>
+    'Игровое время'
 );
