@@ -755,5 +755,8 @@ $translations = array(
   'Unpause Game' => 'Продолжить игру',
   'Game Running' => 'Идёт игра',
   'Game has been paused' => 'Игра была остановлена',
-  'Game has started!' => 'Игра началась!'
+  'Game has started!' => 'Игра началась!',
+  'Game has resumed!' => 'Игра продолжается',
+  'Game has ended!' => 'Игра закончена!'
+
 );
