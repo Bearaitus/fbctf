@@ -123,7 +123,7 @@ module.exports = {
         .attr('width', WIDTH)
         .attr('height', HEIGHT)
         .attr('x', MARGIN.left)
-        .attr('fill', '#142e35');
+        .attr('fill', '#fff');
 
       var graphLine = graphic.append('svg:g').attr('class', 'mouseline').attr('opacity', "0");
 
