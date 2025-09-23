@@ -711,5 +711,39 @@ $translations = array(
   'm.sec' =>
     'м.сек',
   'Captured!' =>
-    'Захвачено!'
+    'Захвачено!',
+  'Please login here with username and password.' =>
+    'Авторизуйтесь, используя название команды и пароль',
+  'Custom Organization' =>
+    'Настроить организацию',
+  'Custom Byline' =>
+    'Настроить название',
+  'Game Start Year' =>
+    'Начало игры, год',
+  'Game End Year' =>
+    'Конец игры, год',
+  'Month' =>
+    'Месяц',
+  'Day' =>
+    'День',
+  'Minute' =>
+    'Минуты',
+  'Reset Schedule' =>
+    'Сбросить расписание',
+  'Reset Databse' =>
+    'Сбросить БД',
+  'Auto Announcements' =>
+    'Авто. объявления',
+  'Configuration Cycle (s)' =>
+    'Цикл настройки (c)',
+  'Autorun Cycle (s)' =>
+    'Автозапуск цикла (c)',
+  'Leaderboard Limit' =>
+    'Лимит таблицы лидеров',
+  'Gameboard Cycle (s)' =>
+    'Цикл игровой доски (с)',
+  'Utilities' => 'Утилиты',
+  'Flush Memcached' => 'Очистка кэша памяти',
+  'Restore Database' => 'Восстановить БД',
+  'Backup Database' => 'Бэкап БД'
 );
