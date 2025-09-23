@@ -767,4 +767,5 @@ $translations = array(
   'enabled' => 'включен',
   'disabled' => 'выключен',
   'Country' => 'Страна',
+  'unpause_' => 'Продолжить '
 );
