@@ -4033,7 +4033,7 @@ class AdminController extends Controller {
             </li>
             <li>
               <a href="/index.php?p=admin&page=countries">
-                {tr('All countries')}
+                {tr('All Countries')}
               </a>
             </li>
             <li>
