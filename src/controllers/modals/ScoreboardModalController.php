@@ -98,11 +98,6 @@ class ScoreboardModalController extends ModalController {
             height={220}>
           </svg>
         </div>
-        <div class="game-progress fb-progress-bar fb-cf row-fixed">
-          {$indicator}
-          <span class="label label--left">[{tr('Start')}]</span>
-          <span class="label label--right">[{tr('End')}]</span>
-        </div>
         <div class="game-scoreboard fb-row-container">
           <table class="row-fixed">
             <thead>

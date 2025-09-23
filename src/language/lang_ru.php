@@ -745,5 +745,12 @@ $translations = array(
   'Utilities' => 'Утилиты',
   'Flush Memcached' => 'Очистка кэша памяти',
   'Restore Database' => 'Восстановить БД',
-  'Backup Database' => 'Бэкап БД'
+  'Backup Database' => 'Бэкап БД',
+  'Level already captured!' => 'Уровень уже пройден',
+  'Or register to use username and password here. Once you have registered, you will be logged in.' => 'Для регистрации введите название команды и пароль',
+  'Are you sure you want to pause the current game?' => 'Вы действительно хотите приостановить игру?',
+  'Pause Game' => 'Приостановить игру',
+  'pause_' => 'Приостановить_',
+  'Are you sure you want to unpause the current game?' => 'Вы действительно хотите продолжить игру?',
+  'Unpause Game' => 'Продолжить игру'
 );
