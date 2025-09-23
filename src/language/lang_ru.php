@@ -186,7 +186,7 @@ $translations = array(
   'Not started yet' =>
     'Еще не началось',
   'Configuration' =>
-    'Настройки',
+    'Настройки ',
   'Tokens' =>
     'Токены',
   'Game Configuration' =>
@@ -517,7 +517,7 @@ $translations = array(
   'pts' =>
     'очки', //points
   'Your Rank' =>
-    'Ваш Ранг',
+    'Ваше место',
   'Your Score' =>
     'Ваш Счет',
   'Everyone' =>
@@ -607,7 +607,7 @@ $translations = array(
   'filter_' =>
     'фильтр',
   'rank_' =>
-    'ранг',
+    'место',
   'team_name_' =>
     'название команды',
   'quiz_pts_' =>
@@ -623,13 +623,13 @@ $translations = array(
   'team_members' =>
     'члены команды',
   'base_pts' =>
-    'базао чки',
+    'очки за базы',
   'quiz_pts' =>
-    'викторина_очки',
+    'очки за викторины',
   'flag_pts' =>
-    'флаг_очки',
+    'очки за флаги',
   'total_pts' =>
-    'всего_очки',
+    'всего',
   'Tool bars are located on all edges of the gameboard. Tap a category to expand and close each tool bar.' =>
     'На всех краях игрового поля расположены панели инструментов. Выберите категорию, чтобы развернуть и свернуть соответствующую панель инструментов.',
   'Tool_Bars' =>
@@ -757,6 +757,8 @@ $translations = array(
   'Game has been paused' => 'Игра была остановлена',
   'Game has started!' => 'Игра началась!',
   'Game has resumed!' => 'Игра продолжается',
-  'Game has ended!' => 'Игра закончена!'
+  'Game has ended!' => 'Игра закончена!',
+  'Teams logos' => 'Логотипы команды',
+  'User sessions' => 'Сессии пользователей'
 
 );

@@ -4033,7 +4033,7 @@ class AdminController extends Controller {
             </li>
             <li>
               <a href="/index.php?p=admin&page=countries">
-                {tr('Levels')}: {tr('Countries')}
+                {tr('All countries')}
               </a>
             </li>
             <li>
@@ -4041,12 +4041,12 @@ class AdminController extends Controller {
             </li>
             <li>
               <a href="/index.php?p=admin&page=logos">
-                {tr('Teams')}: {tr('Logos')}
+                {tr('Teams logos')}
               </a>
             </li>
             <li>
               <a href="/index.php?p=admin&page=sessions">
-                {tr('Teams')}: {tr('Sessions')}
+                {tr('User sessions')}
               </a>
             </li>
             <li>
