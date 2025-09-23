@@ -759,6 +759,12 @@ $translations = array(
   'Game has resumed!' => 'Игра продолжается',
   'Game has ended!' => 'Игра закончена!',
   'Teams logos' => 'Логотипы команды',
-  'User sessions' => 'Сессии пользователей'
-
+  'User sessions' => 'Сессии пользователей',
+  '%s added!' => '%s добавлен!',
+  '%s %s!' => '%s %s!',
+  'added' => 'добавлен',
+  'updated' => 'обновлен',
+  'enabled' => 'включен',
+  'disabled' => 'выключен',
+  'Country' => 'Страна',
 );
