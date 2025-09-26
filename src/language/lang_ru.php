@@ -527,7 +527,7 @@ $translations = array(
   'Captured' =>
     'Захвачено',
   'Initiating' =>
-    'Ознакомление',
+    'Инициализация',
   'run : > boot_sequence' =>
     'run : > boot_sequence',
   'Extracting' =>
@@ -758,7 +758,7 @@ $translations = array(
   'Game has started!' => 'Игра началась!',
   'Game has resumed!' => 'Игра продолжается',
   'Game has ended!' => 'Игра закончена!',
-  'Teams logos' => 'Логотипы команды',
+  'Teams logos' => 'Логотипы команд',
   'User sessions' => 'Сессии пользователей',
   '%s added!' => '%s добавлен!',
   '%s %s!' => '%s %s!',
