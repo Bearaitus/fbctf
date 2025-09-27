@@ -50,11 +50,6 @@ class GameboardController extends Controller {
                   </li>
                   {$admin_link}
                   <li>
-                    <a href="/index.php?page=rules" target="_blank">
-                      {tr('Rules')}
-                    </a>
-                  </li>
-                  <li>
                     <a href="#" class="js-prompt-logout">{tr('Logout')}</a>
                   </li>
                 </ul>

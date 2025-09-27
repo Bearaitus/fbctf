@@ -1235,11 +1235,6 @@ class IndexController extends Controller {
           </a>
         </li>
         <li></li>
-        <li>
-          <a href="/index.php?page=rules" data-active="rules">
-            {tr('Rules')}
-          </a>
-        </li>
       </ul>;
     $branding_gen = await $this->genRenderBranding();
     $branding =
