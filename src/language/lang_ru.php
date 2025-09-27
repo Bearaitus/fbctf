@@ -612,10 +612,10 @@ $translations = array(
     'название команды',
   'quiz_pts_' =>
     'очки за викторину',
-  'flag_pts_' =>
-    'очки за флаги',
-  'base_pts_' =>
-    'база очки',
+  'blue team' =>
+    'blue team',
+  'red team' =>
+    'red team',
   'total_pts_' =>
     'всего',
   'team_' =>
