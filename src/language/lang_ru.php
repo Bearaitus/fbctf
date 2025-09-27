@@ -141,7 +141,7 @@ $translations = array(
   'Tutorial' =>
     'Обучение',
   'Scoreboard' =>
-    'Таблица',
+    'Рейтинг',
   'You' =>
     'Вы',
   'Others' =>
@@ -603,7 +603,7 @@ $translations = array(
   'completed_by' =>
     'выполнено',
   'scoreboard_' =>
-    'Таблица',
+    'Рейтинг',
   'filter_' =>
     'фильтр',
   'rank_' =>
