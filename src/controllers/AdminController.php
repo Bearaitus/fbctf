@@ -3990,23 +3990,18 @@ class AdminController extends Controller {
               </a>
             </li>
             <li>
-              <a href="/index.php?p=admin&page=quiz">
-                {tr('Levels')}: {tr('Quiz')}
-              </a>
-            </li>
-            <li>
               <a href="/index.php?p=admin&page=flags">
-                {tr('Levels')}: {tr('Flags')}
+                Blue Team
               </a>
             </li>
             <li>
               <a href="/index.php?p=admin&page=bases">
-                {tr('Levels')}: {tr('Bases')}
+                Red Team
               </a>
             </li>
             <li>
               <a href="/index.php?p=admin&page=categories">
-                {tr('Levels')}: {tr('Categories')}
+                {tr('Categories')}
               </a>
             </li>
             <li>

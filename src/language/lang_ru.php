@@ -162,7 +162,7 @@ $translations = array(
   'Auto' =>
     'Авто',
   'All Categories' =>
-    'Все категории',
+    'Категории заданий',
   'Open' =>
     'Открытая',
   'Tokenized' =>
