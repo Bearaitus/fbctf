@@ -234,7 +234,7 @@ $translations = array(
   'Expected End Time' =>
     'Ожидаемое Окончание',
   'Internationalization' =>
-    'интернационализация',
+    'Локализация платформы',
   'Language' =>
     'Язык',
   'Branding' =>
