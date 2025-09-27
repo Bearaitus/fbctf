@@ -4061,8 +4061,6 @@ class AdminController extends Controller {
         <div class="admin-nav--footer row-fixed">
           <a href="/index.php?p=game">{tr('Gameboard')}</a>
           <a href="" class="js-prompt-logout">{tr('Logout')}</a>
-          <a></a>
-          {$branding_xhp}
         </div>
       </div>;
   }
