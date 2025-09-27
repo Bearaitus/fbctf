@@ -133,7 +133,7 @@ $translations = array(
   'ADMIN' =>
     'ADMIN',
   'Navigation' =>
-    'Навигация',
+    'Меню',
   'View Mode' =>
     'Режим Просмотра',
   'View mode' =>
