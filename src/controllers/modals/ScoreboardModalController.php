@@ -69,7 +69,6 @@ class ScoreboardModalController extends ModalController {
             </td>
             <td style="width: 10%;">{$rank}</td>
             <td style="width: 40%;">{$team->getName()}</td>
-            <td style="width: 10%;">{strval($quiz)}</td>
             <td style="width: 10%;">{strval($flag)}</td>
             <td style="width: 10%;">{strval($base)}</td>
             <td style="width: 10%;">{strval($team->getPoints())}</td>
