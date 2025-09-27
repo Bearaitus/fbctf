@@ -589,7 +589,7 @@ $translations = array(
   'category' =>
     'категория',
   'capture_' =>
-    'захват_',
+    'захват ',
   'Insert your answer' =>
     'Введите свой ответ',
   'Request Hint' =>
@@ -767,5 +767,7 @@ $translations = array(
   'enabled' => 'включен',
   'disabled' => 'выключен',
   'Country' => 'Страна',
-  'unpause_' => 'Продолжить '
+  'unpause_' => 'Продолжить ',
+  'Scoring Off' => 'Отключено',
+  'Scoring is Currently Disabled!' => 'Захваты отключены'
 );

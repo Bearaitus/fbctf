@@ -1046,8 +1046,8 @@ function setupInputListeners() {
                   e.preventDefault();
                 } 
               });
-              $('.js-trigger-score', $container).text('YES!');
-              $('input[name=answer]', $container).css("background-color", "#1f7a1f");
+              $('.js-trigger-score', $container).text('ДА!');
+              $('input[name=answer]', $container).css("background-color", "#34C759");
               $('.answer_no_bases > .fb-cta.cta--yellow.js-trigger-score').removeClass('js-trigger-score');
               refreshMapData(); // Refresh map so capture shows up right away
               getCaptureData(); // Refresh captured levels so we can't reload the modal and see a submit button
@@ -1059,10 +1059,10 @@ function setupInputListeners() {
             } else {
               // TODO: Make this a modal
               console.log('Failed');
-              $('input[name=answer]', $container).css("background-color", "#800000");
-              $('.js-trigger-score', $container).text('NOPE :(');
+              $('input[name=answer]', $container).css("background-color", "#FF2D55");
+              $('.js-trigger-score', $container).text('НЕТ :(');
               setTimeout(function() {
-                $('.js-trigger-score', $container).text('SUBMIT');
+                $('.js-trigger-score', $container).text('ОТПРАВИТЬ');
                 $('input[name=answer]')[0].value = '';
                 $('input[name=answer]', $container).css("background-color", "");
               }, 2000);
