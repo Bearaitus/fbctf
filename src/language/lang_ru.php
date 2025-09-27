@@ -699,7 +699,7 @@ $translations = array(
   'account' =>
     'аккаунта',
   'Settings' =>
-    'Настройки',
+    'Настройки ',
   'Change your team name.' =>
     'Сменить название команды',
   'hr' =>
