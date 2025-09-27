@@ -3108,10 +3108,10 @@ class AdminController extends Controller {
         <table>
           <thead>
             <tr>
-              <th style="width: 20%;">{tr('time')}_</th>
-              <th style="width: 13%;">{tr('type')}_</th>
-              <th style="width: 7%;">{tr('pts')}_</th>
-              <th style="width: 60%;">{tr('Level')}_</th>
+              <th style="width: 20%;">{tr('time')}</th>
+              <th style="width: 13%;">{tr('type')}</th>
+              <th style="width: 7%;">{tr('pts')}</th>
+              <th style="width: 60%;">{tr('Level')}</th>
             </tr>
           </thead>
           {$scores_tbody}
@@ -3157,9 +3157,9 @@ class AdminController extends Controller {
         <table>
           <thead>
             <tr>
-              <th style="width: 20%;">{tr('time')}_</th>
-              <th style="width: 40%;">{tr('Level')}_</th>
-              <th style="width: 40%;">{tr('Attempt')}_</th>
+              <th style="width: 20%;">{tr('time')}</th>
+              <th style="width: 40%;">{tr('Level')}</th>
+              <th style="width: 40%;">{tr('Attempt')}</th>
             </tr>
           </thead>
           {$failures_tbody}
@@ -3895,12 +3895,12 @@ class AdminController extends Controller {
           <table>
             <thead>
               <tr>
-                <th>{tr('time')}_</th>
-                <th>{tr('entry')}_</th>
-                <th>{tr('level')}_</th>
-                <th>{tr('pts')}_</th>
-                <th>{tr('team')}_</th>
-                <th>{tr('flag')}_</th>
+                <th>{tr('time')}</th>
+                <th>{tr('entry')}</th>
+                <th>{tr('level')}</th>
+                <th>{tr('pts')}</th>
+                <th>{tr('team')}</th>
+                <th>{tr('flag')}</th>
               </tr>
             </thead>
             {$logs_tbody}
