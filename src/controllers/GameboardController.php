@@ -124,7 +124,6 @@ class GameboardController extends Controller {
           </aside>
         </div>
         <div class="fb-module-container container--column column-right">
-          <aside data-name={tr('Teams')} data-module="teams"></aside>
           <aside data-name={tr('Filter')} data-module="filter"></aside>
         </div>
         <div class="fb-module-container container--row">
