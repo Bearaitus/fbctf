@@ -545,9 +545,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Game Configuration')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$tabs_conf}
         <div class="tab-content-container">
@@ -1191,9 +1189,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Announcement Controls')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         <div class="admin-sections">
           <section class="admin-box">
@@ -1234,9 +1230,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>Game Controls</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         <div class="admin-sections">
           <section class="admin-box">
@@ -1795,9 +1789,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Quiz Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
         <div class="admin-buttons">
@@ -2318,9 +2310,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Flags Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
         <div class="admin-buttons">
@@ -2815,9 +2805,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Bases Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
         <div class="admin-buttons">
@@ -2921,9 +2909,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Categories Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
         <div class="admin-buttons">
@@ -3047,9 +3033,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Countries Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
       </div>;
@@ -3743,9 +3727,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Logo Management')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
       </div>;
@@ -3857,9 +3839,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Sessions')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         {$adminsections}
       </div>;
@@ -3939,9 +3919,7 @@ class AdminController extends Controller {
       <div>
         <header class="admin-page-header">
           <h3>{tr('Game Logs')}</h3>
-          <span class="admin-section--status">
-            {tr('status_')}<span class="highlighted">{tr('OK')}</span>
-          </span>
+
         </header>
         <div class="admin-sections">
           <section class="admin-box">
