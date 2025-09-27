@@ -62,7 +62,7 @@ $translations = array(
   'DoSing the Wargame platform or any of the challenges is forbidden.' =>
     'DoS-атака на платформу Wargame или на любое состязание запрещена.',
   'Legal' =>
-    'Заявление',
+    'Дополнение',
   'Disclaimer' =>
     'Disclaimer',
   'By participating in the contest, you agree to release Facebook and its employees, and the hosting organization from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.' =>
