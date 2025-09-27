@@ -973,14 +973,14 @@ function setupInputListeners() {
         // event listeners
         //
         if (hint_cost == -2) {
-          $('.js-trigger-hint span', $container).text('Need more points');
-          $('.capture-hint div', $container).text('Need more points');
+          $('.js-trigger-hint span', $container).text('Необходимо больше очков');
+          $('.capture-hint div', $container).text('Необходимо больше очков');
         } else if (hint_cost == -1) {
-          $('.js-trigger-hint span', $container).text('No Hint');
-          $('.capture-hint div', $container).text('No Hint');
+          $('.js-trigger-hint span', $container).text('Нет подсказки');
+          $('.capture-hint div', $container).text('Нет подсказки');
         } else {
           if (hint_cost === 0) {
-            $('.js-trigger-hint span', $container).text('Free Hint');
+            $('.js-trigger-hint span', $container).text('Бесплатная подсказка');
             $(this).onlySiblingWithClass('active').closest('.fb-modal-content').addClass('hint-enabled');
             $('.capture-hint div', $container).text(hint);
           } else {
