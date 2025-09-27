@@ -176,7 +176,7 @@ class IndexController extends Controller {
             </h1>
             <p class="inner-container typed-text">
               {tr(
-                'Following actions are prohibited, unless explicitly told otherwise by event Admins.',
+                'The following actions are prohibited, unless explicitly permitted by event admins.',
               )}
             </p>
           </header>
@@ -184,71 +184,52 @@ class IndexController extends Controller {
             <section>
               <header class="rule-section-header">
                 <h3>{tr('Rule')} 1</h3>
-                <h6>{tr('Cooperation')}</h6>
+                <h6>{tr('Platform Security')}</h6>
               </header>
               <div class="rule-main">
                 <p>
                   {tr(
-                    'No cooperation between teams with independent accounts. Sharing of keys or providing revealing hints to other teams is cheating, don’t do it.',
+                    'It is strictly forbidden to attack platform components or other participants without prior permission from organizers.',
                   )}
                 </p>
-                <p></p>
+                <p>
+                  {tr(
+                    'DoS/DDoS, stress-testing or service-overloading tools are not allowed.',
+                  )}
+                </p>
+                <p>
+                  {tr(
+                    'Any attempts to exploit vulnerabilities on the platform must be reported immediately to the organizers.',
+                  )}
+                </p>
+                <p>
+                  {tr(
+                    'Automated flag brute-forcing, request spamming or solving attempts are prohibited.',
+                  )}
+                </p>
+                <p>
+                  {tr(
+                    'Sharing answers or solutions with other teams is strictly forbidden.',
+                  )}
+                </p>
+                <p>
+                  {tr(
+                    'Publishing answers, solutions or confidential information is not allowed.',
+                  )}
+                </p>
               </div>
             </section>
             <section>
               <header class="rule-section-header">
                 <h3>{tr('Rule')} 2</h3>
-                <h6>{tr('Attacking Scoreboard')}</h6>
+                <h6>{tr('Fair Play')}</h6>
               </header>
               <div class="rule-main">
                 <p>
                   {tr(
-                    'No attacking the competition infrastructure. If bugs or vulns are found, please alert the competition organizers immediately.',
+                    'All participants must play fairly and respect the integrity of the competition.',
                   )}
                 </p>
-                <p></p>
-              </div>
-            </section>
-            <section>
-              <header class="rule-section-header">
-                <h3>{tr('Rule')} 3</h3>
-                <h6>{tr('Sabotage')}</h6>
-              </header>
-              <div class="rule-main">
-                <p>
-                  {tr(
-                    'Absolutely no sabotaging of other competing teams, or in any way hindering their independent progress.',
-                  )}
-                </p>
-                <p></p>
-              </div>
-            </section>
-            <section>
-              <header class="rule-section-header">
-                <h3>{tr('Rule')} 4</h3>
-                <h6>{tr('Bruteforcing')}</h6>
-              </header>
-              <div class="rule-main">
-                <p>
-                  {tr(
-                    'No brute forcing of challenge flag/ keys against the scoring site.',
-                  )}
-                </p>
-                <p></p>
-              </div>
-            </section>
-            <section>
-              <header class="rule-section-header">
-                <h3>{tr('Rule')} 5</h3>
-                <h6>{tr('Denial Of Service')}</h6>
-              </header>
-              <div class="rule-main">
-                <p>
-                  {tr(
-                    'DoSing the Wargame platform or any of the challenges is forbidden.',
-                  )}
-                </p>
-                <p></p>
               </div>
             </section>
             <section>
