@@ -784,5 +784,6 @@ $translations = array(
   'Disclaimer' => 'Отказ от ответственности',
   'By participating in the contest, you agree to release the hosting organization and its employees from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that the hosting organization is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.' => 'Участвуя в конкурсе, вы соглашаетесь освободить организацию-хостинг и её сотрудников от любой ответственности, требований или действий любого рода за причиненные в результате участия в конкурсе травмы, повреждения или потери имущества и личности. Вы признаёте и соглашаетесь с тем, что организация-хостинг не несёт ответственности за технические, аппаратные или программные сбои, а также за любые ошибки или проблемы, возникающие в связи с проведением конкурса.',
   'If you have any questions about what is or is not allowed, please ask an organizer.' => 'Если у вас есть вопросы о том, что разрешено, а что нет — задайте их организатору.',
-  'Have fun!' => 'Приятной игры!'
+  'Have fun!' => 'Приятной игры!',
+  'Game Controls' => 'Управление'
 );
