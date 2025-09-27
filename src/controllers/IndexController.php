@@ -240,7 +240,7 @@ class IndexController extends Controller {
               <div class="rule-main">
                 <p>
                   {tr(
-                    'By participating in the contest, you agree to release Facebook and its employees, and the hosting organization from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.',
+                    'By participating in the contest, you agree to release the hosting organization and its employees from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that the hosting organization is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.',
                   )}
                 </p>
               </div>
