@@ -655,7 +655,7 @@ $translations = array(
   'Tap Forward Slash [/] to activate computer commands. A list of commands can be found under "Rules".' =>
     'Используйте Слэш [/], чтобы активировать компьютерные команды. Список команд можно найти в "Правилах".',
   'Command_Line' =>
-    'Командная_Строка',
+    'Командная строка',
   'Click "Nav" to access main navigation links like Rules of Play, Registration, Blog, Jobs & more.' =>
     'Нажмите на "Навигацию", чтобы получить основные навигационные ссылки вроде Правил Игры, Регистрации, Блога, Вакансий и проч.',
   'Track your competition by clicking "scorboard" to access real-time game statistics and graphs.' =>
@@ -665,7 +665,7 @@ $translations = array(
   'Game_On' =>
     'Игра_Вкл',
   'tutorial_' =>
-    'обучение_',
+    '',
   'Next' =>
     'След.',
   'Skip to play' =>
@@ -786,5 +786,6 @@ $translations = array(
   'If you have any questions about what is or is not allowed, please ask an organizer.' => 'Если у вас есть вопросы о том, что разрешено, а что нет — задайте их организатору.',
   'Have fun!' => 'Приятной игры!',
   'Game Controls' => 'Управление',
-  'Please login here with username and password. If you have not registered, you may do so by clicking "Sign Up" below.' => 'Авторизуйтесь, используя название команды и пароль'
+  'Please login here with username and password. If you have not registered, you may do so by clicking "Sign Up" below.' => 'Авторизуйтесь, используя название команды и пароль',
+  'Track your competition by clicking "scoreboard" to access real-time game statistics and graphs.' => 'Нажмите Рейтинг, чтобы посмотреть, на каком месте Ваша команда прямо сейчас',
 );
