@@ -101,6 +101,7 @@ class ScoreboardModalController extends ModalController {
           <table class="row-fixed">
             <thead>
               <tr>
+                <th style="width: 10%;">{tr('filter_')}</th>
                 <th style="width: 10%;">{tr('rank_')}</th>
                 <th style="width: 40%;">{tr('team_name_')}</th>
                 <th style="width: 10%;">{tr('blue team')}</th>
