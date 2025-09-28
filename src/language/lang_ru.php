@@ -633,11 +633,11 @@ $translations = array(
   'Tool bars are located on all edges of the gameboard. Tap a category to expand and close each tool bar.' =>
     'На всех краях игрового поля расположены панели инструментов. Выберите категорию, чтобы развернуть и свернуть соответствующую панель инструментов.',
   'Tool_Bars' =>
-    'Панели_Инструментов',
+    'Панели инструментов',
   'Tap the "Game Clock" to keep track of time during gameplay. Don’t let time get the best of you.' =>
-    'Нажмите на "Игровые Часы", чтобы следить за временем во время игры. Не позволяйте времени застать себя врасплох.',
+    'Нажмите на "Оставшееся время", чтобы следить за временем во время игры. Не позволяйте времени застать себя врасплох.',
   'Game_Clock' =>
-    'Игровые_Часы',
+    'Оставшееся время',
   'Countries marked with an ' =>
     'Страны, отмеченные ',
   'are captured by you.' =>
@@ -663,7 +663,7 @@ $translations = array(
   'Have fun, be the best and conquer the world.' =>
     'Насладитесь игрой, будьте лучшими и захватите мир.',
   'Game_On' =>
-    'Игра_Вкл',
+    'Have fun!',
   'tutorial_' =>
     '',
   'Next' =>
