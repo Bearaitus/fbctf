@@ -405,7 +405,7 @@ class ActionModalController extends ModalController {
             </form>
             <br />
             <form class="team-password-form">
-              tr('Change your password.')
+              Смена пароля
               <br />
               <div style="margin-top: 10px">
                 <div style="float:left; width: 25%">
