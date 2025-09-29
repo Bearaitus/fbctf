@@ -326,8 +326,8 @@ function import_empty_db() {
   local PASSWORD
   log "Adding default admin user"
   if [[ $__mode = "dev" ]]; then
-    PASSWORD='password'
-    # PASSWORD='4d51bdd8344e6bd80da6a25ef8f12d93'
+    # PASSWORD='password'
+    PASSWORD='$2y$12$kqeX.QAuB.jKVI50FduBpe2rVNG9lAWm6pCdMpZUGkdq3SOGuttu2'
   else
     PASSWORD=$(head -c 500 /dev/urandom | md5sum | cut -d" " -f1)
   fi
@@ -353,7 +353,7 @@ function set_password() {
   local __path=$5
   local __multiservers=$6
 
-  if [[ "$__admin_pwd" =~ ^[a-f0-9]{32}$ ]]; then
+  if [[ "$__admin_pwd" = '$2y$12$kqeX.QAuB.jKVI50FduBpe2rVNG9lAWm6pCdMpZUGkdq3SOGuttu2' ]]; then
     HASH="$__admin_pwd"
   else
     if [[ "$__multiservers" == true ]]; then
