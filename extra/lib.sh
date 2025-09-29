@@ -335,7 +335,7 @@ function import_empty_db() {
   set_password "$PASSWORD" "$__user" "$__pwd" "$__db" "$__path" "$__multiservers"
 
   print_blank_lines
-  ok_log "The password for admin is: $PASSWORD"
+  ok_log "The password hash for admin is: $PASSWORD"
   if [[ "$__multiservers" == true ]]; then
       echo
       ok_log "Please note password as it will not be displayed again..."
