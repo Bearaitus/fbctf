@@ -405,15 +405,15 @@ class ActionModalController extends ModalController {
             </form>
             <br />
             <form class="team-password-form">
-              Change your password.
+              tr('Change your password.')
               <br />
               <div style="margin-top: 10px">
                 <div style="float:left; width: 25%">
-                  Current:
+                  Текущий:
                 </div>
                 <div style="float:left; width: 75%">
                   <input
-                    placeholder="Current password"
+                    placeholder="Текущий"
                     name="current_password"
                     type="password"
                     autocomplete="off"
@@ -424,11 +424,11 @@ class ActionModalController extends ModalController {
               </div>
               <div style="margin-top: 10px">
                 <div style="float: left; width: 25%">
-                  New:
+                  Новый:
                 </div>
                 <div style="float: left; width: 75%">
                   <input
-                    placeholder="New password"
+                    placeholder="Новый"
                     name="new_password"
                     type="password"
                     autocomplete="off"
@@ -439,11 +439,11 @@ class ActionModalController extends ModalController {
               </div>
               <div style="margin-top: 10px">
                 <div style="float: left; width: 25%">
-                  Re-type new:
+                  Повторите:
                 </div>
                 <div style="float: left; width: 75%">
                   <input
-                    placeholder="Re-type password"
+                    placeholder="Повторите пароль"
                     name="confirm_password"
                     type="password"
                     autocomplete="off"
