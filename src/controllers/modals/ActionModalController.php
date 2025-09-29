@@ -282,7 +282,7 @@ class ActionModalController extends ModalController {
       case 'account':
         $title =
           <h4>
-            {tr('account_')}<span class="highlighted">{tr('Settings')}</span>
+            <span class="highlighted">Настройки</span> аккаунта
           </h4>;
         $oauth_header = '';
         if (Configuration::getFacebookOAuthSettingsExists() === true) {
