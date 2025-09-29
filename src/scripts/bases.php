@@ -62,9 +62,9 @@ while ($conf_game->getValue() === '1') {
   $bases_cycle = \HH\Asio\join(Configuration::gen('bases_cycle'));
   sleep(intval($bases_cycle->getValue()));
 
-  // Flush the local cache before the next cycle to ensure the game is still running and the configuration of the bases hasn't changed (the script runs continuously).
-  Model::deleteLocalCache();
-
   // Get current game status
   $conf_game = \HH\Asio\join(Configuration::gen('game'));
+  
+  // Flush the local cache before the next cycle to ensure the game is still running and the configuration of the bases hasn't changed (the script runs continuously).
+  Model::deleteLocalCache();
 }

@@ -326,8 +326,8 @@ function import_empty_db() {
   local PASSWORD
   log "Adding default admin user"
   if [[ $__mode = "dev" ]]; then
-    # PASSWORD='password'
-    PASSWORD='4d51bdd8344e6bd80da6a25ef8f12d93'
+    PASSWORD='password'
+    # PASSWORD='4d51bdd8344e6bd80da6a25ef8f12d93'
   else
     PASSWORD=$(head -c 500 /dev/urandom | md5sum | cut -d" " -f1)
   fi
