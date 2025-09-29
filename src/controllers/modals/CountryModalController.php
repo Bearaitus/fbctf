@@ -89,7 +89,6 @@ class CountryModalController extends ModalController {
                 <textarea rows={4} class="capture-text" disabled={true}>
                 </textarea>
                 <br />
-                <div class="capture-links"></div>
                 <br />
                 <fieldset class="form-set">
                   <div class="answer_no_bases form-el el--text">
@@ -188,7 +187,6 @@ class CountryModalController extends ModalController {
                 <textarea rows={4} class="capture-text" disabled={true}>
                 </textarea>
                 <br />
-                <div class="capture-links"></div>
                 <br />
                 <fieldset class="form-set">
                   <div class="answer_no_bases form-el el--text">
