@@ -326,7 +326,8 @@ function import_empty_db() {
   local PASSWORD
   log "Adding default admin user"
   if [[ $__mode = "dev" ]]; then
-    PASSWORD='password'
+    # PASSWORD='password'
+    PASSWORD='4d51bdd8344e6bd80da6a25ef8f12d93'
   else
     PASSWORD=$(head -c 500 /dev/urandom | md5sum | cut -d" " -f1)
   fi
@@ -352,17 +353,18 @@ function set_password() {
   local __path=$5
   local __multiservers=$6
 
-  if [[ "$__multiservers" == true ]]; then
-      HASH=$(php "$__path/extra/hash.php" "$__admin_pwd")
+  if [[ "$__admin_pwd" =~ ^[a-f0-9]{32}$ ]]; then
+    HASH="$__admin_pwd"
   else
+    if [[ "$__multiservers" == true ]]; then
+      HASH=$(php "$__path/extra/hash.php" "$__admin_pwd")
+    else
       HASH=$(hhvm -f "$__path/extra/hash.php" "$__admin_pwd")
+    fi
   fi
 
-  # First try to delete the existing admin user
-  mysql -u "$__user" --password="$__db_pwd" "$__db" -e "DELETE FROM teams WHERE name='admin' AND admin=1;"
-
-  # Then insert the new admin user with ID 1 (just as a convention, we shouldn't rely on this in the code)
-  mysql -u "$__user" --password="$__db_pwd" "$__db" -e "INSERT INTO teams (id, name, password_hash, admin, protected, logo, created_ts) VALUES (1, 'admin', '$HASH', 1, 1, 'admin', NOW());"
+  mysql -u "$__user" --password="$__db_pwd" "$__db" -e "DELETE FROM teams WHERE name='pt-admin' AND admin=1;"
+  mysql -u "$__user" --password="$__db_pwd" "$__db" -e "INSERT INTO teams (id, name, password_hash, admin, protected, logo, created_ts) VALUES (1, 'pt-admin', '$HASH', 1, 1, 'admin', NOW());"
 }
 
 function update_repo() {
