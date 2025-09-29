@@ -83,30 +83,7 @@ class TutorialModalController extends ModalController {
   public async function genRender(string $step): Awaitable<:xhp> {
     list($step, $name, $next_step, $header, $content) = $this->getStep($step);
     return
-      <div class="fb-modal-content fb-tutorial" data-tutorial-step={$step}>
-        {$header}
-        <div class="modal-title">
-          <h4>{tr('tutorial_')}<span class="highlighted">{$name}</span></h4>
-        </div>
-        <div class="tutorial-content">
-          {$content}
-          <div class="tutorial-navigation fb-column-container">
-            <ul class="tutorial-progress"></ul>
-            <div class="tutorial-actionable">
-              <a
-                href="#"
-                class="fb-cta cta--yellow"
-                data-next-tutorial={$next_step}>
-                {tr('Next')}
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="tutorial-skip">
-          <a href="#" class="fb-cta js-close-tutorial">
-            {tr('Skip to play')}
-          </a>
-        </div>
+      <div>
       </div>;
   }
 }
