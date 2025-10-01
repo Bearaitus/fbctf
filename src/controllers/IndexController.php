@@ -118,10 +118,10 @@ class IndexController extends Controller {
     $game = $config_game->getValue();
     $next_game = $config_next_game->getValue();
     if ($game === '1') {
-      $next_game_text = tr('In Progress');
+      $next_game_text = "WARGAME-1-АлтГУ";
       $countdown = array('--', '--', '--', '--');
     } else if ($next_game === '0' || intval($next_game) < time()) {
-      $next_game_text = tr('Soon');
+      $next_game_text = "WARGAME-1-АлтГУ";
       $countdown = array('--', '--', '--', '--');
     } else {
       $next_game_text = date(tr('date and time format'), $next_game);
