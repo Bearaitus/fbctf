@@ -141,7 +141,7 @@ $translations = array(
   'Tutorial' =>
     'Обучение',
   'Scoreboard' =>
-    'Рейтинг',
+    'Рейтинг команд',
   'You' =>
     'Вы',
   'Others' =>
@@ -603,9 +603,9 @@ $translations = array(
   'completed_by' =>
     'выполнено',
   'scoreboard_' =>
-    'Рейтинг',
+    'Рейтинг команд',
   'filter_' =>
-    'фильтр',
+    ' ',
   'rank_' =>
     'место',
   'team_name_' =>
@@ -613,11 +613,11 @@ $translations = array(
   'quiz_pts_' =>
     'очки за викторину',
   'blue team' =>
-    'blue team',
+    'Blue team',
   'red team' =>
-    'red team',
+    'Red team',
   'total_pts_' =>
-    'всего',
+    'Итого',
   'team_' =>
     'команда',
   'team_members' =>

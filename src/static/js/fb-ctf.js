@@ -972,20 +972,13 @@ function setupInputListeners() {
         //
         // event listeners
         //
-        if (hint_cost == -2) {
+        if (hint_cost == 10000000) {
           $('.js-trigger-hint span', $container).text('Необходимо больше очков');
           $('.capture-hint div', $container).text('Необходимо больше очков');
-        } else if (hint_cost == -1) {
+        } else if (hint_cost == 1000000) {
           $('.js-trigger-hint span', $container).text('Нет подсказки');
           $('.capture-hint div', $container).text('Нет подсказки');
         } else {
-          if (hint_cost === 0) {
-            $('.js-trigger-hint span', $container).text('Бесплатная подсказка');
-            $(this).onlySiblingWithClass('active').closest('.fb-modal-content').addClass('hint-enabled');
-            $('.capture-hint div', $container).text(hint);
-          } else {
-            $('.js-trigger-hint', $container).attr('data-hover', '-' + hint_cost + ' PTS');
-          }
 
           $('.js-trigger-hint', $container).on('click', function(event) {
             event.preventDefault();
