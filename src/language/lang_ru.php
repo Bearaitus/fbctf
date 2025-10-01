@@ -141,7 +141,7 @@ $translations = array(
   'Tutorial' =>
     'Обучение',
   'Scoreboard' =>
-    'Рейтинг команд',
+    'Рейтинг',
   'You' =>
     'Вы',
   'Others' =>
