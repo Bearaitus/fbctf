@@ -1223,13 +1223,11 @@ class IndexController extends Controller {
       </ul>;
     $branding_gen = await $this->genRenderBranding();
     $branding =
-      <div class="branding">
         <a href="/">
           <div class="branding-rules">
             {$branding_gen}
           </div>
-        </a>
-      </div>;
+        </a>;
 
     return
       <nav class="fb-main-nav fb-navigation">
