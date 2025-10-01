@@ -137,18 +137,6 @@ class CountryModalController extends ModalController {
                     <span class="points-number fb-numbers"></span>
                     <span class="points-label">{tr('PTS')}</span>
                   </div>
-                  <div class="country-stats">
-                    <dl>
-                      <dt>{tr('type')}</dt>
-                      <dd class="country-type"></dd>
-
-                      <dt>{tr('category')}</dt>
-                      <dd class="country-category"></dd>
-
-                      <dt>{tr('first_capture')}</dt>
-                      <dd class="opponent-name country-owner"></dd>
-                    </dl>
-                  </div>
                 </div>
                 <div
                   class=
