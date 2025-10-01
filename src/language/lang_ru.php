@@ -14,13 +14,13 @@ $translations = array(
   'Welcome to EdTech Wargame!' =>
     'Добро пожаловать на EdTech Wargame!',
   'Get ready for the Wargame to start and access the gameboard now!' =>
-    'Приготовьтесь к началу Wargame и получите доступ к игровому полю!',
+    '',
   'Gameboard' =>
     'Игровое поле',
   'Register Team' =>
     'Зарегистрировать команду',
   'Get ready for the Wargame to start and register your team now!' =>
-    'Приготовьтесь к началу Wargame и зарегистируйте свою команду!',
+    '',
   'Login' =>
     'Войти',
   'Soon' =>
@@ -78,7 +78,7 @@ $translations = array(
   'Token' =>
     'Токен',
   'Team Registration' =>
-    'Регистрация Команды',
+    'Регистрация',
   'Team Name' =>
     'Название Команды',
   'Password' =>
@@ -96,7 +96,7 @@ $translations = array(
   'Register to play Capture The Flag here. Once you have registered, you will be logged in.' =>
     'Зарегистрируйтесь, чтобы сыграть в Capture The Flag. После завершения регистрации автоматически будет выполнен вход в систему.',
   'Not Available' =>
-    'Недоступно',
+    'Закрыта',
   'Team Registration will be open soon, stay tuned!' =>
     'Регистрация Команды будет скоро открыта, оставайтесь на связи!',
   'Try Again' =>
@@ -713,7 +713,7 @@ $translations = array(
   'Captured!' =>
     'Захвачено!',
   'Please login here with username and password.' =>
-    'Авторизуйтесь, используя название команды и пароль',
+    '',
   'Custom Organization' =>
     'Настроить организацию',
   'Custom Byline' =>
@@ -788,5 +788,6 @@ $translations = array(
   'Game Controls' => 'Управление',
   'Please login here with username and password. If you have not registered, you may do so by clicking "Sign Up" below.' => 'Авторизуйтесь, используя название команды и пароль',
   'Track your competition by clicking "scoreboard" to access real-time game statistics and graphs.' => 'Нажмите Рейтинг, чтобы посмотреть, на каком месте Ваша команда прямо сейчас',
-  'Change your password.' => 'Смена пароля'
+  'Change your password.' => 'Смена пароля',
+  'Help' => 'Помощь'
 );

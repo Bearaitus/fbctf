@@ -71,11 +71,6 @@ class IndexController extends Controller {
     if (SessionUtils::sessionActive()) {
       $play_nav =
         <form class="fb-form inner-container">
-          <p>
-            {tr(
-              'Get ready for the Wargame to start and access the gameboard now!',
-            )}
-          </p>
           <div class="form-el--actions">
             <a href="/index.php?p=game" class="fb-cta cta--yellow">
               {tr('Gameboard')}
@@ -97,9 +92,6 @@ class IndexController extends Controller {
       }
       $play_nav =
         <form class="fb-form inner-container">
-          <p>
-            {tr('Get ready for the Wargame to start and register your team now!')}
-          </p>
           <div class="form-el--actions">
             {$registration_button}
             <a
@@ -804,18 +796,6 @@ class IndexController extends Controller {
               <h1 class="fb-glitch" data-text={tr('Not Available')}>
                 {tr('Not Available')}
               </h1>
-              <form class="fb-form inner-container">
-                <p>
-                  {tr('Team Registration will be open soon, stay tuned!')}
-                </p>
-                <div class="form-el--actions">
-                  <a
-                    href="/index.php?page=registration"
-                    class="fb-cta cta--yellow">
-                    {tr('Try Again')}
-                  </a>
-                </div>
-              </form>
             </div>
           </main>
         </div>;
@@ -1235,6 +1215,11 @@ class IndexController extends Controller {
           </a>
         </li>
         <li></li>
+        <li>
+          <a href="https://t.me/edtechlab_chat" data-active="help">
+            {tr('Help')}
+          </a>
+        </li>
       </ul>;
     $branding_gen = await $this->genRenderBranding();
     $branding =
