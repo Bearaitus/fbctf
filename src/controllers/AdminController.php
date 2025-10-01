@@ -3669,7 +3669,7 @@ class AdminController extends Controller {
       } else {
         $use_select =
           <select class="not_configuration">
-            <option value="0">{tr('None')}</option>
+            <option value="0">Blue Team</option>
           </select>;
       }
 

@@ -130,7 +130,7 @@ class LiveSyncImport {
       $level->random_country = true;
     }
     if (property_exists($level, 'category') === false) {
-      $level->category = 'None';
+      $level->category = 'Blue Team';
     }
     if (property_exists($level, 'bonus') === false) {
       $level->bonus = 0;

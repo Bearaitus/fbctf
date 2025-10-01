@@ -71,8 +71,8 @@ CREATE TABLE `categories` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `categories` WRITE;
-INSERT INTO `categories` (category, created_ts, protected) VALUES("None", NOW(), 1);
-INSERT INTO `categories` (category, created_ts, protected) VALUES("Quiz", NOW(), 1);
+INSERT INTO `categories` (category, created_ts, protected) VALUES("Red Team", NOW(), 1);
+INSERT INTO `categories` (category, created_ts, protected) VALUES("Blue Team", NOW(), 1);
 UNLOCK TABLES;
 
 --
