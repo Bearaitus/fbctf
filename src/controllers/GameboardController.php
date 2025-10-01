@@ -52,13 +52,13 @@ class GameboardController extends Controller {
                 </ul>
               </li>
             </ul>
-            <div class="branding">
-              <a href="index.php?p=game">
-                <div class="branding-rules">
-                  {$branding_gen}
-                </div>
-              </a>
-            </div>
+            <ul style="justify-content:center">
+              <li>
+                <a href="#">
+                  EdTech Wargame
+                </a>
+              </li>
+            </ul>
             <ul class="nav-right">
               <li>
                 <a href="#" class="js-launch-modal" data-modal="scoreboard">

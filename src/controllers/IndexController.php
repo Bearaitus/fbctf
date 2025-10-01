@@ -1223,7 +1223,7 @@ class IndexController extends Controller {
       </ul>;
     $branding_gen = await $this->genRenderBranding();
     $branding =
-      <ul class="nav-left">
+      <ul style="justify-content:center">
         <li>
           <a href="#">
             EdTech Wargame
