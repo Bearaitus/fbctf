@@ -157,7 +157,7 @@ $translations = array(
   'Filter' =>
     'Фильтр',
   'Activity' =>
-    'Действие',
+    'Ход соревнований',
   //Translations for AdminController
   'Auto' =>
     'Авто',
