@@ -2690,11 +2690,11 @@ function setupInputListeners() {
         var responseData = JSON.parse(data);
         if (responseData.result === 'OK') {
           console.log('OK');
-          $('.team-name-form input[name=team_name]').css("background-color", "#1f7a1f");
+          $('.team-name-form input[name=team_name]').css("background-color", "#34C759");
           $('.team-name-form span').text('Team Name updated.');
         } else {
           console.log('Failed');
-          $('.team-name-form input[name=team_name]').css("background-color", "#800000");
+          $('.team-name-form input[name=team_name]').css("background-color", "#FF2D55");
           $('.team-name-form span').text('Failed! Please try a different name.');
         }
       });
@@ -2729,8 +2729,8 @@ function setupInputListeners() {
         $('.confirm-pw').css("visibility", "hidden");
         new_password = $('.team-password-form input[name=confirm_password]')[0].value;
       } else {
-        $('.team-password-form input[name=new_password]').css("background-color", "#800000");
-        $('.team-password-form input[name=confirm_password]').css("background-color", "#800000");
+        $('.team-password-form input[name=new_password]').css("background-color", "#FF2D55");
+        $('.team-password-form input[name=confirm_password]').css("background-color", "#FF2D55");
         $('.confirm-pw').css("visibility", "visible");
         new_password = '';
       }
@@ -2751,7 +2751,7 @@ function setupInputListeners() {
       });
 
       if (current_password === '') {
-        $('.team-password-form input[name=current_password]').css("background-color", "#800000");
+        $('.team-password-form input[name=current_password]').css("background-color", "#FF2D55");
         $('.pw-error').css("visibility", "visible");
         $('.pw-updated').css("visibility", "hidden");
         $('.strong-pw').css("visibility", "hidden");
@@ -2765,12 +2765,12 @@ function setupInputListeners() {
         }).done(function(data) {
           var responseData = JSON.parse(data);
           if (responseData.result === 'OK') {
-            $('.team-password-form input').css("background-color", "#1f7a1f");
+            $('.team-password-form input').css("background-color", "#34C759");
             $('.pw-error').css("visibility", "hidden");
             $('.strong-pw').css("display", "none");
             $('.pw-updated').css("display", "block");
           } else if (responseData.message === 'PW Error') {
-            $('.team-password-form input[name=current_password]').css("background-color", "#1f7a1f");
+            $('.team-password-form input[name=current_password]').css("background-color", "#34C759");
             $('.pw-error').css("visibility", "hidden");
             $('.pw-updated').css("display", "none");
             $('.strong-pw').css("display", "none");
@@ -2778,14 +2778,14 @@ function setupInputListeners() {
             $('.strong-pw').css("display", "block");
             $('.pw-updated').css("display", "none");
             $('.pw-error').css("visibility", "hidden");
-            $('.team-password-form input[name=new_password]').css("background-color", "#800000");
-            $('.team-password-form input[name=confirm_password]').css("background-color", "#800000");
+            $('.team-password-form input[name=new_password]').css("background-color", "#FF2D55");
+            $('.team-password-form input[name=confirm_password]').css("background-color", "#FF2D55");
           } else {
             $('.pw-error').css("visibility", "visible");
             $('.pw-updated').css("display", "none");
             $('.strong-pw').css("display", "none");
             $('.pw-error').text("Invalid password");
-            $('.team-password-form input[name=current_password]').css("background-color", "#800000");
+            $('.team-password-form input[name=current_password]').css("background-color", "#FF2D55");
           }
         });
       }
@@ -2816,13 +2816,13 @@ function setupInputListeners() {
           var responseData = JSON.parse(data);
           if (responseData.result === 'OK') {
             console.log('OK');
-            $('.account-link-form input[name=livesync_username]').css("background-color", "#1f7a1f");
-            $('.account-link-form input[name=livesync_password]').css("background-color", "#1f7a1f");
+            $('.account-link-form input[name=livesync_username]').css("background-color", "#34C759");
+            $('.account-link-form input[name=livesync_password]').css("background-color", "#34C759");
             $('.account-link-form span').text('Live Sync password updated.');
           } else {
             console.log('Failed');
-            $('.account-link-form input[name=livesync_username]').css("background-color", "#800000");
-            $('.account-link-form input[name=livesync_password]').css("background-color", "#800000");
+            $('.account-link-form input[name=livesync_username]').css("background-color", "#FF2D55");
+            $('.account-link-form input[name=livesync_password]').css("background-color", "#FF2D55");
             $('.account-link-form span').text('Failed! Please try different credentials.');
           }
         });

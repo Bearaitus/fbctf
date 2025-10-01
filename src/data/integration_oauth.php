@@ -68,7 +68,7 @@ class IntegrationOAuth {
       $javascript_button =
         'window.opener.document.getElementsByName("'.
         $button.
-        '")[0].style.backgroundColor="#1f7a1f"';
+        '")[0].style.backgroundColor="#34C759"';
     } else {
       $message = tr(
         'There was an error connecting your account to '.
@@ -88,7 +88,7 @@ class IntegrationOAuth {
       $javascript_button =
         'window.opener.document.getElementsByName("'.
         $button.
-        '")[0].style.backgroundColor="#800000"';
+        '")[0].style.backgroundColor="#FF2D55"';
     }
 
     $javascript_close = "window.open('', '_self', ''); window.close();";
