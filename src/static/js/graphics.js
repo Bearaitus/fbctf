@@ -66,6 +66,7 @@ module.exports = {
 
       var graphic = d3.select(svgEl),
           MARGIN = {
+            top: 20,
             left: 60,
             right: 20,
             bottom: 40
