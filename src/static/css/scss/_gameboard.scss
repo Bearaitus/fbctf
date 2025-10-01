@@ -528,26 +528,26 @@ $module-margin: 20px;
         }
 
         .clock-days:after {
-          content: "day";
+          content: "дн";
         }
 
         .clock-hours:after {
-          content: "hr";
+          content: "ч";
         }
 
         .clock-minutes:after {
-          content: "min";
+          content: "мин";
         }
 
         .clock-seconds:after {
-          content: "sec";
+          content: "сек";
         }
 
         .clock-milliseconds {
           color: darken($teal-blue, 10%);
 
           &:after {
-            content: "m.sec";
+            content: "мсек";
           }
         }
 
