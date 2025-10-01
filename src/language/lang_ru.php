@@ -505,9 +505,9 @@ $translations = array(
   'Status' =>
     'Статус',
   'Completed' =>
-    'Завершено',
+    'Решено',
   'Remaining' =>
-    'Остается',
+    'Не решено',
   'Start' =>
     'Начало',
   'End' =>
