@@ -376,34 +376,6 @@ class ActionModalController extends ModalController {
 
         $content =
           <div class="action-main" style="height: 600px; overflow-y: scroll">
-            {tr('Change your team name.')} (Макс. 20 символов)
-            <form class="fb-form-no-padding team-name-form">
-              <input name="set_team_name" type="hidden" value="" />
-              <div class="form-el el--text">
-                <input
-                  placeholder={tr('Set your team name')}
-                  name="team_name"
-                  type="text"
-                  value={$team_name}
-                  autocomplete="off"
-                  maxlength={20}
-                />
-                <input
-                  type="hidden"
-                  name="csrf_token"
-                  value={SessionUtils::CSRFToken()}
-                />
-              </div>
-              <span class="team-name-form-response highlighted--blue"></span>
-              <div class="action-actionable">
-                <a
-                  class=
-                    "fb-cta cta--yellow js-trigger-account-team-name-save">
-                  {tr('Update')}
-                </a>
-              </div>
-            </form>
-            <br />
             <form class="team-password-form">
               Смена пароля
               <br />
