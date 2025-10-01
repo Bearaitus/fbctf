@@ -130,11 +130,6 @@ class ClockModuleController extends ModuleController {
               <span class="clock-seconds">{$seconds}</span>:
               <span class="clock-milliseconds">{$milliseconds}</span>
             </div>
-            <div class="game-progress fb-progress-bar">
-              <span class="label label--left">[Start]</span>
-              <span class="label label--right">[End]</span>
-              {$indicator}
-            </div>
           </div>
         </div>;
     }
