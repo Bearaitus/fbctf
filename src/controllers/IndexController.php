@@ -1229,7 +1229,7 @@ class IndexController extends Controller {
             EdTech Wargame
           </a>
         </li>
-      </ul>
+      </ul>;
 
     return
       <nav class="fb-main-nav fb-navigation">
