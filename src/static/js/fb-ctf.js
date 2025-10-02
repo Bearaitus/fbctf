@@ -1049,7 +1049,7 @@ function setupInputListeners() {
                 $('.answer_captured').removeClass('completely-hidden');
                 $('.js-close-modal', $container).click()
                 location.reload();
-              }, 2000);
+              }, 1000);
             } else {
               // TODO: Make this a modal
               console.log('Failed');
@@ -2586,68 +2586,61 @@ function setupInputListeners() {
     // load the modal
     Modal.init();
 
-    (function () {
+function initCaptureToast() {
   if (!document.body) return;
-
   const styleId = 'capture-toast-style';
   if (!document.getElementById(styleId)) {
-    console.log('[Toast] Adding style tag');
     const st = document.createElement('style');
     st.id = styleId;
     st.textContent = `
-      .capture-toast {
-        position: fixed;
-        top: 18%;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 80vw;
-        background: rgba(0,0,0,.88);
-        color: #fff;
-        padding: 14px 18px;
-        border-radius: 12px;
-        box-shadow: 0 8px 32px rgba(0,0,0,.35);
-        z-index: 9999;
-        font-size: 16px;
-        line-height: 1.35;
-        opacity: 0;
-        transition: opacity .2s ease;
+      .capture-toast{
+        position:fixed;
+        top:5%;left:5%;right:5%;bottom:5%;
+        background:#212121;
+        color:#fff;
+        border-radius:12px;
+        box-shadow:0 8px 32px #212121;
+        font-size:16px;
+        line-height:1.35;
+        padding:20px;
+        opacity:0;
+        transition:opacity .2s ease;
+        z-index:9999;
       }
-      .capture-toast.show { opacity: 1; }
-      .capture-toast__close {
-        position: absolute;
-        top: 6px; right: 8px;
-        border: 0; background: transparent; color: #fff;
-        font-size: 18px; cursor: pointer;
+      .capture-toast.show{opacity:1;}
+      .capture-toast__close{
+        position:absolute;
+        top:6px;right:8px;
+        border:0;
+        background:transparent;
+        color:#fff;
+        font-size:18px;
+        cursor:pointer;
       }
-      .capture-toast__text { padding-right: 28px; }
+      .capture-toast__text{padding-right:28px;}
     `;
     document.head.appendChild(st);
   }
 
   function showCaptureToast(text) {
-    console.log('[Toast] showCaptureToast called with:', text); // 5
     const el = document.createElement('div');
     el.className = 'capture-toast';
     el.setAttribute('role', 'alert');
-
     const btn = document.createElement('button');
     btn.className = 'capture-toast__close';
     btn.setAttribute('aria-label', 'Close');
     btn.textContent = '×';
-    btn.addEventListener('click', () => {
+    btn.onclick = () => {
       el.classList.remove('show');
       setTimeout(() => el.remove(), 180);
-    });
-
+    };
     const txt = document.createElement('div');
     txt.className = 'capture-toast__text';
     txt.textContent = text;
-
     el.appendChild(btn);
     el.appendChild(txt);
     document.body.appendChild(el);
     requestAnimationFrame(() => el.classList.add('show'));
-
     setTimeout(() => {
       if (!document.body.contains(el)) return;
       el.classList.remove('show');
@@ -2656,37 +2649,52 @@ function setupInputListeners() {
   }
 
   const candidates = [
-    '#actions .list', '#actions', '.actions .list', '.actions', '.game-log', '.log-actions',
-    '.sidebar .actions', '[data-section="actions"]', '.panel-actions .list', 'aside[data-module="activity"][data-name="Ход соревнований"]'
+    '#actions .list',
+    '#actions',
+    '.actions .list',
+    '.actions',
+    '.game-log',
+    '.log-actions',
+    '.sidebar .actions',
+    '[data-section="actions"]',
+    '.panel-actions .list',
+    'aside[data-module="activity"][data-name="Ход соревнований"]'
   ];
   const logEl = candidates.map(q => document.querySelector(q)).find(Boolean);
-  if (!logEl) {
-      console.warn('[Toast] No log element found – exit');
-      return; // тихо выходим, если сайдбар не найден
-  }
-  console.log('[Toast] log element found:', logEl);
+  if (!logEl) return;
 
-  const seen = new Set();
+  let lastCapture = null;
+  const isCapture = s => /(captured|захват(ил|ила|или)?|захвачено|взял(а)?|взяты?|флаг|база)/i.test(s);
+  const debounce = (fn, delay) => {
+    let t;
+    return (...a) => {
+      clearTimeout(t);
+      t = setTimeout(() => fn(...a), delay);
+    };
+  };
+  const showDebounced = debounce(showCaptureToast, 250);
 
-  const isCapture = (s) => /(captured|захват(ил|ила|или)?|захвачено|взял(а)?|взяты?|флаг|база)/i.test(s);
-
-  const obs = new MutationObserver((mutations) => {
+  const obs = new MutationObserver(mutations => {
+    const candidates = [];
     for (const m of mutations) {
-      m.addedNodes && m.addedNodes.forEach((n) => {
+      m.addedNodes && m.addedNodes.forEach(n => {
         if (n.nodeType !== 1) return;
-        const t = (n.textContent || '').trim();
-        if (!t) return;
-        if (!isCapture(t)) return;
-        if (seen.has(t)) return;
-        seen.add(t);
-        console.log('[Toast] NEW capture detected →', t);
-        showCaptureToast(t);
+        const txt = (n.textContent || '').trim();
+        if (!txt) return;
+        if (!isCapture(txt)) return;
+        candidates.push(txt);
       });
     }
+    if (!candidates.length) return;
+    const latest = candidates[candidates.length - 1];
+    if (latest === lastCapture) return;
+    lastCapture = latest;
+    showDebounced(latest);
   });
 
   obs.observe(logEl, { childList: true, subtree: true });
-})();
+}
+initCaptureToast();
 
     // any modules that does stuff based on loaded content (for
     //  example, modals or svg grahics) should get fired when the
