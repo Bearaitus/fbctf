@@ -104,6 +104,8 @@ class CountryModalController extends ModalController {
                   </div>
                 </fieldset>
                 <div class="form-el--multiple-actions fb-column-container">
+                  <div class="col col-1-2">
+                  </div>
                   <div class="answer_no_bases col col-1-2 actions--right ">
                     <a class="fb-cta cta--yellow js-trigger-score">
                       {tr('Submit')}
