@@ -2667,7 +2667,7 @@ function setupInputListeners() {
 
   const seen = new Set();
 
-  const isCapture = (s) => /(captured|захват(ил|ила|или)?|взял(а)?|взяты?|флаг|база)/i.test(s);
+  const isCapture = (s) => /(captured|захват(ил|ила|или)?|захвачено|взял(а)?|взяты?|флаг|база)/i.test(s);
 
   const obs = new MutationObserver((mutations) => {
     for (const m of mutations) {
