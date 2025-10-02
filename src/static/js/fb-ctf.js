@@ -2590,6 +2590,7 @@ function setupInputListeners() {
 
   const styleId = 'capture-toast-style';
   if (!document.getElementById(styleId)) {
+    console.log('[Toast] Adding style tag');
     const st = document.createElement('style');
     st.id = styleId;
     st.textContent = `
@@ -2623,6 +2624,7 @@ function setupInputListeners() {
   }
 
   function showCaptureToast(text) {
+    console.log('[Toast] showCaptureToast called with:', text); // 5
     const el = document.createElement('div');
     el.className = 'capture-toast';
     el.setAttribute('role', 'alert');
@@ -2657,7 +2659,11 @@ function setupInputListeners() {
     '.sidebar .actions', '[data-section="actions"]', '.panel-actions .list', 'aside[data-module="activity"][data-name="Ход соревнований"]'
   ];
   const logEl = candidates.map(q => document.querySelector(q)).find(Boolean);
-  if (!logEl) return;
+  if (!logEl) {
+      console.warn('[Toast] No log element found – exit');
+      return; // тихо выходим, если сайдбар не найден
+  }
+  console.log('[Toast] log element found:', logEl);
 
   const seen = new Set();
 
@@ -2672,6 +2678,7 @@ function setupInputListeners() {
         if (!isCapture(t)) return;
         if (seen.has(t)) return;
         seen.add(t);
+        console.log('[Toast] NEW capture detected →', t);
         showCaptureToast(t);
       });
     }
