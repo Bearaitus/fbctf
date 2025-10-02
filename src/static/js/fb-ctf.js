@@ -1047,8 +1047,9 @@ function setupInputListeners() {
               setTimeout(function() {
                 $('.answer_no_bases').addClass('completely-hidden');
                 $('.answer_captured').removeClass('completely-hidden');
-                $('.js-close-modal', $container).click();
-              }, 2000);
+                $('.js-close-modal', $container).click()
+                location.reload();
+              }, 1000);
             } else {
               // TODO: Make this a modal
               console.log('Failed');
@@ -2585,6 +2586,93 @@ function setupInputListeners() {
     // load the modal
     Modal.init();
 
+    // Утилита получения списка захваченных баз
+    async function getCaptureData() {
+      const r = await fetch('/captures.php', { credentials: 'include' });
+      if (!r.ok) throw new Error('fetch captures failed');
+      return await r.json();
+    }
+
+    // Показ полноэкранного баннера
+    function showBanner(message, type) {
+      let banner = document.getElementById('fullscreenBanner');
+      if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'fullscreenBanner';
+        document.body.appendChild(banner);
+      }
+      banner.className = `fullscreen-banner ${type}`;
+      banner.textContent = message;
+      requestAnimationFrame(() => banner.classList.add('visible'));
+      setTimeout(() => banner.classList.remove('visible'), 3500);
+    }
+
+    // Хранение предыдущего состояния захватов
+    let previousCaptures = new Set();
+    (async () => {
+      try {
+        const data = await getCaptureData();
+        previousCaptures = new Set(data);
+      } catch (e) {
+        console.error(e);
+      }
+    })();
+
+    // Периодический опрос сервера
+    const CAPTURE_POLL_INTERVAL = 2000;
+    async function pollCaptures() {
+      try {
+        const data = await getCaptureData();
+        const current = new Set(data);
+        const newly = [...current].filter(id => !previousCaptures.has(id));
+        if (newly.length) {
+          const names = newly.map(id => `База #${id}`).join(', ');
+          showBanner(`Захвачена ${names}!`, 'capture');
+        }
+        previousCaptures = current;
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setTimeout(pollCaptures, CAPTURE_POLL_INTERVAL);
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', pollCaptures);
+    } else {
+      pollCaptures();
+    }
+
+    // Отправка флага
+    async function submitFlag(flag, levelId) {
+      try {
+        const resp = await fetch('/flag.php', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ flag, levelId })
+        });
+        const json = await resp.json();
+        if (resp.ok && json.success) {
+          showBanner(`Флаг для базы #${levelId} принят!`, 'flag');
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    // Привязка к форме флага (при наличии)
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('flagForm');
+      if (form) {
+        form.addEventListener('submit', async e => {
+          e.preventDefault();
+          const fd = new FormData(form);
+          const flag = fd.get('flag').trim();
+          const levelId = Number(fd.get('levelId'));
+          await submitFlag(flag, levelId);
+        });
+      }
+    });
     // any modules that does stuff based on loaded content (for
     //  example, modals or svg grahics) should get fired when the
     //  "content-loaded" event gets fired. The modules that load
