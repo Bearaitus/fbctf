@@ -626,7 +626,7 @@ function setupInputListeners() {
      */
     function getCapturedByMarkup(capturedBy) {
       if (capturedBy === undefined) {
-        return "Uncaptured";
+        return "Не выполнено";
       }
 
       var capturedClass = (capturedBy === FB_CTF.data.CONF.currentTeam) ? 'your-name' : 'opponent-name';
