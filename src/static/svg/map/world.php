@@ -1,11 +1,14 @@
 <?hh // strict
+
 require_once ($_SERVER['DOCUMENT_ROOT'].'/../vendor/autoload.php');
 
 class WorldMapController extends ModuleController {
   public async function genRender(): Awaitable<:xhp> {
+
     /* HH_IGNORE_ERROR[1002] */
     SessionUtils::sessionStart();
     SessionUtils::enforceLogin();
+
     $worldMap = await $this->genRenderWorldMap();
     return
       <svg
@@ -34,8 +37,9 @@ class WorldMapController extends ModuleController {
   public async function genRenderWorldMap(): Awaitable<:xhp> {
     $svg_countries = <g class="countries"></g>;
 
-    $all_levels      = await Level::genAllLevels();
+    $all_levels = await Level::genAllLevels();
     $all_map_countries = await Country::genAllCountriesForMap();
+
     $levels_map = Map {};
     foreach ($all_levels as $level) {
       $levels_map[$level->getEntityId()] = $level;
@@ -50,6 +54,7 @@ class WorldMapController extends ModuleController {
           ($country->getUsed() && $is_active_level) ? 'land active' : 'land';
         $map_indicator = 'map-indicator ';
         $data_captured = null;
+
         if ($level) {
           $my_previous_score = await ScoreLog::genAllPreviousScore(
             $level->getId(),
@@ -66,7 +71,8 @@ class WorldMapController extends ModuleController {
             $data_captured = SessionUtils::sessionTeamName();
           } else if ($other_previous_score) {
             $map_indicator .= 'captured--opponent';
-            $completed_by = await MultiTeam::genCompletedLevel($level->getId());
+            $completed_by =
+              await MultiTeam::genCompletedLevel($level->getId());
             $data_captured = '';
             foreach ($completed_by as $c) {
               $data_captured .= ' '.$c->getName();
@@ -91,37 +97,13 @@ class WorldMapController extends ModuleController {
             <path d="M0,9.1L4.8,0h0.1l4.8,9.1v0L0,9.1L0,9.1z"></path>
           </g>
         </g>;
-
       if ($data_captured) {
         $g->setAttribute('data-captured', $data_captured);
       }
-
       $svg_countries->appendChild($g);
     }
 
-    /* ----------  ДОЕННЫЙ БАННЕР  ---------- */
-    $banner = <g id="capture-banner" visibility="hidden">
-                <rect x="0" y="0" width="100%" height="100%"
-                      fill="rgba(0,0,0,0.8)"/>
-                <text id="banner-text"
-                      x="50%" y="50%"
-                      dominant-baseline="middle"
-                      text-anchor="middle"
-                      fill="#fff"
-                      font-size="48"
-                      font-weight="bold"></text>
-              </g>;
-
-    if ($data_captured) {
-      $banner->setAttribute('data-captured', $data_captured);
-    }
-
-    $root = <g>
-              {$svg_countries}
-              {$banner}
-            </g>;
-
-    return $root;
+    return $svg_countries;
   }
 }
 
