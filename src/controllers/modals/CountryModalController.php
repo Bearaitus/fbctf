@@ -48,6 +48,12 @@ class CountryModalController extends ModalController {
                 <span class="points-number fb-numbers"></span>
                 <span class="points-label">{tr('PTS')}</span>
               </div>
+              <div class="country-stats">
+                <dl>
+                  <dt>{tr('category')}</dt>
+                  <dd class="country-category"></dd>
+                </dl>
+              </div>
             </div>
           </div>;
       case 'capture':
@@ -225,9 +231,8 @@ class CountryModalController extends ModalController {
                   </div>
                   <div class="country-stats">
                     <dl>
-                      <dt>{tr('category')}</dt>
-                      <dd class="country-category"></dd>
-
+                      <dt>{tr('type')}</dt>
+                      <dd class="country-type"></dd>
                       <dt>Первый захват</dt>
                       <dd class="opponent-name country-owner"></dd>
                     </dl>
