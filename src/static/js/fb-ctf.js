@@ -2940,6 +2940,109 @@ function setupInputListeners() {
       $customEmblemCarouselNotice.removeClass('active');
     });
 
+    /* === Capture toast on Base/Flag events (minimal, no deps) === */
+(function () {
+  // Показываем тост только на игровом экране
+  if (!document.body) return;
+
+  // Вставляем CSS один раз
+  const styleId = 'capture-toast-style';
+  if (!document.getElementById(styleId)) {
+    const st = document.createElement('style');
+    st.id = styleId;
+    st.textContent = `
+      .capture-toast {
+        position: fixed;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 80vw;
+        background: rgba(0,0,0,.88);
+        color: #fff;
+        padding: 14px 18px;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0,0,0,.35);
+        z-index: 9999;
+        font-size: 16px;
+        line-height: 1.35;
+        opacity: 0;
+        transition: opacity .2s ease;
+      }
+      .capture-toast.show { opacity: 1; }
+      .capture-toast__close {
+        position: absolute;
+        top: 6px; right: 8px;
+        border: 0; background: transparent; color: #fff;
+        font-size: 18px; cursor: pointer;
+      }
+      .capture-toast__text { padding-right: 28px; }
+    `;
+    document.head.appendChild(st);
+  }
+
+  // Функция показа тоста
+  function showCaptureToast(text) {
+    const el = document.createElement('div');
+    el.className = 'capture-toast';
+    el.setAttribute('role', 'alert');
+
+    const btn = document.createElement('button');
+    btn.className = 'capture-toast__close';
+    btn.setAttribute('aria-label', 'Close');
+    btn.textContent = '×';
+    btn.addEventListener('click', () => {
+      el.classList.remove('show');
+      setTimeout(() => el.remove(), 180);
+    });
+
+    const txt = document.createElement('div');
+    txt.className = 'capture-toast__text';
+    txt.textContent = text;
+
+    el.appendChild(btn);
+    el.appendChild(txt);
+    document.body.appendChild(el);
+    requestAnimationFrame(() => el.classList.add('show'));
+
+    // Авто-закрытие через 5 сек.
+    setTimeout(() => {
+      if (!document.body.contains(el)) return;
+      el.classList.remove('show');
+      setTimeout(() => el.remove(), 180);
+    }, 5000);
+  }
+
+  // Находим контейнер «ДЕЙСТВИЯ» (разные селекторы на случай тем/форков)
+  const candidates = [
+    '#actions .list', '#actions', '.actions .list', '.actions', '.game-log', '.log-actions',
+    '.sidebar .actions', '[data-section="actions"]', '.panel-actions .list'
+  ];
+  const logEl = candidates.map(q => document.querySelector(q)).find(Boolean);
+  if (!logEl) return; // тихо выходим, если сайдбар не найден
+
+  // Не дублируем уже показанные сообщения
+  const seen = new Set();
+
+  // Считаем, что захват — это строка с «captured/захват»
+  const isCapture = (s) => /(captured|захват(ил|ила|или)?|взял(а)?|взяты?|флаг|база)/i.test(s);
+
+  const obs = new MutationObserver((mutations) => {
+    for (const m of mutations) {
+      m.addedNodes && m.addedNodes.forEach((n) => {
+        if (n.nodeType !== 1) return;
+        const t = (n.textContent || '').trim();
+        if (!t) return;
+        if (!isCapture(t)) return;
+        if (seen.has(t)) return;
+        seen.add(t);
+        showCaptureToast(t);
+      });
+    }
+  });
+
+  // Следим за появлением новых пунктов лога
+  obs.observe(logEl, { childList: true, subtree: true });
+})();
   }; // FB_CTF.init()
 })(window.FB_CTF = {});
 
