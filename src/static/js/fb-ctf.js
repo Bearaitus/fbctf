@@ -1048,8 +1048,7 @@ function setupInputListeners() {
                 $('.answer_no_bases').addClass('completely-hidden');
                 $('.answer_captured').removeClass('completely-hidden');
                 $('.js-close-modal', $container).click()
-                location.reload();
-              }, 1000);
+              }, 2000);
             } else {
               // TODO: Make this a modal
               console.log('Failed');
