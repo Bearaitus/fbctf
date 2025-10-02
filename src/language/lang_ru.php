@@ -789,5 +789,6 @@ $translations = array(
   'Please login here with username and password. If you have not registered, you may do so by clicking "Sign Up" below.' => 'Авторизуйтесь, используя название команды и пароль',
   'Track your competition by clicking "scoreboard" to access real-time game statistics and graphs.' => 'Нажмите Рейтинг, чтобы посмотреть, на каком месте Ваша команда прямо сейчас',
   'Change your password.' => 'Смена пароля',
-  'Help' => 'Помощь'
+  'Help' => 'Помощь',
+  'Uncaptured' => 'Не выполнено'
 );

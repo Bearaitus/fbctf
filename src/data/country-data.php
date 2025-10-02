@@ -93,7 +93,7 @@ class CountryDataController extends DataController {
         $owner = await MultiTeam::genFirstCapture($level->getId()); // TODO: Combine Awaits
         $owner = $owner->getName();
       } else {
-        $owner = 'Uncaptured';
+        $owner = tr('Uncaptured');
       }
       $country_data = (object) array(
         'level_id' => $level->getId(),
