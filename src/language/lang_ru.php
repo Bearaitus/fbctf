@@ -312,9 +312,9 @@ $translations = array(
   'All Status' =>
     'Все статусы',
   'Enabled' =>
-    'Включено',
+    'Включить',
   'Disabled' =>
-    'Выключено',
+    'Выключить',
   'Quiz Level' =>
     'Уровень Викторины',
   'Show Answer' =>
@@ -670,8 +670,6 @@ $translations = array(
     'След.',
   'Skip to play' =>
     'Пропустить',
-  'Powered By Facebook' =>
-    'При поддержке Facebook',
   'Active Directory / LDAP' =>
     'Active Directory / LDAP',
   'LDAP Server' =>
