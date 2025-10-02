@@ -589,7 +589,7 @@ $translations = array(
   'category' =>
     'категория',
   'capture_' =>
-    'захват ',
+    'Страна ',
   'Insert your answer' =>
     'Введите свой ответ',
   'Request Hint' =>
