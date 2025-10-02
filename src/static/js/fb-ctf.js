@@ -1032,24 +1032,56 @@ function setupInputListeners() {
             console.log('ERROR');
           }).done(function(data) {
             var responseData = JSON.parse(data);
-            if (responseData.result === 'OK') {
-              console.log('OK');
-              $($container).on('keypress', function(e) {
-              if (e.keyCode == 13) {
-                  e.preventDefault();
-                } 
-              });
-              $('.js-trigger-score', $container).text('ДА!');
-              $('input[name=answer]', $container).css("background-color", "#34C759");
-              $('.answer_no_bases > .fb-cta.cta--yellow.js-trigger-score').removeClass('js-trigger-score');
-              refreshMapData(); // Refresh map so capture shows up right away
-              getCaptureData(); // Refresh captured levels so we can't reload the modal and see a submit button
-              setTimeout(function() {
+        if (responseData.result === 'OK') {
+            console.log('OK');
+            $($container).on('keypress', function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                }
+            });
+            $('.js-trigger-score', $container).text('ДА!');
+            $('input[name=answer]', $container).css('background-color', '#34C759');
+            $('.answer_no_bases > .fb-cta.cta--yellow.js-trigger-score')
+                .removeClass('js-trigger-score');
+
+            refreshMapData();          // Refresh map so capture shows up right away
+            getCaptureData();          // Refresh captured levels
+
+            let $fullScreenOverlay = $('#fullScreenOverlay');
+            if ($fullScreenOverlay.length === 0) {
+                $fullScreenOverlay = $(
+                    `<div id="fullScreenOverlay">
+                        <span class="msg">правильный ответ</span>
+                    </div>`
+                ).appendTo('body');
+            }
+
+            $fullScreenOverlay.css({
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'rgba(0,0,0,0.85)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 9999,
+                color: '#fff',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                pointerEvents: 'none'
+            });
+
+            setTimeout(function () {
                 $('.answer_no_bases').addClass('completely-hidden');
                 $('.answer_captured').removeClass('completely-hidden');
-                $('.js-close-modal', $container).click()
-              }, 2000);
-            } else {
+
+                $('.js-close-modal', $container).click();
+
+                setTimeout(() => $fullScreenOverlay.fadeOut(300, () => $fullScreenOverlay.remove()), 1500);
+            }, 2000);
+        } else {
               // TODO: Make this a modal
               console.log('Failed');
               $('input[name=answer]', $container).css("background-color", "#FF2D55");
