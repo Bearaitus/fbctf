@@ -155,7 +155,7 @@ $translations = array(
   'Teams' =>
     'Команды',
   'Filter' =>
-    'Фильтр',
+    'Категории заданий',
   'Activity' =>
     'Ход соревнований',
   //Translations for AdminController
