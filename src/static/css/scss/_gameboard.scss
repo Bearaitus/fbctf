@@ -216,7 +216,7 @@ $module-margin: 20px;
         opacity: 1;
 
         &:not(.leaderboard-viewmode) {
-          height: calc(33vh - 62px);
+          height: 100%;
         }
         &.leaderboard-viewmode {
           height: calc(97vh - 62px);
