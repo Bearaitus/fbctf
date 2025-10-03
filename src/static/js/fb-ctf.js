@@ -1611,6 +1611,7 @@ function setupInputListeners() {
 
         return loadModuleGeneric(activityModulePath, activityTargetSelector, function() {
           refresh_active_activity = false;
+          console.log("Checking li", $li, idAttr);
 
           // === НОВОЕ: проверка новых активностей ===
           $('aside[data-module="activity"] .activity-stream li').each(function() {
