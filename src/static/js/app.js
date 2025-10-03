@@ -49,10 +49,38 @@ function enableAdminActiveState() {
   }).addClass('active');
 }
 
+// ======== НОВОЕ: функция для показа баннера ========
+function showCaptureBanner(text) {
+  if (document.getElementById('capture-banner')) return;
+
+  var banner = document.createElement('div');
+  banner.id = 'capture-banner';
+  banner.innerHTML = '<div class="inner">' + text + '</div>';
+  document.body.appendChild(banner);
+
+  banner.style.cssText = `
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,0.85);
+    color:#fff;font-size:48px;font-weight:bold;
+    display:flex;align-items:center;justify-content:center;
+    z-index:9999;
+  `;
+  banner.querySelector('.inner').style.cssText = `
+    padding:30px 40px;
+    border:4px solid #fff;
+    background:#700;
+    text-transform:uppercase;
+  `;
+
+  setTimeout(function() {
+    if (banner && banner.parentNode) banner.remove();
+  }, 3000);
+}
+
 $(document).ready(function() {
   var page_location = window.location.pathname + window.location.search;
   if (window.innerWidth < 960 && page_location != '/index.php?page=mobile') {
-  window.location = '/index.php?page=mobile';
+    window.location = '/index.php?page=mobile';
   } else if (window.innerWidth < 960 && page_location == '/index.php?page=mobile') {
     setTimeout(function() {
       window.location = '/index.php';
@@ -75,5 +103,13 @@ $(document).ready(function() {
 
   $('body').trigger('content-loaded', {
     page: section
+  });
+
+  // ======== НОВОЕ: ловим события активности ========
+  $(document).on('new-activity', function(e, activity) {
+    if (activity.action === 'captured') {
+      var text = activity.formatted_subject + ' захватила ' + activity.formatted_entity;
+      showCaptureBanner(text);
+    }
   });
 });

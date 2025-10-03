@@ -52,7 +52,7 @@ class ActivityModuleController extends ModuleController {
           $formatted_entity = $activity->getFormattedEntity();
         }
         $activity_ul->appendChild(
-          <li class={$class_li}>
+          <li class={$class_li} data-id={$activity->getId()}>
             [ {time_ago($ts)} ]
             <span class={$class_span}>
               {$activity->getFormattedSubject()}
@@ -62,7 +62,7 @@ class ActivityModuleController extends ModuleController {
         );
       } else {
         $activity_ul->appendChild(
-          <li class={'opponent-team'}>
+          <li class={'opponent-team'} data-id={$activity->getId()}>
             [ {time_ago($ts)} ]
             <span class={'opponent-name'}>
               {$activity->getFormattedMessage()}

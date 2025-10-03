@@ -1600,6 +1600,9 @@ function setupInputListeners() {
     /**
      * load the activity module
      */
+    // глобальная переменная
+    var lastActivityId = 0;
+
     function loadActivityModule(force = false) {
       if (refresh_active_activity === false || force === true) {
         refresh_active_activity = true;
@@ -1608,9 +1611,34 @@ function setupInputListeners() {
 
         return loadModuleGeneric(activityModulePath, activityTargetSelector, function() {
           refresh_active_activity = false;
+
+          // === НОВОЕ: проверка новых активностей ===
+          $('aside[data-module="activity"] .activity-stream li').each(function() {
+            var $li = $(this);
+            var idAttr = $li.data('id');   // нужно добавить data-id в activity.php
+            var actionText = $li.text();
+            
+            // если idAttr отсутствует — пропускаем
+            if (!idAttr) return;
+
+            var id = parseInt(idAttr, 10);
+            if (id > lastActivityId) {
+              lastActivityId = id;
+
+              if (actionText.indexOf('captured') !== -1) {
+                // генерим объект события
+                $(document).trigger('new-activity', {
+                  action: 'captured',
+                  formatted_subject: $li.find('span').text(),
+                  formatted_entity: actionText.split('captured')[1].trim()
+                });
+              }
+            }
+          });
         });
       }
     }
+
 
     /**
      * load the configuration data
