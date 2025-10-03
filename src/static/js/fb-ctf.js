@@ -1614,7 +1614,10 @@ function setupInputListeners() {
 
           $('aside[data-module="activity"] .activity-stream li').each(function() {
             var $li = $(this);
-            var idAttr = $li.data('id');
+            var idAttr = $li.data('id');   // нужно добавить data-id в activity.php
+            var actionText = $li.text();
+            
+            // если idAttr отсутствует — пропускаем
             if (!idAttr) return;
 
             console.log("Checking li", idAttr, $li.text());
@@ -1623,13 +1626,12 @@ function setupInputListeners() {
             if (id > lastActivityId) {
               lastActivityId = id;
 
-              var actionText = $li.text();
-              if (actionText.indexOf('захвачено') !== -1 || actionText.indexOf('captured') !== -1) {
-                console.log("Triggering event for captured", id, actionText);
+              if (actionText.indexOf('captured') !== -1) {
+                // генерим объект события
                 $(document).trigger('new-activity', {
                   action: 'captured',
                   formatted_subject: $li.find('span').text(),
-                  formatted_entity: actionText.split('захвачено')[1]?.trim() || actionText.split('captured')[1]?.trim()
+                  formatted_entity: actionText.split('captured')[1].trim()
                 });
               }
             }
