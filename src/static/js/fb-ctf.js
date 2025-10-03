@@ -1626,12 +1626,12 @@ function setupInputListeners() {
             if (id > lastActivityId) {
               lastActivityId = id;
 
-              if (actionText.indexOf('captured') !== -1) {
+              if (actionText.indexOf('захвачено') !== -1) {
                 // генерим объект события
                 $(document).trigger('new-activity', {
                   action: 'captured',
                   formatted_subject: $li.find('span').text(),
-                  formatted_entity: actionText.split('captured')[1].trim()
+                  formatted_entity: actionText.split('захвачено')[1].trim()
                 });
               }
             }
