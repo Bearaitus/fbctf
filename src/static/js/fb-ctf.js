@@ -1614,20 +1614,16 @@ function setupInputListeners() {
 
           $('aside[data-module="activity"] .activity-stream li').each(function() {
             var $li = $(this);
-            var idAttr = $li.data('id');   // нужно добавить data-id в activity.php
+            var idAttr = $li.data('id');
             var actionText = $li.text();
             
-            // если idAttr отсутствует — пропускаем
             if (!idAttr) return;
-
-            console.log("Checking li", idAttr, $li.text());
 
             var id = parseInt(idAttr, 10);
             if (id > lastActivityId) {
               lastActivityId = id;
 
               if (actionText.indexOf('захвачено') !== -1) {
-                // генерим объект события
                 $(document).trigger('new-activity', {
                   action: 'captured',
                   formatted_subject: $li.find('span').text(),
