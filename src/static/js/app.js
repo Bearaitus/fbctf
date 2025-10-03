@@ -49,7 +49,6 @@ function enableAdminActiveState() {
   }).addClass('active');
 }
 
-// ======== НОВОЕ: функция для показа баннера ========
 function showCaptureBanner(text) {
   if (document.getElementById('capture-banner')) return;
 
@@ -60,7 +59,7 @@ function showCaptureBanner(text) {
 
   banner.style.cssText = `
     position:fixed;top:0;left:0;right:0;bottom:0;
-    background:rgba(0,0,0,0.85);
+    background:rgba(33,33,33,0.85);
     color:#fff;font-size:48px;font-weight:bold;
     display:flex;align-items:center;justify-content:center;
     z-index:9999;
