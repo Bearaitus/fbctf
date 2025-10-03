@@ -1611,27 +1611,25 @@ function setupInputListeners() {
 
         return loadModuleGeneric(activityModulePath, activityTargetSelector, function() {
           refresh_active_activity = false;
-          console.log("Checking li", $li, idAttr);
 
-          // === НОВОЕ: проверка новых активностей ===
           $('aside[data-module="activity"] .activity-stream li').each(function() {
             var $li = $(this);
-            var idAttr = $li.data('id');   // нужно добавить data-id в activity.php
-            var actionText = $li.text();
-            
-            // если idAttr отсутствует — пропускаем
+            var idAttr = $li.data('id');
             if (!idAttr) return;
+
+            console.log("Checking li", idAttr, $li.text());
 
             var id = parseInt(idAttr, 10);
             if (id > lastActivityId) {
               lastActivityId = id;
 
-              if (actionText.indexOf('captured') !== -1) {
-                // генерим объект события
+              var actionText = $li.text();
+              if (actionText.indexOf('захвачено') !== -1 || actionText.indexOf('captured') !== -1) {
+                console.log("Triggering event for captured", id, actionText);
                 $(document).trigger('new-activity', {
                   action: 'captured',
                   formatted_subject: $li.find('span').text(),
-                  formatted_entity: actionText.split('captured')[1].trim()
+                  formatted_entity: actionText.split('захвачено')[1]?.trim() || actionText.split('captured')[1]?.trim()
                 });
               }
             }
