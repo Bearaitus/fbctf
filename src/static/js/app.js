@@ -105,8 +105,8 @@ $(document).ready(function() {
     page: section
   });
 
-  // ======== НОВОЕ: ловим события активности ========
   $(document).on('new-activity', function(e, activity) {
+    console.log("NEW ACTIVITY", activity); // для теста
     if (activity.action === 'captured') {
       var text = activity.formatted_subject + ' захватила ' + activity.formatted_entity;
       showCaptureBanner(text);
