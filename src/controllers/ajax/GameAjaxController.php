@@ -67,7 +67,6 @@ class GameAjaxController extends AjaxController {
               return Utils::error_response('MChoice Failed', 'game');
             }
             MultiTeam::invalidateMCRecords();
-            await ActivityLog::genCaptureLog(SessionUtils::sessionTeam(), $level_id);
             return Utils::ok_response('Success', 'game');
           } else {
             await FailureLog::genLogFailedScore(
