@@ -68,7 +68,7 @@ function showCaptureBanner(text) {
   banner.querySelector('.inner').style.cssText = `
     padding:30px 40px;
     border:4px solid #fff;
-    background:#700;
+    background: #ff0000;
     text-transform:uppercase;
   `;
 
