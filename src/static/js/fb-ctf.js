@@ -583,7 +583,7 @@ function setupInputListeners() {
           loadTeamsModule(true);
           loadLeaderboardModule(true);
           loadClockModule();
-        }, 60000);
+        }, 10000);
 
         // Commands
         setInterval(function() {
