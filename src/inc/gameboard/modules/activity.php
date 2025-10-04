@@ -56,18 +56,29 @@ class ActivityModuleController extends ModuleController {
           $formatted_entity = $activity->getFormattedEntity();
         }
 
+        $action = $activity->getAction();
+        $team = $activity->getFormattedSubject();
+        $text = '';
+
+        if ($action === 'captured') {
+          $text = 'Команда '.$team.' выполнила задание '.$formatted_entity;
+        } else if ($action === 'enabled') {
+          $text = 'Задание '.$formatted_entity.' было включено';
+        } else if ($action === 'added') {
+          $text = 'Задание '.$formatted_entity.' было добавлено';
+        } else {
+          // fallback: покажем сырые данные
+          $text = $team.' '.$action.' '.$formatted_entity;
+        }
+
         $activity_ul->appendChild(
           <li class={$class_li}
               data-id={$activity->getId()}
-              data-team={$activity->getFormattedSubject()}
+              data-team={$team}
               data-entity={$activity->getEntity()}
-              data-action={$activity->getAction()}
+              data-action={$action}
               data-target={$formatted_entity}>
-            [ {time_ago($ts)} ]
-            <span class={$class_span}>
-              {$activity->getFormattedSubject()}
-            </span>&nbsp;{tr($activity->getAction())}&nbsp;
-            {$formatted_entity}
+            [ {time_ago($ts)} ] {$text}
           </li>
         );
       } else {
