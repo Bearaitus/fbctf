@@ -57,19 +57,25 @@ function showCaptureBanner(text) {
   banner.innerHTML = '<div class="inner">' + text + '</div>';
   document.body.appendChild(banner);
 
+  // Фон делим пополам: левая половина синяя, правая красная
   banner.style.cssText = `
     position:fixed;top:0;left:0;right:0;bottom:0;
-    background:rgba(33,33,33,0.85);
-    color:#fff;font-size:48px;font-weight:bold;
+    background: linear-gradient(to right, #0000ff 50%, #ff0000 50%);
     display:flex;align-items:center;justify-content:center;
     z-index:9999;
     font-family:'TT_Positive_Bold', sans-serif;
   `;
+
+  // Текстовый блок в центре
   banner.querySelector('.inner').style.cssText = `
     padding:30px 40px;
     border:4px solid #fff;
-    background: #ff0000;
+    background:#212121;
+    color:#fff;
+    font-size:48px;
+    font-weight:bold;
     text-transform:uppercase;
+    text-align:center;
   `;
 
   setTimeout(function() {
@@ -107,7 +113,21 @@ $(document).ready(function() {
 
   $(document).on('new-activity', function(e, activity) {
     if (activity.action === 'captured') {
-      var text = 'Команда ' + activity.formatted_subject + ' выполнила задание ' + activity.formatted_entity;
+      var investigationCountries = ['Россия', 'США', 'Германия']; // расследование
+      var captureCountries = ['Боливия', 'Украина', 'Румыния'];   // захват
+
+      var country = activity.formatted_entity;
+      var team = activity.formatted_subject;
+      var text = '';
+
+      if (investigationCountries.includes(country)) {
+        text = 'Команда ' + team + ' расследовала инцидент в стране ' + country;
+      } else if (captureCountries.includes(country)) {
+        text = 'Команда ' + team + ' захватила страну ' + country;
+      } else {
+        text = 'Команда ' + team + ' выполнила задание ' + country;
+      }
+
       showCaptureBanner(text);
     }
   });
