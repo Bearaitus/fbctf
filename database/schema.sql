@@ -236,8 +236,8 @@ INSERT INTO `configuration` (field, value, description) VALUES("gameboard", "1",
 INSERT INTO `configuration` (field, value, description) VALUES("auto_announce", "0", "(Boolean) Auto game announcements");
 INSERT INTO `configuration` (field, value, description) VALUES("progressive_cycle", "300", "(Integer) Frequency to take progressive scoreboard in seconds");
 INSERT INTO `configuration` (field, value, description) VALUES("bases_cycle", "5", "(Integer) Frequency to score base levels in seconds");
-INSERT INTO `configuration` (field, value, description) VALUES("autorun_cycle", "5", "(Integer) Frequency to cycle autorun in seconds");
-INSERT INTO `configuration` (field, value, description) VALUES("gameboard_cycle", "3", "(Integer) Frequency to cycle gameboard in seconds");
+INSERT INTO `configuration` (field, value, description) VALUES("autorun_cycle", "30", "(Integer) Frequency to cycle autorun in seconds");
+INSERT INTO `configuration` (field, value, description) VALUES("gameboard_cycle", "5", "(Integer) Frequency to cycle gameboard in seconds");
 INSERT INTO `configuration` (field, value, description) VALUES("conf_cycle", "10", "(Integer) Frequency to cycle configuration and commandline in seconds");
 INSERT INTO `configuration` (field, value, description) VALUES("leaderboard_limit", "50", "(Integer) Maximum number of teams to show on the leaderboard");
 INSERT INTO `configuration` (field, value, description) VALUES("registration", "0", "(Boolean) Ability to register teams");
