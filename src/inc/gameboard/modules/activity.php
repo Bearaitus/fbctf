@@ -19,6 +19,7 @@ class ActivityModuleController extends ModuleController {
     $language = $config->getValue();
     $activity_count = count($all_activity);
     $activity_limit = ($activity_count > 100) ? 100 : $activity_count;
+
     for ($i = 0; $i < $activity_limit; $i++) {
       $activity = $all_activity[$i];
       $subject = $activity->getSubject();
@@ -28,12 +29,14 @@ class ActivityModuleController extends ModuleController {
       if ($visible === false) {
         continue;
       }
+
       if (($subject !== '') && ($entity !== '')) {
         $class_li = '';
         $class_span = '';
         list($subject_type, $subject_id) =
           explode(':', $activity->getSubject());
         list($entity_type, $entity_id) = explode(':', $activity->getEntity());
+
         if ($subject_type === 'Team') {
           if (intval($subject_id) === SessionUtils::sessionTeam()) {
             $class_li = 'your-team';
@@ -43,6 +46,7 @@ class ActivityModuleController extends ModuleController {
             $class_span = 'opponent-name';
           }
         }
+
         if ($entity_type === 'Country') {
           $formatted_entity = locale_get_display_region(
             '-'.$activity->getFormattedEntity(),
@@ -51,8 +55,14 @@ class ActivityModuleController extends ModuleController {
         } else {
           $formatted_entity = $activity->getFormattedEntity();
         }
+
         $activity_ul->appendChild(
-          <li class={$class_li} data-id={$activity->getId()}>
+          <li class={$class_li}
+              data-id={$activity->getId()}
+              data-team={$activity->getFormattedSubject()}
+              data-entity={$activity->getEntity()}
+              data-action={$activity->getAction()}
+              data-target={$formatted_entity}>
             [ {time_ago($ts)} ]
             <span class={$class_span}>
               {$activity->getFormattedSubject()}
@@ -62,7 +72,9 @@ class ActivityModuleController extends ModuleController {
         );
       } else {
         $activity_ul->appendChild(
-          <li class={'opponent-team'} data-id={$activity->getId()}>
+          <li class={'opponent-team'}
+              data-id={$activity->getId()}
+              data-action={$activity->getAction()}>
             [ {time_ago($ts)} ]
             <span class={'opponent-name'}>
               {$activity->getFormattedMessage()}

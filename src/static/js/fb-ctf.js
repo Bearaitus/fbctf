@@ -1601,6 +1601,7 @@ function setupInputListeners() {
      * load the activity module
      */
     var lastActivityId = 0;
+    var initialized = false;
 
     function loadActivityModule(force = false) {
       if (refresh_active_activity === false || force === true) {
@@ -1617,6 +1618,14 @@ function setupInputListeners() {
             if (!idAttr) return;
 
             var id = parseInt(idAttr, 10);
+
+            if (!initialized) {
+              if (id > lastActivityId) {
+                lastActivityId = id;
+              }
+              return;
+            }
+
             if (id > lastActivityId) {
               lastActivityId = id;
 
@@ -1631,6 +1640,8 @@ function setupInputListeners() {
               });
             }
           });
+
+          initialized = true;
         });
       }
     }
