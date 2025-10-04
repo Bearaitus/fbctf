@@ -788,5 +788,6 @@ $translations = array(
   'Track your competition by clicking "scoreboard" to access real-time game statistics and graphs.' => 'Нажмите Рейтинг, чтобы посмотреть, на каком месте Ваша команда прямо сейчас',
   'Change your password.' => 'Смена пароля',
   'Help' => 'Помощь',
-  'Uncaptured' => 'Не выполнено'
+  'Uncaptured' => 'Не выполнено',
+  'Announcement Controls' => 'Уведомления'
 );
