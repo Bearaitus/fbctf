@@ -1631,13 +1631,15 @@ function setupInputListeners() {
 
               var team = $li.data('team') || '';
               var target = $li.data('target') || '';
-              var action = $li.data('action') || 'captured';
+              var action = $li.data('action') || '';
 
-              $(document).trigger('new-activity', {
-                action: action,
-                formatted_subject: team,
-                formatted_entity: target
-              });
+              if (action === 'captured') {
+                $(document).trigger('new-activity', {
+                  action: action,
+                  formatted_subject: team,
+                  formatted_entity: target
+                });
+              }
             }
           });
 

@@ -57,7 +57,6 @@ function showCaptureBanner(text) {
   banner.innerHTML = '<div class="inner">' + text + '</div>';
   document.body.appendChild(banner);
 
-  // Фон делим пополам: левая половина синяя, правая красная
   banner.style.cssText = `
     position:fixed;top:0;left:0;right:0;bottom:0;
     background: linear-gradient(to right, #0000ff 50%, #ff0000 50%);
@@ -66,7 +65,6 @@ function showCaptureBanner(text) {
     font-family:'TT_Positive_Bold', sans-serif;
   `;
 
-  // Текстовый блок в центре
   banner.querySelector('.inner').style.cssText = `
     padding:30px 40px;
     border:4px solid #fff;
