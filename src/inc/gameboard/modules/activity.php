@@ -56,29 +56,43 @@ class ActivityModuleController extends ModuleController {
           $formatted_entity = $activity->getFormattedEntity();
         }
 
+        $team_class = $class_span === '' ? 'accent' : $class_span.' accent';
+        $team_node = <span class={$team_class}>{$activity->getFormattedSubject()}</span>;
+        $country_node = <span class={'accent'}>{$formatted_entity}</span>;
+
         $action = $activity->getAction();
-        $team = $activity->getFormattedSubject();
-        $text = '';
+        $line = <x:frag />;
 
         if ($action === 'captured') {
-          $text = 'Команда '.$team.' выполнила задание '.$formatted_entity;
+          $line =
+            <x:frag>
+              Команда {$team_node} выполнила задание {$country_node}
+            </x:frag>;
         } else if ($action === 'enabled') {
-          $text = 'Задание '.$formatted_entity.' было включено';
+          $line =
+            <x:frag>
+              Задание {$country_node} было включено
+            </x:frag>;
         } else if ($action === 'added') {
-          $text = 'Задание '.$formatted_entity.' было добавлено';
+          $line =
+            <x:frag>
+              Задание {$country_node} было добавлено
+            </x:frag>;
         } else {
-          // fallback: покажем сырые данные
-          $text = $team.' '.$action.' '.$formatted_entity;
+          $line =
+            <x:frag>
+              {$team_node} {$action} {$country_node}
+            </x:frag>;
         }
 
         $activity_ul->appendChild(
           <li class={$class_li}
               data-id={$activity->getId()}
-              data-team={$team}
+              data-team={$activity->getFormattedSubject()}
               data-entity={$activity->getEntity()}
               data-action={$action}
               data-target={$formatted_entity}>
-            [ {time_ago($ts)} ] {$text}
+            [ {time_ago($ts)} ] {$line}
           </li>
         );
       } else {

@@ -279,6 +279,11 @@ $module-margin: 20px;
 
     // activity module
     &[data-module="activity"] {
+
+      .activity-stream .accent {
+          color: #ff0000;
+        }
+        
       .activity-stream li {
         position: relative;
         padding: 4px 0 4px 18px;
@@ -312,6 +317,7 @@ $module-margin: 20px;
     // data-module = activity
 
     &[data-module="under-attack"] {
+
       .activity-stream {
         li {
           margin: 8px 0;
