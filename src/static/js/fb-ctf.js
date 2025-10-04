@@ -1624,19 +1624,17 @@ function setupInputListeners() {
               var target = $li.data('target') || '';
               var action = $li.data('action') || 'captured';
 
-              var bannerText = team + ' захватила ' + target;
-
               $(document).trigger('new-activity', {
                 action: action,
                 formatted_subject: team,
-                formatted_entity: target,
-                banner_text: bannerText
+                formatted_entity: target
               });
             }
           });
         });
       }
     }
+
 
     /**
      * load the configuration data
