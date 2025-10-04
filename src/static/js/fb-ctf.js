@@ -1600,7 +1600,6 @@ function setupInputListeners() {
     /**
      * load the activity module
      */
-    // глобальная переменная
     var lastActivityId = 0;
 
     function loadActivityModule(force = false) {
@@ -1615,27 +1614,29 @@ function setupInputListeners() {
           $('aside[data-module="activity"] .activity-stream li').each(function() {
             var $li = $(this);
             var idAttr = $li.data('id');
-            var actionText = $li.text();
-            
             if (!idAttr) return;
 
             var id = parseInt(idAttr, 10);
             if (id > lastActivityId) {
               lastActivityId = id;
 
-              if (actionText.indexOf('захвачено') !== -1) {
-                $(document).trigger('new-activity', {
-                  action: 'captured',
-                  formatted_subject: $li.find('span').text(),
-                  formatted_entity: actionText.split('захвачено')[1].trim()
-                });
-              }
+              var team = $li.data('team') || '';
+              var target = $li.data('target') || '';
+              var action = $li.data('action') || 'captured';
+
+              var bannerText = team + ' захватила ' + target;
+
+              $(document).trigger('new-activity', {
+                action: action,
+                formatted_subject: team,
+                formatted_entity: target,
+                banner_text: bannerText
+              });
             }
           });
         });
       }
     }
-
 
     /**
      * load the configuration data

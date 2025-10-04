@@ -16,7 +16,11 @@ class ActivityViewModeModuleController extends ModuleController {
       $translated_country =
         locale_get_display_region('-'.$score['country'], $language);
       $activity_ul->appendChild(
-        <li class="opponent-team">
+        <li class="opponent-team"
+            data-id={$score['id'] ?? ''}
+            data-team={$score['team']}
+            data-action="captured"
+            data-target={$translated_country}>
           [ {time_ago($score['time'])} ]
           <span class="opponent-name">{$score['team']}</span>&nbsp;
           {tr('captured')}&nbsp;{$translated_country}
