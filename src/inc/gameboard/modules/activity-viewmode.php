@@ -23,8 +23,8 @@ class ActivityViewModeModuleController extends ModuleController {
             data-action="captured"
             data-target={$translated_country}>
           [ {time_ago($score['time'])} ]
-          Команда <span class="opponent-name" style="color:#ff0000">{$score['team']}</span>
-          выполнила задание <span style="color:#ff0000">{$translated_country}</span>
+          Команда <span class="opponent-name">{$score['team']}</span>
+          выполнила задание>{$translated_country}</span>
         </li>
       );
     }
