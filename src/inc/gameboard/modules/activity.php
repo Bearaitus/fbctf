@@ -59,10 +59,9 @@ class ActivityModuleController extends ModuleController {
               data-action={$activity->getAction()}
               data-target={$formatted_entity}>
             [ {time_ago($ts)} ]
-            <span class={$class_span}>
+            Команда <span class={$class_span}>
               {$activity->getFormattedSubject()}
-            </span>&nbsp;{tr($activity->getAction())}&nbsp;
-            {$formatted_entity}
+            </span> выполнила задание {$formatted_entity}
           </li>
         );
       } else {
