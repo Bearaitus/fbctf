@@ -106,7 +106,7 @@ $(document).ready(function() {
 
   $(document).on('new-activity', function(e, activity) {
     if (activity.action === 'captured') {
-      var text = activity.formatted_subject + ' захватила ' + activity.formatted_entity;
+      var text = 'Команда ' + activity.formatted_subject + ' выполнила задание ' + activity.formatted_entity;
       showCaptureBanner(text);
     }
   });

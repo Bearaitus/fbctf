@@ -22,11 +22,10 @@ class ActivityViewModeModuleController extends ModuleController {
             data-action="captured"
             data-target={$translated_country}>
           [ {time_ago($score['time'])} ]
-          <span class="opponent-name">{$score['team']}</span>&nbsp;
-          {tr('captured')}&nbsp;{$translated_country}
+          Команда <span class="opponent-name">{$score['team']}</span> выполнила задание {$translated_country}
         </li>
       );
-    }
+
 
     return
       <div>
