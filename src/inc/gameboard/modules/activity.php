@@ -52,23 +52,17 @@ class ActivityModuleController extends ModuleController {
           $formatted_entity = $activity->getFormattedEntity();
         }
         $activity_ul->appendChild(
-          <li class={$class_li}
-              data-id={$activity->getId()}
-              data-team={$activity->getFormattedSubject()}
-              data-entity={$activity->getEntity()}
-              data-action={$activity->getAction()}
-              data-target={$formatted_entity}>
+          <li class={$class_li} data-id={$activity->getId()}>
             [ {time_ago($ts)} ]
-            Команда <span class={$class_span}>
+            <span class={$class_span}>
               {$activity->getFormattedSubject()}
-            </span> выполнила задание {$formatted_entity}
+            </span>&nbsp;{tr($activity->getAction())}&nbsp;
+            {$formatted_entity}
           </li>
         );
       } else {
         $activity_ul->appendChild(
-          <li class={'opponent-team'}
-              data-id={$activity->getId()}
-              data-action={$activity->getAction()}>
+          <li class={'opponent-team'} data-id={$activity->getId()}>
             [ {time_ago($ts)} ]
             <span class={'opponent-name'}>
               {$activity->getFormattedMessage()}
