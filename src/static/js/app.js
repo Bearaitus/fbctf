@@ -63,6 +63,7 @@ function showCaptureBanner(text) {
     color:#fff;font-size:48px;font-weight:bold;
     display:flex;align-items:center;justify-content:center;
     z-index:9999;
+    font-family:'TT_Positive_Bold', sans-serif;
   `;
   banner.querySelector('.inner').style.cssText = `
     padding:30px 40px;
