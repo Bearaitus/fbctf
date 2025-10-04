@@ -20,8 +20,9 @@ class ActivityModuleController extends ModuleController {
     $activity_count = count($all_activity);
     $activity_limit = ($activity_count > 100) ? 100 : $activity_count;
 
-    $investigation_countries = vec['171','30','176']; // расследование
-    $capture_countries = vec['14','137','111'];       // захват
+    // --- списки стран по названию
+    $investigation_countries = vec['Украина','Россия','Беларусь']; // расследования
+    $capture_countries = vec['Румыния','Казахстан','Польша'];      // захваты
 
     for ($i = 0; $i < $activity_limit; $i++) {
       $activity = $all_activity[$i];
@@ -66,12 +67,12 @@ class ActivityModuleController extends ModuleController {
         $line = <x:frag />;
 
         if ($action === 'captured') {
-          if (C\contains($investigation_countries, $entity_id)) {
+          if (C\contains($investigation_countries, $formatted_entity)) {
             $line =
               <x:frag>
                 Команда {$team_node} расследовала инцидент в стране {$country_node}
               </x:frag>;
-          } else if (C\contains($capture_countries, $entity_id)) {
+          } else if (C\contains($capture_countries, $formatted_entity)) {
             $line =
               <x:frag>
                 Команда {$team_node} захватила страну {$country_node}
