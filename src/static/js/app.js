@@ -59,7 +59,7 @@ function showCaptureBanner(text) {
 
   banner.style.cssText = `
     position:fixed;top:0;left:0;right:0;bottom:0;
-    background: linear-gradient(to right, #0000ff 50%, #ff0000 50%);
+    background: linear-gradient(to right, #0060B9 50%, #ff0000 50%);
     display:flex;align-items:center;justify-content:center;
     z-index:9999;
     font-family:'TT_Positive_Bold', sans-serif;
