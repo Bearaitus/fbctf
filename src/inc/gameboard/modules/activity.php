@@ -21,8 +21,8 @@ class ActivityModuleController extends ModuleController {
     $activity_limit = ($activity_count > 100) ? 100 : $activity_count;
 
     // Списки стран
-    $investigation_countries = vec['Россия','Украина','Беларусь'];
-    $capture_countries = vec['Румыния','Казахстан','Польша'];
+    $investigation_countries = vec['Россия', 'Соединенные Штаты', 'Германия'];
+    $capture_countries = vec['Боливия', 'Украина', 'Румыния'];
 
     for ($i = 0; $i < $activity_limit; $i++) {
       $activity = $all_activity[$i];
