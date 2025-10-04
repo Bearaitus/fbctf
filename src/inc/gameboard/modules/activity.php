@@ -20,6 +20,9 @@ class ActivityModuleController extends ModuleController {
     $activity_count = count($all_activity);
     $activity_limit = ($activity_count > 100) ? 100 : $activity_count;
 
+    $investigation_countries = vec['171','30','176']; // расследование
+    $capture_countries = vec['14','137','111'];       // захват
+
     for ($i = 0; $i < $activity_limit; $i++) {
       $activity = $all_activity[$i];
       $subject = $activity->getSubject();
@@ -56,18 +59,29 @@ class ActivityModuleController extends ModuleController {
           $formatted_entity = $activity->getFormattedEntity();
         }
 
-        $team_class = $class_span === '' ? 'accent' : $class_span.' accent';
-        $team_node = <span class={$team_class}>{$activity->getFormattedSubject()}</span>;
+        $team_node = <span class={'accent'}>{$activity->getFormattedSubject()}</span>;
         $country_node = <span class={'accent'}>{$formatted_entity}</span>;
 
         $action = $activity->getAction();
         $line = <x:frag />;
 
         if ($action === 'captured') {
-          $line =
-            <x:frag>
-              Команда {$team_node} выполнила задание {$country_node}
-            </x:frag>;
+          if (C\contains($investigation_countries, $entity_id)) {
+            $line =
+              <x:frag>
+                Команда {$team_node} расследовала инцидент в стране {$country_node}
+              </x:frag>;
+          } else if (C\contains($capture_countries, $entity_id)) {
+            $line =
+              <x:frag>
+                Команда {$team_node} захватила страну {$country_node}
+              </x:frag>;
+          } else {
+            $line =
+              <x:frag>
+                Команда {$team_node} выполнила задание {$country_node}
+              </x:frag>;
+          }
         } else if ($action === 'enabled') {
           $line =
             <x:frag>

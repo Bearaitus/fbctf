@@ -113,7 +113,7 @@ $(document).ready(function() {
 
   $(document).on('new-activity', function(e, activity) {
     if (activity.action === 'captured') {
-      var investigationCountries = ['Россия', 'США', 'Германия']; // расследование
+      var investigationCountries = ['Россия', 'Соединенные Штаты', 'Германия']; // расследование
       var captureCountries = ['Боливия', 'Украина', 'Румыния'];   // захват
 
       var country = activity.formatted_entity;
