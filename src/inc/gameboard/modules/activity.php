@@ -70,12 +70,12 @@ class ActivityModuleController extends ModuleController {
           if (in_array($formatted_entity, $investigation_countries, true)) {
             $line =
               <x:frag>
-                Команда {$team_node} расследовала инцидент в стране {$country_node}
+                {$team_node} расследовала инцидент в {$country_node}
               </x:frag>;
           } else if (in_array($formatted_entity, $capture_countries, true)) {
             $line =
               <x:frag>
-                Команда {$team_node} захватила страну {$country_node}
+                {$team_node} взломала организацию в {$country_node}
               </x:frag>;
           } else {
             $line =
