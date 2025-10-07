@@ -398,7 +398,7 @@ $(document).ready(function() {
         align = 'center'
       }
 
-      showCaptureBanner(text);
+      showCaptureBanner(text, align);
     }
   });
 });
