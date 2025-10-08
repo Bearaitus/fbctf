@@ -62,7 +62,7 @@ module.exports = {
           }
         });
       });
-      var maxYaxis = maxScore + 30;
+      var maxYaxis = maxScore + 55;
 
       var graphic = d3.select(svgEl),
           MARGIN = {
