@@ -388,10 +388,10 @@ $(document).ready(function() {
       const forms = declineCountry(country);
 
       if (investigationCountries.includes(country)) {
-        text = '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br>расследовали инцидент в <br>' + '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
+        text = '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br>расследовала инцидент в организации из<br>' + '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
         align = 'right';
       } else if (captureCountries.includes(country)) {
-        text = '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br> взломали организацию<br>в ' + '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
+        text = '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br> взломала организацию<br>в ' + '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
         align='left'
       } else {
         text = 'Команда ' + team + ' выполнила задание ' + forms.prep;
