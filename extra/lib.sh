@@ -353,7 +353,7 @@ function set_password() {
   local __path=$5
   local __multiservers=$6
 
-  if [[ "$__admin_pwd" = '$2y$12$kqeX.QAuB.jKVI50FduBpe2rVNG9lAWm6pCdMpZUGkdq3SOGuttu2' ]]; then
+  if [[ "$__admin_pwd" = '$2y$12$.TeBimSYgtATYXwxSxaiHOQZo9v/CoD7ZrCqgOpGNmkeTVHG/Mbgi' ]]; then
     HASH="$__admin_pwd"
   else
     if [[ "$__multiservers" == true ]]; then
