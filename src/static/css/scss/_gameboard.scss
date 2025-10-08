@@ -611,11 +611,11 @@ body[data-section="gameboard"] .fb-page {
       pointer-events: none;
 
       &.captured--you {
-        fill: $yellow;
+        fill: #34C759;
       }
 
       &.captured--opponent {
-        stroke: $red;
+        stroke: #212121;
         stroke-width: 2;
       }
     }
