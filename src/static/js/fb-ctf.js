@@ -1039,7 +1039,7 @@ function setupInputListeners() {
                   e.preventDefault();
                 } 
               });
-              $('.js-trigger-score', $container).text('ДА!');
+              $('.js-trigger-score', $container).text('ВЕРНО!');
               $('input[name=answer]', $container).css("background-color", "#34C759");
               $('.answer_no_bases > .fb-cta.cta--yellow.js-trigger-score').removeClass('js-trigger-score');
               refreshMapData(); // Refresh map so capture shows up right away
@@ -1053,7 +1053,7 @@ function setupInputListeners() {
               // TODO: Make this a modal
               console.log('Failed');
               $('input[name=answer]', $container).css("background-color", "#FF2D55");
-              $('.js-trigger-score', $container).text('НЕТ :(');
+              $('.js-trigger-score', $container).text('НЕВЕРНО :(');
               setTimeout(function() {
                 $('.js-trigger-score', $container).text('ОТПРАВИТЬ');
                 $('input[name=answer]')[0].value = '';
