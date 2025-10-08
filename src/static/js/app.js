@@ -300,7 +300,7 @@ function showCaptureBanner(text, align='center') {
     banner.style.opacity = '0';
     setTimeout(() => banner.remove(), 600);
     document.body.style.overflow = "auto";
-  }, 2500);
+  }, 5000);
 }
 
 const IRREGULARS = {
