@@ -109,11 +109,11 @@
   }
 
   &.your-team {
-    fill: $yellow;
+    fill: #34C759;
   }
 
   &.opponent-team {
-    stroke: $red;
+    stroke: #212121;
     stroke-width: 2;
   }
 }
