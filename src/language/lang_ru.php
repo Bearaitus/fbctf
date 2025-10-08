@@ -587,7 +587,7 @@ $translations = array(
   'PTS' =>
     'ОЧК',
   'category' =>
-    'категория',
+    'Категория',
   'capture_' =>
     ' ',
   'Insert your answer' =>
@@ -601,7 +601,7 @@ $translations = array(
   'first_capture' =>
     'первый_захват',
   'completed_by' =>
-    'выполнено',
+    'Выполнено',
   'scoreboard_' =>
     'Рейтинг команд',
   'filter_' =>
