@@ -583,7 +583,7 @@ $translations = array(
   'flag_owner_' =>
     'флаг_владелец_',
   'INACTIVE' =>
-    'НЕАКТИВНО',
+    'ЗАЩИЩЕНА',
   'PTS' =>
     'ОЧК',
   'category' =>
