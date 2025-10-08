@@ -84,7 +84,7 @@ class CountryModalController extends ModalController {
               </div>
               <form class="fb-form country-capture-form">
                 <input name="level_id" type="hidden" value="" />
-                <textarea rows={15} class="capture-text" disabled={true}>
+                <textarea rows={8} class="capture-text" disabled={true}>
                 </textarea>
                 <br />
                 <br />
@@ -173,7 +173,7 @@ class CountryModalController extends ModalController {
               </div>
               <form class="fb-form country-capture-form">
                 <input name="level_id" type="hidden" value="" />
-                <textarea rows={15} class="capture-text" disabled={true}>
+                <textarea rows={8} class="capture-text" disabled={true}>
                 </textarea>
                 <br />
                 <br />
