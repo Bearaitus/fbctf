@@ -134,24 +134,6 @@ class IndexController extends Controller {
             <h1 class="fb-glitch" data-text={$next_game_text}>
               {$next_game_text}
             </h1>
-            <ul class="upcoming-game-countdown">
-              <li>
-                <span class="count-number">{$countdown[0]}</span>
-                {tr('_days')}
-              </li>
-              <li>
-                <span class="count-number">{$countdown[1]}</span>
-                {tr('_hours')}
-              </li>
-              <li>
-                <span class="count-number">{$countdown[2]}</span>
-                {tr('_minutes')}
-              </li>
-              <li>
-                <span class="count-number">{$countdown[3]}</span>
-                {tr('_seconds')}
-              </li>
-            </ul>
             {$play_nav}
           </div>
         </main>
