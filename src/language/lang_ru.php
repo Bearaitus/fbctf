@@ -709,7 +709,7 @@ $translations = array(
   'm.sec' =>
     'м.сек',
   'Captured!' =>
-    'Захвачено!',
+    'Выполнено!',
   'Please login here with username and password.' =>
     '',
   'Custom Organization' =>
@@ -744,7 +744,7 @@ $translations = array(
   'Flush Memcached' => 'Очистка кэша памяти',
   'Restore Database' => 'Восстановить БД',
   'Backup Database' => 'Бэкап БД',
-  'Level already captured!' => 'Уровень уже пройден',
+  'Level already captured!' => 'Задание выполнено',
   'Or register to use username and password here. Once you have registered, you will be logged in.' => 'Для регистрации введите название команды и пароль',
   'Are you sure you want to pause the current game?' => 'Вы действительно хотите приостановить игру?',
   'Pause Game' => 'Приостановить игру',
