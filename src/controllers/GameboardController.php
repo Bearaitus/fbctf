@@ -55,7 +55,7 @@ class GameboardController extends Controller {
             <ul style="justify-content:center">
               <li>
                 <a href="#">
-                  EdTech Wargame
+                  EdTechLab Wargame
                 </a>
               </li>
             </ul>

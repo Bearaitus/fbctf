@@ -39,3 +39,5 @@ attachments/deleted/*
 # Custom logos directory
 src/data/customlogos/*
 !src/data/customlogos/index.php
+
+opencode.json
