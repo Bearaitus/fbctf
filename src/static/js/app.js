@@ -304,9 +304,9 @@ function showCaptureBanner(text, align='center') {
 }
 
 const IRREGULARS = {
-  "СОЕДИНЕННЫЕ ШТАТЫ":       { nom:"Соединенных Штатах",    gen:"Соединенные штаты",    dat:"Соединенных Штатах",    acc:"Соединенных Штатах",    ins:"Соединенных Штатах",    prep:"Соединенных Штатах" },
-  "НОВАЯ КАЛЕДОНИЯ": { nom:"Новой Каледонии",    gen:"Соединенные штаты",    dat:"Новой Каледонии",    acc:"Соединенных Штатах",    ins:"Соединенных Штатах",    prep:"Соединенных Штатах" },
-  "ВЬЕТНАМ": { nom:"Вьетнама",    gen:"Вьетнама",    dat:"Вьетнама",    acc:"Вьетнама",    ins:"Вьетнама",    prep:"Вьетнама" },
+  "UNITED STATES":       { nom:"United States",    gen:"United States",    dat:"United States",    acc:"United States",    ins:"United States",    prep:"United States" },
+  "NEW CALEDONIA": { nom:"New Caledonia",    gen:"New Caledonia",    dat:"New Caledonia",    acc:"New Caledonia",    ins:"New Caledonia",    prep:"New Caledonia" },
+  "VIETNAM": { nom:"Vietnam",    gen:"Vietnam",    dat:"Vietnam",    acc:"Vietnam",    ins:"Vietnam",    prep:"Vietnam" },
 };
 
 function declineCountry(country) {
@@ -379,8 +379,8 @@ $(document).ready(function() {
 
   $(document).on('new-activity', function(e, activity) {
     if (activity.action === 'captured') {
-      var investigationCountries = ["Азербайджан", "Алжир", "Ангола", "Аргентина", "Армения", "Афганистан", "Бангладеш", "Беларусь", "Белиз", "Бенин", "Боливия", "Босния и Герцеговина", "Ботсвана", "Бразилия", "Бруней-Даруссалам", "Буркина-Фасо", "Бурунди", "Бутан", "Вануату", "Венесуэла", "Восточный Тимор", "Вьетнам", "Габон", "Гаити", "Гайана", "Гамбия", "Гана", "Гватемала", "Гвинея", "Гвинея-Бисау", "Гондурас", "Гренландия", "Грузия", "Джибути", "Доминиканская Республика", "Египет", "Замбия", "Западная Сахара", "Зимбабве", "Израиль", "Индия", "Индонезия", "Иордания", "Ирак", "Иран", "Йемен", "КНДР", "Казахстан", "Камбоджа", "Камерун", "Катар", "Кения", "Киргизия", "Китай", "Конго - Браззавиль", "Конго - Киншаса", "Косово", "Коста-Рика", "Кот-д’Ивуар", "Куба", "Кувейт", "Лаос", "Лесото", "Либерия", "Ливан", "Ливия", "Мавритания", "Мадагаскар", "Македония", "Малави", "Малайзия", "Мали", "Марокко", "Мексика", "Мозамбик", "Молдова", "Монголия", "Мьянма (Бирма)", "Намибия", "Непал", "Нигер", "Нигерия", "Никарагуа", "ОАЭ", "Оман", "Пакистан", "Палестинские территории", "Панама", "Папуа – Новая Гвинея", "Парагвай", "Перу", "Пуэрто-Рико", "Республика Корея", "Россия", "Руанда", "Сальвадор", "Саудовская Аравия", "Свазиленд", "Сербия", "Сирия", "Соломоновы о-ва", "Сомали", "Судан", "Суринам", "Сьерра-Леоне", "Таджикистан", "Таиланд", "Танзания", "Того", "Тринидад и Тобаго", "Тунис", "Туркменистан", "Турция", "Уганда", "Узбекистан", "Уругвай", "Фиджи", "Филиппины", "Фолклендские о-ва", "ЦАР", "Чад", "Чили", "Шри-Ланка", "Эквадор", "Экваториальная Гвинея", "Эритрея", "Эфиопия", "ЮАР", "Южный Судан", "Ямайка"]; // расследование
-      var captureCountries = ["Австралия", "Австрия", "Албания", "Багамские о-ва", "Бельгия", "Болгария", "Великобритания", "Венгрия", "Германия", "Греция", "Дания", "Ирландия", "Исландия", "Испания", "Италия", "Канада", "Кипр", "Колумбия", "Латвия", "Литва", "Люксембург", "Нидерланды", "Новая Зеландия", "Новая Каледония", "Норвегия", "Польша", "Португалия", "Румыния", "Сенегал", "Словакия", "Словения", "Соединенные Штаты", "Тайвань", "Украина", "Финляндия", "Франция", "Французская Гвиана", "Французские Южные Территории", "Хорватия", "Черногория", "Чехия", "Швейцария", "Швеция", "Шпицберген и Ян-Майен", "Эстония", "Япония"];   // захват
+      var investigationCountries = ["Azerbaijan", "Algeria", "Angola", "Argentina", "Armenia", "Afghanistan", "Bangladesh", "Belarus", "Belize", "Benin", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei Darussalam", "Burkina Faso", "Burundi", "Bhutan", "Vanuatu", "Venezuela", "East Timor", "Vietnam", "Gabon", "Haiti", "Guyana", "Gambia", "Ghana", "Guatemala", "Guinea", "Guinea-Bissau", "Honduras", "Greenland", "Georgia", "Djibouti", "Dominican Republic", "Egypt", "Zambia", "Western Sahara", "Zimbabwe", "Israel", "India", "Indonesia", "Jordan", "Iraq", "Iran", "Yemen", "North Korea", "Kazakhstan", "Cambodia", "Cameroon", "Qatar", "Kenya", "Kyrgyzstan", "China", "Congo - Brazzaville", "Congo - Kinshasa", "Kosovo", "Costa Rica", "Кот-д’Ивуар", "Куба", "Кувейт", "Лаос", "Лесото", "Либерия", "Ливан", "Ливия", "Мавритания", "Мадагаскар", "Македония", "Малави", "Малайзия", "Мали", "Марокко", "Мексика", "Мозамбик", "Молдова", "Монголия", "Мьянма (Бирма)", "Намибия", "Непал", "Нигер", "Нигерия", "Никарагуа", "UAE", "Oman", "Pakistan", "Palestinian territories", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Puerto Rico", "South Korea", "Russia", "Rwanda", "El Salvador", "Saudi Arabia", "Swaziland", "Serbia", "Syria", "Solomon Islands", "Somalia", "Sudan", "Suriname", "Sierra Leone", "Tajikistan", "Thailand", "Tanzania", "Togo", "Trinidad and Tobago", "Tunisia", "Turkmenistan", "Turkey", "Uganda", "Uzbekistan", "Uruguay", "Fiji", "Philippines", "Falkland Islands", "Central African Republic", "Chad", "Chile", "Sri Lanka", "Ecuador", "Equatorial Guinea", "Eritrea", "Ethiopia", "South Africa", "South Sudan", "Jamaica"]; // расследование
+      var captureCountries = ["Australia", "Austria", "Al Bahamas", "Belgium", "Bulgaria", "United Kingdom", "Hungary", "Germany", "Greece", "Denmark", "Ireland", "Iceland", "Spain", "Italy", "Canada", "Cyprus", "Colombia", "Latvia", "Lithuania", "Luxembourg", "Netherlands", "New Zealand", "New Caledonia", "Norway", "Poland", "Portugal", "Romania", "Senegal", "Slovakia", "Slovenia", "United States", "Taiwan", "Ukraine", "Finland", "France", "French Guiana", "French Southern Territories", "Croatia", "Montenegro", "Czech Republic", "Switzerland", "Sweden", "Svalbard and Jan Mayen", "Estonia", "Japan"];
       
       var country = activity.formatted_entity;
       var team = activity.formatted_subject;
@@ -389,13 +389,13 @@ $(document).ready(function() {
       const forms = declineCountry(country);
 
       if (investigationCountries.includes(country)) {
-        text = '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br>расследовала инцидент в организации из<br>' + '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
+        text = '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br>investigated an incident at an organization in<br>' + '<span style="color:#fff;background:#0060B9;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
         align = 'right';
       } else if (captureCountries.includes(country)) {
-        text = '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br> взломала организацию<br>в ' + '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
+        text = '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + team + '</span><br> hacked an organization in<br>' + '<span style="color:#fff;background:#FF2D55;padding-left:15px;padding-right:15px;border-radius: 15px;">' + forms.prep + '</span>';
         align='left'
       } else {
-        text = 'Команда ' + team + ' выполнила задание ' + forms.prep;
+        text = 'Team ' + team + ' completed the task in ' + forms.prep;
         align = 'center'
       }
 

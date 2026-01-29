@@ -802,6 +802,18 @@ $translations = array(
     'Повторите',
   'Repeat Password' =>
     'Повторите пароль',
-  'First Capture' =>
-    'Первый захват',
-);
+   'First Capture' =>
+     'Первый захват',
+   'Team' =>
+     'Команда',
+   'completed' =>
+     'выполнила задание',
+   'investigated incident in' =>
+     'расследовала инцидент в организации из',
+   'hacked organization in' =>
+     'взломала организацию в',
+   'was enabled' =>
+     'было включено',
+   'was added' =>
+     'было добавлено',
+ );

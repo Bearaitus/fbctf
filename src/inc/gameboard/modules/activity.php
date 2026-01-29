@@ -20,9 +20,9 @@ class ActivityModuleController extends ModuleController {
     $activity_count = count($all_activity);
     $activity_limit = ($activity_count > 100) ? 100 : $activity_count;
 
-    // Списки стран
-    $investigation_countries = vec["Азербайджан", "Алжир", "Ангола", "Аргентина", "Армения", "Афганистан", "Бангладеш", "Беларусь", "Белиз", "Бенин", "Боливия", "Босния и Герцеговина", "Ботсвана", "Бразилия", "Бруней-Даруссалам", "Буркина-Фасо", "Бурунди", "Бутан", "Вануату", "Венесуэла", "Восточный Тимор", "Вьетнам", "Габон", "Гаити", "Гайана", "Гамбия", "Гана", "Гватемала", "Гвинея", "Гвинея-Бисау", "Гондурас", "Гренландия", "Грузия", "Джибути", "Доминиканская Республика", "Египет", "Замбия", "Западная Сахара", "Зимбабве", "Израиль", "Индия", "Индонезия", "Иордания", "Ирак", "Иран", "Йемен", "КНДР", "Казахстан", "Камбоджа", "Камерун", "Катар", "Кения", "Киргизия", "Китай", "Конго - Браззавиль", "Конго - Киншаса", "Косово", "Коста-Рика", "Кот-д’Ивуар", "Куба", "Кувейт", "Лаос", "Лесото", "Либерия", "Ливан", "Ливия", "Мавритания", "Мадагаскар", "Македония", "Малави", "Малайзия", "Мали", "Марокко", "Мексика", "Мозамбик", "Молдова", "Монголия", "Мьянма (Бирма)", "Намибия", "Непал", "Нигер", "Нигерия", "Никарагуа", "ОАЭ", "Оман", "Пакистан", "Палестинские территории", "Панама", "Папуа – Новая Гвинея", "Парагвай", "Перу", "Пуэрто-Рико", "Республика Корея", "Россия", "Руанда", "Сальвадор", "Саудовская Аравия", "Свазиленд", "Сербия", "Сирия", "Соломоновы о-ва", "Сомали", "Судан", "Суринам", "Сьерра-Леоне", "Таджикистан", "Таиланд", "Танзания", "Того", "Тринидад и Тобаго", "Тунис", "Туркменистан", "Турция", "Уганда", "Узбекистан", "Уругвай", "Фиджи", "Филиппины", "Фолклендские о-ва", "ЦАР", "Чад", "Чили", "Шри-Ланка", "Эквадор", "Экваториальная Гвинея", "Эритрея", "Эфиопия", "ЮАР", "Южный Судан", "Ямайка"];
-    $capture_countries = vec["Австралия", "Австрия", "Албания", "Багамские о-ва", "Бельгия", "Болгария", "Великобритания", "Венгрия", "Германия", "Греция", "Дания", "Ирландия", "Исландия", "Испания", "Италия", "Канада", "Кипр", "Колумбия", "Латвия", "Литва", "Люксембург", "Нидерланды", "Новая Зеландия", "Новая Каледония", "Норвегия", "Польша", "Португалия", "Румыния", "Сенегал", "Словакия", "Словения", "Соединенные Штаты", "Тайвань", "Украина", "Финляндия", "Франция", "Французская Гвиана", "Французские Южные Территории", "Хорватия", "Черногория", "Чехия", "Швейцария", "Швеция", "Шпицберген и Ян-Майен", "Эстония", "Япония"];
+    // Country lists
+    $investigation_countries = vec["Azerbaijan", "Algeria", "Angola", "Argentina", "Armenia", "Afghanistan", "Bangladesh", "Belarus", "Belize", "Benin", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei Darussalam", "Burkina Faso", "Burundi", "Bhutan", "Vanuatu", "Venezuela", "Timor-Leste", "Vietnam", "Gabon", "Haiti", "Guyana", "Gambia", "Ghana", "Guatemala", "Guinea", "Guinea-Bissau", "Honduras", "Greenland", "Georgia", "Djibouti", "Dominican Republic", "Egypt", "Zambia", "Western Sahara", "Zimbabwe", "Israel", "India", "Indonesia", "Jordan", "Iraq", "Iran", "Yemen", "North Korea", "Kazakhstan", "Cambodia", "Cameroon", "Qatar", "Kenya", "Kyrgyzstan", "China", "Congo - Brazzaville", "Congo - Kinshasa", "Kosovo", "Costa Rica", "Côte d'Ivoire", "Cuba", "Kuwait", "Laos", "Lesotho", "Liberia", "Lebanon", "Libya", "Mauritania", "Madagascar", "Macedonia", "Malawi", "Malaysia", "Mali", "Morocco", "Mexico", "Mozambique", "Moldova", "Mongolia", "Myanmar", "Namibia", "Nepal", "Niger", "Nigeria", "Nicaragua", "United Arab Emirates", "Oman", "Pakistan", "Palestinian Territories", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Puerto Rico", "South Korea", "Russia", "Rwanda", "El Salvador", "Saudi Arabia", "Swaziland", "Serbia", "Syria", "Solomon Islands", "Somalia", "Sudan", "Suriname", "Sierra Leone", "Tajikistan", "Thailand", "Tanzania", "Togo", "Trinidad and Tobago", "Tunisia", "Turkmenistan", "Turkey", "Uganda", "Uzbekistan", "Uruguay", "Fiji", "Philippines", "Falkland Islands", "Central African Republic", "Chad", "Chile", "Sri Lanka", "Ecuador", "Equatorial Guinea", "Eritrea", "Ethiopia", "South Africa", "South Sudan", "Jamaica"];
+    $capture_countries = vec["Australia", "Austria", "Albahhama", "Belgium", "Bulgaria", "United Kingdom", "Hungary", "Germany", "Greece", "Denmark", "Ireland", "Iceland", "Spain", "Italy", "Canada", "Cyprus", "Colombia", "Latvia", "Lithuania", "Luxembourg", "Netherlands", "New Zealand", "New Caledonia", "Norway", "Poland", "Portugal", "Romania", "Senegal", "Slovakia", "Slovenia", "United States", "Taiwan", "Ukraine", "Finland", "France", "French Guiana", "French Southern Territories", "Croatia", "Montenegro", "Czech Republic", "Switzerland", "Sweden", "Svalbard and Jan Mayen", "Estonia", "Japan"];
 
     for ($i = 0; $i < $activity_limit; $i++) {
       $activity = $all_activity[$i];
@@ -70,28 +70,28 @@ class ActivityModuleController extends ModuleController {
           if (in_array($formatted_entity, $investigation_countries, true)) {
             $line =
               <x:frag>
-                {$team_node} расследовала инцидент в организации из {$country_node}
+                {$team_node} {tr('investigated incident in')} {$country_node}
               </x:frag>;
           } else if (in_array($formatted_entity, $capture_countries, true)) {
             $line =
               <x:frag>
-                {$team_node} взломала организацию в {$country_node}
+                {$team_node} {tr('hacked organization in')} {$country_node}
               </x:frag>;
           } else {
             $line =
               <x:frag>
-                Команда {$team_node} выполнила задание {$country_node}
+                {tr('Team')} {$team_node} {tr('completed')} {$country_node}
               </x:frag>;
           }
         } else if ($action === 'enabled') {
           $line =
             <x:frag>
-              Задание {$country_node} было включено
+              {$country_node} {tr('was enabled')}
             </x:frag>;
         } else if ($action === 'added') {
           $line =
             <x:frag>
-              Задание {$country_node} было добавлено
+              {$country_node} {tr('was added')}
             </x:frag>;
         } else {
           $line =

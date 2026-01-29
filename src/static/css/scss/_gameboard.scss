@@ -523,26 +523,26 @@ $module-margin: 20px;
         }
 
         .clock-days:after {
-          content: "дн";
+          content: "days";
         }
 
         .clock-hours:after {
-          content: "ч";
+          content: "h";
         }
 
         .clock-minutes:after {
-          content: "мин";
+          content: "min";
         }
 
         .clock-seconds:after {
-          content: "сек";
+          content: "s";
         }
 
         .clock-milliseconds {
           color: darken($teal-blue, 10%);
 
           &:after {
-            content: "мс";
+            content: "ms";
           }
         }
 

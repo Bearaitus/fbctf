@@ -626,7 +626,7 @@ function setupInputListeners() {
      */
     function getCapturedByMarkup(capturedBy) {
       if (capturedBy === undefined) {
-        return "Не выполнено";
+        return "Uncaptured";
       }
 
       var capturedClass = (capturedBy === FB_CTF.data.CONF.currentTeam) ? 'your-name' : 'opponent-name';
@@ -973,11 +973,11 @@ function setupInputListeners() {
         // event listeners
         //
         if (hint_cost == 10000000) {
-          $('.js-trigger-hint span', $container).text('Необходимо больше очков');
-          $('.capture-hint div', $container).text('Необходимо больше очков');
+          $('.js-trigger-hint span', $container).text('More points needed');
+          $('.capture-hint div', $container).text('More points needed');
         } else if (hint_cost == 1000000) {
-          $('.js-trigger-hint span', $container).text('Нет подсказки');
-          $('.capture-hint div', $container).text('Нет подсказки');
+          $('.js-trigger-hint span', $container).text('No hint available');
+          $('.capture-hint div', $container).text('No hint available');
         } else {
 
           $('.js-trigger-hint', $container).on('click', function(event) {
@@ -1039,7 +1039,7 @@ function setupInputListeners() {
                   e.preventDefault();
                 } 
               });
-              $('.js-trigger-score', $container).text('ВЕРНО!');
+              $('.js-trigger-score', $container).text('CORRECT!');
               $('input[name=answer]', $container).css("background-color", "#34C759");
               $('.answer_no_bases > .fb-cta.cta--yellow.js-trigger-score').removeClass('js-trigger-score');
               refreshMapData(); // Refresh map so capture shows up right away
@@ -1053,9 +1053,9 @@ function setupInputListeners() {
               // TODO: Make this a modal
               console.log('Failed');
               $('input[name=answer]', $container).css("background-color", "#FF2D55");
-              $('.js-trigger-score', $container).text('НЕВЕРНО :(');
+                $('.js-trigger-score', $container).text('INCORRECT :(');
               setTimeout(function() {
-                $('.js-trigger-score', $container).text('ОТПРАВИТЬ');
+                $('.js-trigger-score', $container).text('SUBMIT');
                 $('input[name=answer]')[0].value = '';
                 $('input[name=answer]', $container).css("background-color", "");
               }, 2000);
