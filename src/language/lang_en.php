@@ -692,4 +692,18 @@ $translations = array(
     'LDAP Port',
   'LDAP Domain' =>
     'LDAP Domain',
+  'Settings' =>
+    'Settings',
+  'Change Password' =>
+    'Change Password',
+  'Current' =>
+    'Current',
+  'New' =>
+    'New',
+  'Repeat' =>
+    'Repeat',
+  'Repeat Password' =>
+    'Repeat Password',
+  'First Capture' =>
+    'First Capture',
 );

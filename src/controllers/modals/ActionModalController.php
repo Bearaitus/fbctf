@@ -282,7 +282,7 @@ class ActionModalController extends ModalController {
       case 'account':
         $title =
           <h4>
-            <span class="highlighted">Настройки</span> аккаунта
+            <span class="highlighted">{tr('Account')}</span> {tr('Settings')}
           </h4>;
         $oauth_header = '';
         if (Configuration::getFacebookOAuthSettingsExists() === true) {
@@ -376,16 +376,16 @@ class ActionModalController extends ModalController {
 
         $content =
           <div class="action-main" style="height: 600px; overflow-y: scroll">
-            <form class="team-password-form">
-              Смена пароля
+          <form class="team-password-form">
+              {tr('Change Password')}
               <br />
               <div style="margin-top: 10px">
                 <div style="float:left; width: 25%">
-                  Текущий:
+                  {tr('Current')}:
                 </div>
                 <div style="float:left; width: 75%">
                   <input
-                    placeholder="Текущий"
+                    placeholder={tr('Current')}
                     name="current_password"
                     type="password"
                     autocomplete="off"
@@ -396,11 +396,11 @@ class ActionModalController extends ModalController {
               </div>
               <div style="margin-top: 10px">
                 <div style="float: left; width: 25%">
-                  Новый:
+                  {tr('New')}:
                 </div>
                 <div style="float: left; width: 75%">
                   <input
-                    placeholder="Новый"
+                    placeholder={tr('New')}
                     name="new_password"
                     type="password"
                     autocomplete="off"
@@ -411,11 +411,11 @@ class ActionModalController extends ModalController {
               </div>
               <div style="margin-top: 10px">
                 <div style="float: left; width: 25%">
-                  Повторите:
+                  {tr('Repeat')}:
                 </div>
                 <div style="float: left; width: 75%">
                   <input
-                    placeholder="Повторите пароль"
+                    placeholder={tr('Repeat Password')}
                     name="confirm_password"
                     type="password"
                     autocomplete="off"

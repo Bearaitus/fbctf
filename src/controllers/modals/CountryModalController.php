@@ -233,7 +233,7 @@ class CountryModalController extends ModalController {
                     <dl>
                       <dt>{tr('type')}</dt>
                       <dd class="country-type"></dd>
-                      <dt>Первый захват</dt>
+                      <dt>{tr('First Capture')}</dt>
                       <dd class="opponent-name country-owner"></dd>
                     </dl>
                   </div>

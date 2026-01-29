@@ -14,13 +14,13 @@ $translations = array(
   'Welcome to EdTechLab Wargame!' =>
     'Добро пожаловать на EdTechLab Wargame!',
   'Get ready for the Wargame to start and access the gameboard now!' =>
-    '',
+    'Приготовьтесь к началу Wargame и получите доступ к игровому полю!',
   'Gameboard' =>
     'Игровое поле',
   'Register Team' =>
     'Зарегистрировать команду',
   'Get ready for the Wargame to start and register your team now!' =>
-    '',
+    'Приготовьтесь к началу Wargame и зарегистрируйте свою команду сейчас!',
   'Login' =>
     'Войти',
   'Soon' =>
@@ -665,7 +665,7 @@ $translations = array(
   'Game_On' =>
     'Have fun!',
   'tutorial_' =>
-    '',
+    'Обучение',
   'Next' =>
     'След.',
   'Skip to play' =>
@@ -711,7 +711,7 @@ $translations = array(
   'Captured!' =>
     'Выполнено!',
   'Please login here with username and password.' =>
-    '',
+    'Пожалуйста, войдите здесь, используя название команды и пароль.',
   'Custom Organization' =>
     'Настроить организацию',
   'Custom Byline' =>
@@ -789,5 +789,19 @@ $translations = array(
   'Change your password.' => 'Смена пароля',
   'Help' => 'Помощь',
   'Uncaptured' => 'Не выполнено',
-  'Announcement Controls' => 'Уведомления'
+  'Announcement Controls' => 'Уведомления',
+  'Settings' =>
+    'Настройки',
+  'Change Password' =>
+    'Смена пароля',
+  'Current' =>
+    'Текущий',
+  'New' =>
+    'Новый',
+  'Repeat' =>
+    'Повторите',
+  'Repeat Password' =>
+    'Повторите пароль',
+  'First Capture' =>
+    'Первый захват',
 );
