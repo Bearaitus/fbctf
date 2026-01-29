@@ -42,7 +42,7 @@ class IndexController extends Controller {
     $custom_org = \HH\Asio\join(Configuration::gen('custom_org'));
     $welcome_msg =
         tr(
-          'Welcome to EdTech Wargame!',
+          'Welcome to EdTechLab Wargame!',
         );
     return
       <div class="fb-row-container full-height fb-scroll">
@@ -51,8 +51,8 @@ class IndexController extends Controller {
           class=
             "fb-main page--landing row-fluid no-shrink center-vertically fb-img-glitch">
           <div class="fb-container fb-centered-main">
-            <h1 class="fb-glitch" data-text="EdTech Wargame">
-              EdTech Wargame
+            <h1 class="fb-glitch" data-text="EdTechLab Wargame">
+              EdTechLab Wargame
             </h1>
             <p class="typed-text">
               {$welcome_msg}
@@ -1206,11 +1206,11 @@ class IndexController extends Controller {
     $branding_gen = await $this->genRenderBranding();
     $branding =
       <ul style="justify-content:center">
-        <li>
-          <a href="#">
-            EdTech Wargame
-          </a>
-        </li>
+          <li>
+            <a href="#">
+              EdTechLab Wargame
+            </a>
+          </li>
       </ul>;
 
     return

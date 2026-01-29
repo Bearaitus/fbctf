@@ -11,8 +11,8 @@ $translations = array(
     'Покорите мир',
   'Play' =>
     'Играть',
-  'Welcome to EdTech Wargame!' =>
-    'Добро пожаловать на EdTech Wargame!',
+  'Welcome to EdTechLab Wargame!' =>
+    'Добро пожаловать на EdTechLab Wargame!',
   'Get ready for the Wargame to start and access the gameboard now!' =>
     '',
   'Gameboard' =>
@@ -36,7 +36,7 @@ $translations = array(
   '_seconds' =>
     '_с',
   'Official Wargame Rules' =>
-    'Правила EdTech Wargame',
+    'Правила EdTechLab Wargame',
   'Following actions are prohibited, unless explicitly told otherwise by event Admins.' =>
     'Следующие действия запрещены, за исключением случаев, когда администраторы мероприятия явно утверждают обратное.',
   'Rule' =>
