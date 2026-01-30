@@ -309,7 +309,7 @@ fi
  	  apt-get remove -y nodejs npm || true
 	  # подключаем репозиторий nodesource и ставим nodejs 14
 	  curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
-	  apt-get install -y nodejs
+	  apt-get install -y nodejs --allow-unauthenticated
 	  # фиксируем npm на версии 6
 	  npm install -g npm@6
 	}
