@@ -307,8 +307,8 @@ fi
 	  log "Installing Node.js 14 and npm 6"
  	 # удаляем старый nodejs
  	  apt-get remove -y nodejs npm || true
-	  # подключаем репозиторий nodesource и ставим nodejs 14
-	  curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
+	  # изменение: подключаем новую версию node js
+	  curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
 	  apt-get install -y nodejs
 	  # фиксируем npm на версии 6
 	  npm install -g npm@6
