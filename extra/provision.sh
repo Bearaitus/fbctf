@@ -308,7 +308,7 @@ fi
  	 # удаляем старый nodejs
  	  apt-get remove -y nodejs npm || true
 	  # изменение: подключаем новую версию node js
-	  curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -
+	  curl -fsSL https://deb.nodesource.com/setup_12.x | bash -
 	  apt-get install -y nodejs
 	  # фиксируем npm на версии 6
 	  npm install -g npm@6
