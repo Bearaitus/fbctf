@@ -104,7 +104,7 @@ function self_signed_cert() {
   local __devcert=$1
   local __devkey=$2
 
-  sudo openssl req -nodes -newkey rsa:2048 -keyout "$__devkey" -out "$__csr" -subj "/O=Facebook CTF"
+  sudo openssl req -nodes -newkey rsa:2048 -keyout "$__devkey" -out "$__csr" -subj "/O=EdTechLab Wargame"
   sudo openssl x509 -req -days 365 -in "$__csr" -signkey "$__devkey" -out "$__devcert"
 }
 
