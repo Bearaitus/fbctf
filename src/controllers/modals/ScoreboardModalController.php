@@ -104,8 +104,8 @@ class ScoreboardModalController extends ModalController {
                 <th style="width: 10%;text-align: center;">{tr('Filter')}</th>
                 <th style="width: 10%;text-align: center;">{tr('Rank')}</th>
                 <th style="width: 40%;text-align: center;">{tr('Team name')}</th>
-                <th style="width: 10%;text-align: center;">{tr('blue team')}</th>
-                <th style="width: 10%;text-align: center;">{tr('red team')}</th>
+                <th style="width: 10%;text-align: center;">{tr('Blue team')}</th>
+                <th style="width: 10%;text-align: center;">{tr('Red team')}</th>
                 <th style="width: 10%;text-align: center;">{tr('Total pts')}</th>
               </tr>
             </thead>
