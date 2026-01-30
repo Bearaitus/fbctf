@@ -82,7 +82,7 @@ class ScoreboardModalController extends ModalController {
     return
       <div class="fb-modal-content fb-row-container">
         <div class="modal-title row-fixed">
-          <h4>{tr('scoreboard_')}</h4>
+          <h4>{tr('Scoreboard')}</h4>
           <a href="#" class="js-close-modal">
             <svg class="icon icon--close">
               <use href="#icon--close" />
@@ -101,12 +101,12 @@ class ScoreboardModalController extends ModalController {
           <table class="row-fixed">
             <thead>
               <tr>
-                <th style="width: 10%;text-align: center;">{tr('filter_')}</th>
-                <th style="width: 10%;text-align: center;">{tr('rank_')}</th>
-                <th style="width: 40%;text-align: center;">{tr('team_name_')}</th>
+                <th style="width: 10%;text-align: center;">{tr('Filter')}</th>
+                <th style="width: 10%;text-align: center;">{tr('Rank')}</th>
+                <th style="width: 40%;text-align: center;">{tr('Team name')}</th>
                 <th style="width: 10%;text-align: center;">{tr('blue team')}</th>
                 <th style="width: 10%;text-align: center;">{tr('red team')}</th>
-                <th style="width: 10%;text-align: center;">{tr('total_pts_')}</th>
+                <th style="width: 10%;text-align: center;">{tr('Total pts')}</th>
               </tr>
             </thead>
           </table>

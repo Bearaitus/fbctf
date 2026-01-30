@@ -7,7 +7,7 @@ class TeamModalController extends ModalController {
       <div class="fb-modal-content">
         <div class="modal-title">
           <h4>
-            {tr('team_')}[ <span class="team-name highlighted"></span> ]
+            {tr('Team')} [ <span class="team-name highlighted"></span> ]
           </h4>
           <a href="#" class="js-close-modal">
             <svg class="icon icon--close"><use href="#icon--close" /></svg>

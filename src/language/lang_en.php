@@ -621,9 +621,21 @@ $translations = array(
   'hint' =>
     'Hint',
   'first_capture' =>
-    'first_capture',
+    'First Capture',
+  'pause' =>
+    'Pause',
+  'unpause' =>
+    'Unpause',
+  'delete' =>
+    'Delete',
+  'status' =>
+    'Status',
+  'restore' =>
+    'Restore',
+  'reset' =>
+    'Reset',
   'completed_by' =>
-    'completed_by',
+    'Completed by',
   'scoreboard' =>
     'Scoreboard',
   'filter' =>

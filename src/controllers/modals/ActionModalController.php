@@ -6,7 +6,7 @@ class ActionModalController extends ModalController {
       case 'begin-game':
         $title =
           <h4>
-            {tr('begin_')}<span class="highlighted">{tr('Game')}</span>
+            {tr('Begin')}<span class="highlighted">{tr('Game')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -27,7 +27,7 @@ class ActionModalController extends ModalController {
         return tuple($title, $content);
       case 'end-game':
         $title =
-          <h4>{tr('end_')}<span class="highlighted">{tr('Game')}</span></h4>;
+          <h4>{tr('End')}<span class="highlighted">{tr('Game')}</span></h4>;
         $content =
           <div class="action-main">
             <p>{tr('Are you sure you want to finish the current game?')}</p>
@@ -44,7 +44,7 @@ class ActionModalController extends ModalController {
       case 'pause-game':
         $title =
           <h4>
-            {tr('pause_')}<span class="highlighted">{tr('Game')}</span>
+            {tr('Pause')}<span class="highlighted">{tr('Game')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -62,7 +62,7 @@ class ActionModalController extends ModalController {
       case 'unpause-game':
         $title =
           <h4>
-            {tr('unpause_')}<span class="highlighted">{tr('Game')}</span>
+            {tr('Unpause')}<span class="highlighted">{tr('Game')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -80,7 +80,7 @@ class ActionModalController extends ModalController {
       case 'delete-team':
         $title =
           <h4>
-            {tr('delete_')}<span class="highlighted">{tr('Team')}</span>
+            {tr('Delete')}<span class="highlighted">{tr('Team')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -102,7 +102,7 @@ class ActionModalController extends ModalController {
       case 'delete-level':
         $title =
           <h4>
-            {tr('delete_')}<span class="highlighted">{tr('Level')}</span>
+            {tr('Delete')}<span class="highlighted">{tr('Level')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -124,7 +124,7 @@ class ActionModalController extends ModalController {
       case 'logout':
         $title =
           <h4>
-            {tr('status_')}<span class="highlighted">{tr('Logout')}</span>
+            {tr('Status')}<span class="highlighted">{tr('Logout')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -160,7 +160,7 @@ class ActionModalController extends ModalController {
       case 'save':
         $title =
           <h4>
-            {tr('status_')}<span class="highlighted">{tr('Saved')}</span>
+            {tr('Status')}<span class="highlighted">{tr('Saved')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -177,7 +177,7 @@ class ActionModalController extends ModalController {
       case 'error':
         $title =
           <h4>
-            {tr('status_')}
+            {tr('Status')}
             <span class="highlighted--red">{tr('Error')}</span>
           </h4>;
         $content =
@@ -200,7 +200,7 @@ class ActionModalController extends ModalController {
       case 'cancel':
         $title =
           <h4>
-            {tr('cancel_')}
+            {tr('Cancel')}
             <span class="admin-section-name highlighted"></span>
           </h4>;
         $content =
@@ -223,7 +223,7 @@ class ActionModalController extends ModalController {
       case 'import-done':
         $title =
           <h4>
-            {tr('status_')}<span class="highlighted">{tr('Imported')}</span>
+            {tr('Status')}<span class="highlighted">{tr('Imported')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -238,7 +238,7 @@ class ActionModalController extends ModalController {
       case 'restore-database':
         $title =
           <h4>
-            {tr('restore_')}<span class="highlighted">{tr('Database')}</span>
+            {tr('Restore')}<span class="highlighted">{tr('Database')}</span>
           </h4>;
         $content =
           <div class="action-main">
@@ -260,7 +260,7 @@ class ActionModalController extends ModalController {
       case 'reset-database':
         $title =
           <h4>
-            {tr('reset_')}<span class="highlighted">{tr('Database')}</span>
+            {tr('Reset')}<span class="highlighted">{tr('Database')}</span>
           </h4>;
         $content =
           <div class="action-main">

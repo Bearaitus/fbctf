@@ -12,14 +12,14 @@ class CountryModalController extends ModalController {
               <span class="points-value fb-numbers"></span>
             </header>
             <ul class="country-capture-stats">
-              <li>
-                {tr('captured_')}
-                <span class="highlighted country-name"></span>
-              </li>
-              <li>
-                {tr('flag_owner_')}
-                <span class="highlighted country-owner"></span>
-              </li>
+                <li>
+                  {tr('Captured')}
+                  <span class="highlighted country-name"></span>
+                </li>
+                <li>
+                  {tr('Flag owner')}
+                  <span class="highlighted country-owner"></span>
+                </li>
             </ul>
           </div>;
       case 'inactive':
@@ -72,7 +72,7 @@ class CountryModalController extends ModalController {
             <div class="fb-modal-content">
               <div class="modal-title">
                 <h4>
-                  {tr('capture_')}
+                  {tr('Capture')}
                   <span class="country-name highlighted"></span> -
                   <span class="country-title"></span>
                 </h4>
@@ -128,7 +128,7 @@ class CountryModalController extends ModalController {
               </form>
               <div class="capture-hints-and-help">
                 <div class="capture-hint">
-                  <h4>{tr('hint_')}</h4>
+                  <h4>{tr('Hint')}</h4>
                   <div></div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ class CountryModalController extends ModalController {
             <div class="fb-modal-content">
               <div class="modal-title">
                 <h4>
-                  {tr('capture_')}
+                  {tr('Capture')}
                   <span class="country-name highlighted"></span> -
                   <span class="country-title"></span>
                 </h4>
@@ -217,7 +217,7 @@ class CountryModalController extends ModalController {
               </form>
               <div class="capture-hints-and-help">
                 <div class="capture-hint">
-                  <h4>{tr('hint_')}</h4>
+                  <h4>{tr('Hint')}</h4>
                   <div></div>
                 </div>
               </div>
