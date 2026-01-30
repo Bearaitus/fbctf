@@ -195,8 +195,8 @@ $translations = array(
     'Game Configuration',
   'OK' =>
     'OK',
-  'status_' =>
-    'status_',
+  'status' =>
+    'Status',
   'On' =>
     'On',
   'Off' =>
@@ -520,6 +520,14 @@ $translations = array(
     'Status',
   'Completed' =>
     'Completed',
+  'Investigated incident in' =>
+    'Investigated incident in',
+  'Hacked organization in' =>
+    'Hacked organization in',
+  'Was enabled' =>
+    'Was enabled',
+  'Was added' =>
+    'Was added',
   'Remaining' =>
     'Remaining',
   'Start' =>
@@ -568,12 +576,12 @@ $translations = array(
   'ago' =>
     'ago',
   //Translations for ModalControllers
-  'begin_' =>
-    'begin_',
+  'begin' =>
+    'Begin',
   'Are you sure you want to kick off the game? Logs will be cleared and progressive scoreboard will start' =>
     'Are you sure you want to kick off the game? Logs will be cleared and progressive scoreboard will start',
-  'end_' =>
-    'end_',
+  'end' =>
+    'End',
   'Are you sure you want to finish the current game?' =>
     'Are you sure you want to finish the current game?',
   'Are you sure you want to logout from the game?' =>
@@ -586,54 +594,54 @@ $translations = array(
     'Error',
   'Sorry your form was not saved. Please correct the all errors and save again.' =>
     'Sorry your form was not saved. Please correct the all errors and save again.',
-  'cancel_' =>
-    'cancel_',
+  'cancel' =>
+    'Cancel',
   'Are you sure you want to cancel? You have unsaved changes that will be reverted.' =>
     'Are you sure you want to cancel? You have unsaved changes that will be reverted.',
-  'choose_logo' =>
-    'choose_logo',
-  'captured_' =>
-    'captured_',
-  'flag_owner_' =>
-    'flag_owner_',
+  'choose logo' =>
+    'Choose logo',
+  'captured' =>
+    'Captured',
+  'flag owner' =>
+    'Flag owner',
   'INACTIVE' =>
     'INACTIVE',
   'PTS' =>
     'PTS',
   'category' =>
     'category',
-  'capture_' =>
-    'capture_',
+  'capture' =>
+    'Capture',
   'Insert your answer' =>
     'Insert your answer',
   'Request Hint' =>
     'Request Hint',
   'Submit' =>
     'Submit',
-  'hint_' =>
-    'hint_',
+  'hint' =>
+    'Hint',
   'first_capture' =>
     'first_capture',
   'completed_by' =>
     'completed_by',
-  'scoreboard_' =>
-    'scoreboard_',
-  'filter_' =>
-    'filter_',
-  'rank_' =>
-    'rank_',
-  'team_name_' =>
-    'team_name_',
-  'quiz_pts_' =>
-    'quiz_pts_',
-  'flag_pts_' =>
-    'flag_pts_',
-  'base_pts_' =>
-    'base_pts_',
-  'total_pts_' =>
-    'total_pts_',
-  'team_' =>
-    'team_',
+  'scoreboard' =>
+    'Scoreboard',
+  'filter' =>
+    'Filter',
+  'rank' =>
+    'Rank',
+  'team name' =>
+    'Team name',
+  'quiz pts' =>
+    'Quiz pts',
+  'flag pts' =>
+    'Flag pts',
+  'base pts' =>
+    'Base pts',
+  'total pts' =>
+    'Total pts',
+  'team' =>
+    'Team',
   'team_members' =>
     'team_members',
   'base_pts' =>
@@ -678,8 +686,8 @@ $translations = array(
     'Have fun, be the best and conquer the world.',
   'Game_On' =>
     'Game_On',
-  'tutorial_' =>
-    'tutorial_',
+  'tutorial' =>
+    'Tutorial',
   'Next' =>
     'Next',
   'Skip to play' =>

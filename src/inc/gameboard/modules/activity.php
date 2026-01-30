@@ -70,28 +70,28 @@ class ActivityModuleController extends ModuleController {
           if (in_array($formatted_entity, $investigation_countries, true)) {
             $line =
               <x:frag>
-                {$team_node} {tr('investigated incident in')} {$country_node}
+                {$team_node} {tr(' investigated incident in ')} {$country_node}
               </x:frag>;
           } else if (in_array($formatted_entity, $capture_countries, true)) {
             $line =
               <x:frag>
-                {$team_node} {tr('hacked organization in')} {$country_node}
+                {$team_node} {tr(' hacked organization in ')} {$country_node}
               </x:frag>;
           } else {
             $line =
               <x:frag>
-                {tr('Team')} {$team_node} {tr('completed')} {$country_node}
+                {tr(' Team ')} {$team_node} {tr(' completed ')} {$country_node}
               </x:frag>;
           }
         } else if ($action === 'enabled') {
           $line =
             <x:frag>
-              {$country_node} {tr('was enabled')}
+              {$country_node} {tr(' was enabled ')}
             </x:frag>;
         } else if ($action === 'added') {
           $line =
             <x:frag>
-              {$country_node} {tr('was added')}
+              {$country_node} {tr(' was added ')}
             </x:frag>;
         } else {
           $line =
